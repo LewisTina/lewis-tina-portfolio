@@ -1,0 +1,15 @@
+.skillsMarqueeLeft{
+    --play: running; 
+    --direction: normal; 
+    --duration: 60s; 
+    --delay: 0s; 
+    --iteration-count: infinite;
+}
+
+.skillsMarqueeRight{
+    --play: running; 
+    --direction: reverse; 
+    --duration: 60s; 
+    --delay: 0s; 
+    --iteration-count: infinite;
+}
