@@ -9,6 +9,22 @@
     "light": "Thème clair",
     "system": "Défaut système",
     "iam": "Je suis",
+    "hi": "Salut",
+    "since": "depuis",
+
+    "experience_count": "{{counter}} ans \n d'expérience",
+
+    "about": "À propos",
+    "about_me": "Tout sur moi",
+    "skills": "Skills",
+    "my_skills": "my skills",
+    "projects": "projets",
+    "hire_me": "Embauchez moi",
+    "see_more": "Voir plus",
+
+    "download_resume": "Téléchargez mon cv",
+    "terms_and_services": "CGU",
+    "privacy": "confidentialité",
 
     "about_lewis": "D'une formation DUT Génie Logiciel et en autodidacte, depuis le début de mes études en génie logiciel en 2018, j'exerce également en tant que Designer Graphique. De plus, depuis 2020, je travaille en parallèle en tant que Développeur Fullstack. J’ai travaillé jusqu’ici sur différents projets en équipe et individuellement pour des particuliers et pour des entreprise.\nJ’ai également à mon actif un produit personnel qui est une solution d’invoicing que je vous recommande pour vos activités en tant qu’entrepreneur ou PME.",
     "focus_text": "Mon objectif principal est de fournir des solutions optimisés, responsives, intuitives et adaptées à vos besoins. Je propose pour ce faire des services en:",
