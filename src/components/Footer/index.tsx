@@ -17,19 +17,20 @@ export default function Footer(props: any) {
     const {t} = useTranslation('common')
     return(
         <footer className="w-full flex justify-center bg-primary dark:bg-black/70 text-white" id="hire_me">
-            <div className="px-16 py-8 max-w-[1535px] w-full h-auto">
-                    <CustomButton 
-                        leftIcon={
-                            <span className="material-symbols-outlined pr-4">arrow_downward</span>
-                        }
-                        bgColor={"bg-white dark:bg-deep-purple"} 
-                        color={"text-deep-purple dark:text-white"} 
-                        label="download_resume" 
-                        action={undefined}/>
+            <div className="px-16 py-8 max-w-[1535px] w-full h-auto md:px-4 lg:px-8">
+                    <a href="/cvfile_aboutou_review2023.pdf" download="CV ABOUTOU TINA Pierre Lewis Review 2023 FS DEV.pdf">
+                        <CustomButton 
+                            leftIcon={
+                                <span className="material-symbols-outlined pr-4">arrow_downward</span>
+                            }
+                            bgColor={"bg-white dark:bg-deep-purple"} 
+                            color={"text-deep-purple dark:text-white"} 
+                            label={t("download_resume")} 
+                            action={undefined}/>
+                    </a>
 
-
-                <div className="flex justify-between py-10 items-end border-b-2 border-white/25">
-                    <div className="max-w-[45%]">
+                <div className="flex justify-between py-10 items-end border-b-2 border-white/25 md:flex-col md:justify-start md:items-start lg:items-start">
+                    <div className="max-w-[45%] md:max-w-full lg:max-w-[65%]">
                         <div className="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
                             <circle cx="16.7887" cy="16.2113" r="15.7113" stroke="white"/>
@@ -47,41 +48,44 @@ export default function Footer(props: any) {
                     </div>
 
                     
-                    <div className="max-w-[55%] flex items-start">
+                    <div className="max-w-[55%] lg:max-w-[35%] flex items-start lg:flex-col md:justify-start md:items-start md:mt-10">
                         <div className="">
-                            <h1 className="capitalize mx-4">
+                            <h2 className="capitalize">
                                 {t("hire_me")}
-                            </h1>
+                            </h2>
 
                             <div className={`${dm_sans.className} flex flex-col my-3`}>
-                                <Link href="mailto:contact@lewistina.com" className="rounded-full mt-1 px-4 py-1 hover:bg-white hover:text-primary hover:dark:text-black ">
-                                    contact@lewistina.com
+                                <Link href="mailto:contact@lewistina.com" className="mt-1 py-1 hover:border-b-white hover:border-b">
+                                    contact@lewistina.com 
                                 </Link>
-                                <Link href="tel:+330767914587" className="rounded-full mt-1 px-4 py-1 flex hover:bg-white hover:text-primary hover:dark:text-black ">
+                                <Link href="tel:+330767914587" className="mt-1 py-1 flex hover:border-b-white hover:border-b">
                                     +33 07 67 91 45 87
                                 </Link>
                             </div>
                         </div>
-                        <div className="mx-10"></div>
+                        <div className="mx-10 md:my-2"></div>
                         <div className="">
-                            <h1 className="capitalize">
+                            <h2 className="capitalize">
                                 {t("social_media")}
-                            </h1>
+                            </h2>
 
                             <div className="flex my-3">
-                                <Link href="https://www.facebook.com/" className="bg-white/25 rounded-full my-4 mr-4 flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
+                                <Link target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/pierre-lewis-aboutou-tina-113810234/" className="bg-white/25 rounded-full my-4 mr-4 flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
                                     <i className="text-xl fa fa-linkedin transition"></i>
                                 </Link>
-                                
-                                <Link href="https://www.instagram.com/" className="bg-white/25 rounded-full my-4 mr-4 flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
+                                &nbsp;
+
+                                <Link target="_blank" rel="noreferrer" href="https://www.behance.net/lewistinaab" className="bg-white/25 rounded-full my-4 mr-4 flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
                                     <i className="text-xl fa fa-behance transition"></i>
                                 </Link>
-
-                                <Link href="https://twitter.com/" className="bg-white/25 rounded-full my-4 mr-4 flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
+                                &nbsp;
+                                
+                                <Link target="_blank" rel="noreferrer" href="https://github.com/LewisTina" className="bg-white/25 rounded-full my-4 mr-4 flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
                                     <i className="text-3xl fa fa-github transition"></i>
                                 </Link>
-                                
-                                <Link href="https://www.whatsapp.com/" className="bg-white/25 rounded-full my-4 mr-4 flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
+                                &nbsp;
+
+                                <Link target="_blank" rel="noreferrer" href="https://www.instagram.com/" className="bg-white/25 rounded-full my-4 mr-4 flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
                                     <i className="text-2xl fa fa-instagram transition"></i>
                                 </Link>
 
@@ -90,21 +94,23 @@ export default function Footer(props: any) {
                     </div>
                 </div>
 
-                <div className={`${dm_sans.className} flex items-center justify-between py-10`}>
+                <div className={`${dm_sans.className} flex items-center justify-between py-10 lg:flex-col-reverse md:items-center md:text-center md:justify-start`}>
 
-                    <div className="flex">
-                        <span className="">Designed and powered with love and water by</span>
+                    <div className="block">
+                        <span className="">Designed and powered with love and fresh water by</span>
                         <span className="text-white font-bold dark:text-secondary">&nbsp; {t('Lewis TINA')}</span>
                     </div>
 
-                    <div className="flex">
-                        <Link href="https://www.facebook.com/" className="rounded-full my-1 px-4 py-1 hover:bg-white hover:text-primary hover:dark:text-black ">
+                    <div className="flex capitalize md:my-4">
+                        <Link href="/" className="mr-4 mt-1 py-1 hover:border-b-white hover:border-b">
                             {t("terms_and_services")}
                         </Link>
-                        <Link href="tel:+330767914587" className="rounded-full my-1 px-4 py-1 flex hover:bg-white hover:text-primary hover:dark:text-black ">
+                        &nbsp;
+                        <Link href="/" className="mr-4 mt-1 py-1 hover:border-b-white hover:border-b">
                             {t("privacy")}
                         </Link>
-                        <Link href="tel:+330767914587" className="rounded-full my-1 px-4 py-1 flex hover:bg-white hover:text-primary hover:dark:text-black ">
+                        &nbsp;
+                        <Link href="/" className="mr-4 mt-1 py-1 hover:border-b-white hover:border-b">
                             {t("cookies")}
                         </Link>
                     </div>

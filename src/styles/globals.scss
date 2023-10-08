@@ -7,7 +7,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --foreground-rgb-dark: 255, 255, 255;
+  --foreground-rgb-dark: 18, 18, 18;
   --background: 255, 255, 255;
   --background-dark: 18, 18, 18;
   --deep-purple : 134, 23, 255;
@@ -41,7 +41,7 @@ input::-webkit-inner-spin-button {
 
   /* custom scrollbar */
   ::-webkit-scrollbar {
-    width: 0em;
+    width: 1em;
   }
   
   ::-webkit-scrollbar-track {

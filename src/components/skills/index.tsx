@@ -1,6 +1,5 @@
 import { DM_Sans } from 'next/font/google'
 import style from './index.module.scss'
-import CustomButton from "../button"
 import Image from "next/image"
 import useTranslation from 'next-translate/useTranslation'
 
@@ -15,19 +14,19 @@ export default function Skills(props: any) {
     const {t} = useTranslation('common')
     return (
         <section className="flex flex-col items-center justify-start w-full" id='skills'>
-            <div className="px-16 max-w-[1535px] w-full ">
+            <div className="px-16 md:px-4 lg:px-6 max-w-[1535px] w-full ">
                 <div className="flex flex-col rounded-3xl bg-dark-grey py-8 text-white">
                 <div className="px-10">
-                        <h1 className="text-4xl capitalize">
+                        <h2 className="text-4xl capitalize">
                             {t('my_skills')}
-                        </h1>
+                        </h2>
                         <p className={`py-2 ${dm_sans.className} whitespace-pre-line`}>
                             {t('lewis_skills')}
                         </p>
                 </div>
 
                 
-                <div className="overflow-hidden flex items-center my-10">
+                <div className="overflow-hidden flex items-center my-10 md:my-6">
                     <ul className={`marquee capitalize text-xl ${style.skillsMarqueeLeft}`}>
                         <li>
                         <Image  
@@ -35,9 +34,8 @@ export default function Skills(props: any) {
                             alt = "git logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.5rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -48,9 +46,8 @@ export default function Skills(props: any) {
                             alt = "typescript logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.5rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -61,9 +58,8 @@ export default function Skills(props: any) {
                             alt = "react logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.5rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -74,9 +70,8 @@ export default function Skills(props: any) {
                             alt = "next logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.5rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -87,9 +82,8 @@ export default function Skills(props: any) {
                             alt = "node logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.5rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -100,9 +94,8 @@ export default function Skills(props: any) {
                             alt = "angular logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -113,9 +106,8 @@ export default function Skills(props: any) {
                             alt = "python logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -126,9 +118,8 @@ export default function Skills(props: any) {
                             alt = "sass logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -139,9 +130,8 @@ export default function Skills(props: any) {
                             alt = "figma logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -152,9 +142,8 @@ export default function Skills(props: any) {
                             alt = "tailwind logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -167,9 +156,8 @@ export default function Skills(props: any) {
                             alt = "git logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.5rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -180,9 +168,8 @@ export default function Skills(props: any) {
                             alt = "typescript logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.5rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -193,9 +180,8 @@ export default function Skills(props: any) {
                             alt = "react logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.5rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -206,9 +192,8 @@ export default function Skills(props: any) {
                             alt = "next logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.5rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -219,9 +204,8 @@ export default function Skills(props: any) {
                             alt = "node logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.5rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -232,9 +216,8 @@ export default function Skills(props: any) {
                             alt = "angular logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -245,9 +228,8 @@ export default function Skills(props: any) {
                             alt = "python logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -258,9 +240,8 @@ export default function Skills(props: any) {
                             alt = "sass logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -271,9 +252,8 @@ export default function Skills(props: any) {
                             alt = "figma logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -284,16 +264,15 @@ export default function Skills(props: any) {
                             alt = "tailwind logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
                     </ul>
                 </div>
 
-                <div className="overflow-hidden flex items-center my-10">
+                <div className="overflow-hidden flex items-center my-10 md:my-6">
                     <ul className={`marquee capitalize text-xl ${style.skillsMarqueeRight}`}>
                         <li>
                         <Image  
@@ -301,9 +280,8 @@ export default function Skills(props: any) {
                             alt = "flutter logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -314,9 +292,8 @@ export default function Skills(props: any) {
                             alt = "docker logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -327,9 +304,8 @@ export default function Skills(props: any) {
                             alt = "swagger logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -340,9 +316,8 @@ export default function Skills(props: any) {
                             alt = "html logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -353,9 +328,8 @@ export default function Skills(props: any) {
                             alt = "c_sharp logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -366,9 +340,8 @@ export default function Skills(props: any) {
                             alt = "adobe_xd logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -379,9 +352,8 @@ export default function Skills(props: any) {
                             alt = "adobe_ai logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -392,9 +364,8 @@ export default function Skills(props: any) {
                             alt = "adobe_ps logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -405,9 +376,8 @@ export default function Skills(props: any) {
                             alt = "javascript logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -421,9 +391,8 @@ export default function Skills(props: any) {
                             alt = "flutter logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -434,9 +403,8 @@ export default function Skills(props: any) {
                             alt = "docker logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -447,9 +415,8 @@ export default function Skills(props: any) {
                             alt = "swagger logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -460,9 +427,8 @@ export default function Skills(props: any) {
                             alt = "html logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -473,9 +439,8 @@ export default function Skills(props: any) {
                             alt = "c_sharp logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -486,9 +451,8 @@ export default function Skills(props: any) {
                             alt = "adobe_xd logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -499,9 +463,8 @@ export default function Skills(props: any) {
                             alt = "adobe_ai logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -512,9 +475,8 @@ export default function Skills(props: any) {
                             alt = "adobe_ps logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>
@@ -525,9 +487,8 @@ export default function Skills(props: any) {
                             alt = "javascript logo"
                             height={500}
                             width={500}
-                            className='mr-20'
+                            className='mr-20 h-14 md:h-10 md:mr-10'
                             style={{
-                                height: '3.6rem',
                                 width: 'auto',
                               }}/>
                         </li>

@@ -17,9 +17,9 @@ export default function About(props: any){
     const {t} = useTranslation('common')
     const actualYear = parseFloat((new Date().getFullYear()).toString())
     return(
-        <section className="w-full relative overflow-hidden -top-32" id="about">
-            <div className="bg-primary py-4 px-16 mt-20 relative -left-8 w-[calc(100%+4rem)] rotate-[-3.15deg] flex text-white">
-                <div className="px-20 flex">
+        <section className="w-full relative overflow-hidden -top-32 md:top-unset" id="about">
+            <div className="bg-primary py-4 px-16 md:px-4 lg:px-6 mt-20 relative -left-8 md:-left-2 w-[calc(100%+4rem)] md:w-[calc(100%+1rem)] rotate-[-3.15deg] flex md:flex-wrap text-white">
+                <div className="px-20 flex lg:px-6">
                     <p className="px-4 py-1 border-r-2 border-white">
                         <span className="block text-base leading-4 capitalize">
                             {t('since')}
@@ -30,56 +30,55 @@ export default function About(props: any){
                         </span>
                     </p>
                     <p className={`px-4 py-1 ${dm_sans.className}`}>
-                        <span className="block text-base capitalize">
-                            {actualYear - 2020} {t('years')}<br />
-                            {"Experience"}
+                        <span className="block text-base capitalize whitespace-pre-line">
+                            {t('experience_count', {counter: (actualYear - 2020)})}
                         </span>
                     </p>
                 </div>
 
-                <div className="overflow-hidden flex items-center">
+                <div className="overflow-hidden flex items-center md:my-4">
                     <ul className={`marquee capitalize text-xl ${style.aboutMarquee}`}>
-                        <li>creative</li>
+                        <li>{t('creative')}</li>
                         <li className="mx-10">·</li>
-                        <li>rigorous</li>
+                        <li>{t('rigorous')}</li>
                         <li className="mx-10">·</li>
-                        <li>attentive </li>
+                        <li>{t('attentive')} </li>
                         <li className="mx-10">·</li>
-                        <li>demanding</li>
+                        <li>{t('demanding')}</li>
                         <li className="mx-10">·</li>
-                        <li>professional </li>
+                        <li>{t('professional')} </li>
                         <li className="mx-10">·</li>
-                        <li>concerned</li>
+                        <li>{t('concerned')}</li>
                     </ul>
                     <ul className={`marquee capitalize text-xl ${style.aboutMarquee}`}>
-                        <li>creative</li>
+                        <li>{t('creative')}</li>
                         <li className="mx-10">·</li>
-                        <li>rigorous</li>
+                        <li>{t('rigorous')}</li>
                         <li className="mx-10">·</li>
-                        <li>attentive </li>
+                        <li>{t('attentive')} </li>
                         <li className="mx-10">·</li>
-                        <li>demanding</li>
+                        <li>{t('demanding')}</li>
                         <li className="mx-10">·</li>
-                        <li>professional </li>
+                        <li>{t('professional')} </li>
                         <li className="mx-10">·</li>
-                        <li>concerned</li>
+                        <li>{t('concerned')}</li>
                     </ul>
                 </div>
             </div>
 
             <div className="flex flex-col items-center justify-start w-full">
-                <div className="flex justify-between items-end  px-16 max-w-[1535px] w-full">
-                    <div className="w-96 select-none after:block after:absolute after:-inset-1 after:bg-gradient-white after:dark:bg-gradient-darkest relative -z-10">
-                        <span className="text-8xl block text-light-grey dark:text-light-grey/25">Web & Mobile</span>  
-                        <span className="text-8xl block text-secondary">Dev</span>  
+                <div className="flex justify-between items-end lg:items-start px-16 md:px-4 lg:px-6 lg:my-8 md:my-0 md:flex-col max-w-[1535px] w-full">
+                    <div className="w-96 flex flex-col select-none after:block after:absolute after:-inset-1 after:bg-gradient-white after:dark:bg-gradient-darkest relative -z-10">
+                        <span className="text-8xl lg:text-7xl block text-light-grey dark:text-light-grey/25">Web & Mobile</span>  
+                        <span className="text-8xl lg:text-7xl block text-secondary">Dev</span>  
                     </div>
 
-                    <div className="mx-8"></div>
+                    <div className="mx-8 md:my-4 lg:mx-6"></div>
 
                     <div className="text-darkest dark:text-white">
-                        <h1 className="text-4xl capitalize">
+                        <h2 className="text-4xl capitalize">
                             {t('about_me')}
-                        </h1>
+                        </h2>
                         <p className={`py-2 ${dm_sans.className} whitespace-pre-line`}>
                             {t('about_lewis')}
                         </p>
@@ -90,16 +89,16 @@ export default function About(props: any){
                             }
                             bgColor={"bg-secondary"} 
                             color={"text-white"} 
-                            label="try_factauto" 
+                            label={t("try_factauto")} 
                             action={undefined}/>
                     </div>
                 </div>
 
-                <div className="flex justify-between items-center my-8 px-16 max-w-[1535px] w-full">
-                    <div className="max-w-[50rem] text-darkest dark:text-white">
-                        <h1 className="text-4xl capitalize">
+                <div className="flex justify-between items-center md:items-start my-8 px-16 md:px-4 lg:px-6 lg:my-8 md:flex-col-reverse max-w-[1535px] w-full">
+                    <div className="max-w-[50rem] text-darkest dark:text-white lg:max-w-[30rem] md:max-w-full md:mt-8">
+                        <h2 className="text-4xl capitalize">
                             {t('my_focus')}
-                        </h1>
+                        </h2>
                         <p className={`py-3 ${dm_sans.className} whitespace-pre-line`}>
                             {t('focus_text')}
 
@@ -117,7 +116,7 @@ export default function About(props: any){
                         </p>
                     </div>
                     
-                    <div className="mx-8"></div>
+                    <div className="mx-8 lg:mx-6"></div>
 
                     <span>
                         

@@ -27,12 +27,12 @@ export default function Navbar(props: any){
     }, [active])
     
     return(
-        <header className="w-full fixed p-10 flex justify-center z-50">
+        <header className="w-full fixed p-10 flex justify-center z-50 md:p-4 lg:p-6">
             <div className="max-w-[1535px] w-full flex justify-between">
                 <div className="">
                 </div>
 
-                <div className="relative rounded-full h-10 bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl">
+                <div className="relative rounded-full h-10 bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl sm:hidden">
                     <div className={`absolute rounded-full h-full transition-all duration-300 bg-primary z-10`} id='selector'></div>
                     <NavBarLink path={"/"} label={"home"} action={()=> {setActive(0)}}/>
                     <NavBarLink path={"/#about"} label={"about"} action={()=> {setActive(1)}}/>
@@ -41,7 +41,7 @@ export default function Navbar(props: any){
                     <NavBarLink path={"/#hire_me"} label={"hire_me"} action={()=> {setActive(4)}}/>
                 </div>
 
-                <div className={`rounded-full h-10 bg-light-grey/25 flex items-center px-1 backdrop-blur-xl ${dm_sans.className}`}>
+                <div className={`rounded-full h-10 bg-light-grey/25 flex items-center px-1 backdrop-blur-xl border-2 border-light-grey/25 ${dm_sans.className}`}>
                     <SwitchLang></SwitchLang>
                     <SwitchTheme></SwitchTheme>
                 </div>

@@ -28,7 +28,7 @@ export default function NavBarLink(props: linkProps) {
 
     return (
             <Link href={path} onClick={action} id={label + 'Link'} className="z-20">
-                <div className={`flex text-xs h-full px-10 items-center`}>
+                <div className={`flex text-xs h-full px-10 lg:px-6 items-center`}>
                     <span className={`
                     capitalize transition-all duration-300
                     ${isActive ? "text-white" : "text-darkest dark:text-light-grey"}`}>

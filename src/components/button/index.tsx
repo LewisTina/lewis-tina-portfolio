@@ -13,7 +13,7 @@ export default function CustomButton(props: CustomButtonProps){
     return(
         <button 
             onClick={action}
-            className={`${color} ${bgColor} ${className} flex items-center rounded-full px-6 py-2 capitalize my-3`}>
+            className={`${color} ${bgColor} ${className} flex items-center rounded-full px-6 py-2 my-3`}>
             {leftIcon}
             {label}
             {rightIcon}

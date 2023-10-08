@@ -1,11 +1,18 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import useTranslation from "next-translate/useTranslation";
 import style from './index.module.scss'
+import setLanguage from 'next-translate/setLanguage'
+import { useRouter } from "next/router";
 
 
 export default function SwitchLang() {
-    
-  const {t} = useTranslation("common")
+  const router = useRouter();
+
+  const handleLanguageChange = async (locale: any) => {
+    await setLanguage(locale)
+    localStorage.setItem("lang", locale);
+  };
+  
   const [isOpen, setIsOpen] = useState(false)
   const [activeLang, setActiveLang] = useState<string>("fr")
   const handleChange = (value:'fr' | 'en') => {
@@ -35,29 +42,29 @@ export default function SwitchLang() {
           aria-expanded="true"
           aria-haspopup="true"
           onClick={() => {setIsOpen(!isOpen)}}>
-            {activeLang}
+            {router.locale}
         </button>
       </div>
       
 
       {
         isOpen &&
-        <div className={`absolute right-0 z-10 mt-5 w-48 origin-top-right rounded-md bg-white dark:bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ${style.menuButton}`} role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
+        <div className={`absolute right-0 z-10 mt-5 w-20 origin-top-right rounded-md bg-white dark:bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ${style.menuButton}`} role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
           <div className="py-1" role="none">
             <button 
               className="text-gray-700 dark:text-white hover:dark:bg-white/20 hover:bg-gray-100 flex w-full items-center px-4 py-2 text-sm " 
               role="menuitem" 
               id="menu-item-0"
-              onClick={() => {handleChange('fr')}}>
-                {t('fr')}
+              onClick={() => {handleLanguageChange('fr')}}>
+                {('fr')}
             </button>
 
             <button 
               className="text-gray-700 dark:text-white hover:dark:bg-white/20 hover:bg-gray-100 flex w-full items-center px-4 py-2 text-sm" 
               role="menuitem" 
               id="menu-item-1"
-              onClick={() => {handleChange('en')}}>
-                {t('en')}
+              onClick={() => {handleLanguageChange('en')}}>
+                {('en')}
             </button>
 
           </div>

@@ -1,0 +1,7 @@
+.gradient_mask {
+    overflow-x: visible;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to bottom,#000000 82%, rgba(29, 29, 29, 0) 95%);
+    mask-image: linear-gradient(to bottom,#000000 82%, rgba(29, 29, 29, 0) 95%);
+    
+  }

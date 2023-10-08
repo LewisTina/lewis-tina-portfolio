@@ -23,6 +23,14 @@ const Layout = (props: LayoutProps) => {
                 <title>Lewis Tina · Portfolio</title>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width,"/>
+                <meta property="og:image" content="/geek_apple_memoji.svg"/>
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Lewis Tina's Portfolio" />
+                <meta property="og:url" content="https://www.lewistina.com/"></meta>
+                <meta property="og:site_name" content="www.lewistina.com"></meta>
+                <meta property="og:description" content="Lewis tina's presentation site and portfolio" />
+                <meta name="description" content="Lewis tina's presentation site and portfolio" />
+                <meta name="keywords" content="lewis - tina - lewistina - profolio - ternay - lyon - developper - développeur - fullstack - frontend - backend - mobile - dev - designer - graphic - design - designer - skills"></meta> 
             </Head>
                   {children}
         </main>
