@@ -87,7 +87,7 @@ export default function About(props: any){
                             rightIcon={
                                 <span className="material-symbols-outlined pl-4">arrow_outward</span>
                             }
-                            bgColor={"bg-secondary"} 
+                            bgColor={"bg-primary"} 
                             color={"text-white"} 
                             label={t("try_factauto")} 
                             action={undefined}/>

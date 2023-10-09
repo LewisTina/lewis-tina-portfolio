@@ -47,7 +47,7 @@ export default function SwitchTheme() {
       <div className={style.preview}>
         <button 
           type="button"
-          className="flex w-full items-center gap-x-1.5 rounded-md text-secondary px-3 py-2 text-sm font-semibold" id="menu-button" 
+          className="flex w-full items-center gap-x-1.5 rounded-md text-secondary px-3 py-2 text-sm font-semibold" id="theme-button" 
           aria-expanded="true"
           aria-haspopup="true"
           onClick={() => {setIsOpen(!isOpen)}}>
@@ -58,12 +58,12 @@ export default function SwitchTheme() {
 
       {
         isOpen &&
-        <div className={`absolute right-0 z-10 mt-5 w-48 origin-top-right text-xs rounded-md bg-white dark:bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ${style.menuButton}`} role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
+        <div className={`absolute right-0 z-10 mt-5 w-48 origin-top-right text-xs rounded-md bg-white dark:bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ${style.menuButton}`} role="menu" aria-orientation="vertical" aria-labelledby="theme-button">
           <div className="py-1" role="none">
             <button 
               className="text-gray-700 dark:text-white hover:dark:bg-white/20 hover:bg-gray-100 flex w-full items-center px-4 py-2 text-sm " 
               role="menuitem" 
-              id="menu-item-0"
+              id="theme-item-0"
               onClick={() => {handleChange('light')}}>
                 <i className="material-icons">{getIcon('light')}</i>
                 {t('light')}
@@ -72,7 +72,7 @@ export default function SwitchTheme() {
             <button 
               className="text-gray-700 dark:text-white hover:dark:bg-white/20 hover:bg-gray-100 flex w-full items-center px-4 py-2 text-sm" 
               role="menuitem" 
-              id="menu-item-1"
+              id="theme-item-1"
               onClick={() => {handleChange('dark')}}>
                 <i className="material-icons">{getIcon('dark')}</i>
                 {t('dark')}
@@ -81,7 +81,7 @@ export default function SwitchTheme() {
             <button 
               className="text-gray-700 dark:text-white hover:dark:bg-white/20 hover:bg-gray-100 flex w-full items-center px-4 py-2 text-sm" 
               role="menuitem" 
-              id="menu-item-2"
+              id="theme-item-2"
               onClick={() => {handleChange('system')}}>
                 <i className="material-icons">{getIcon('system')}</i>
                 {t('system')}
