@@ -123,7 +123,7 @@ export default function HireMe(props: any) {
     
 
     return(
-        <section className={`bg-gray-300/50 dark:bg-dark-grey w-full flex justify-center pb-20 md:pb-26`} id="hire_me">
+        <section className={`bg-gray-300/50 dark:bg-dark-grey w-full flex justify-center py-20 md:pb-26`} id="hire_me">
             <div className={`px-16 py-8 max-w-[1535px] flex w-full h-auto md:px-4 lg:px-8  md:flex-col md:justify-start md:items-start lg:items-start`}>
             <div className={`w-2/5 md:w-full flex flex-col justify-between`}>
                 <h2 className="text-4xl capitalize w-full">

@@ -43,7 +43,7 @@ export default function VisitCard(props: any) {
                         action={undefined}/>
                     </a>
 
-                    <a href="sms:+330767914587?body=Hey%Lewis">
+                    <a href="sms:+330767914587?body=Hey20%Lewis">
                     <CustomButton 
                         leftIcon={
                             <span className="material-symbols-outlined pr-4">sms</span>
