@@ -2,9 +2,11 @@ import useTranslation from "next-translate/useTranslation";
 import CustomButton from "../button";
 import DripEffect from "./abstractDrop";
 import BubbleEffect from "./abstractDrop";
+import { useRouter } from "next/router";
 
 export default function Cover(props: any){
     const {t} = useTranslation('common')
+    const router = useRouter()
     return(
         <section className="relative h-[calc(100vh+7rem)] md:h-[39rem] flex justify-center w-full bg-white dark:bg-darkest bg-cover-bg bg-no-repeat bg-right-top bg-contain z-0 max-h-[1114px]" id="home">
             <div className="absolute h-full w-full bg-cover-glow bg-no-repeat bg-center">
@@ -37,7 +39,7 @@ export default function Cover(props: any){
                         bgColor={"bg-primary"} 
                         color={"text-white"} 
                         label={t("hire_me")} 
-                        action={undefined}/>
+                        action={() => {router.push("#hire_me")}}/>
 
                     <a href="/cvfile_aboutou_review2023.pdf" download="CV ABOUTOU TINA Pierre Lewis Review 2023 FS DEV.pdf">
                         <CustomButton 

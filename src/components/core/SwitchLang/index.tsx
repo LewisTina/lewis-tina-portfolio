@@ -3,6 +3,7 @@ import useTranslation from "next-translate/useTranslation";
 import style from './index.module.scss'
 import setLanguage from 'next-translate/setLanguage'
 import { useRouter } from "next/router";
+import Cookies from 'js-cookie'
 
 
 export default function SwitchLang() {
@@ -11,13 +12,11 @@ export default function SwitchLang() {
   const handleLanguageChange = async (locale: any) => {
     await setLanguage(locale)
     localStorage.setItem("lang", locale);
+    Cookies.set('language', locale)
   };
   
   const [isOpen, setIsOpen] = useState(false)
   const [activeLang, setActiveLang] = useState<string>("fr")
-  const handleChange = (value:'fr' | 'en') => {
-      setActiveLang(value)
-    };
 
   useEffect(()=> {
     if(isOpen == true){

@@ -1,9 +1,10 @@
 import useTranslation from "next-translate/useTranslation";
 import CustomButton from "../button";
-import { DM_Sans } from 'next/font/google'
 import style from './index.module.scss'
 import Image from "next/image"
 import Link from "next/link";
+import { DM_Sans } from 'next/font/google'
+import VisitCard from "./visitCard";
 
 const dm_sans = DM_Sans(
     {
@@ -16,9 +17,9 @@ const dm_sans = DM_Sans(
 export default function Footer(props: any) {
     const {t} = useTranslation('common')
     return(
-        <footer className="w-full flex justify-center bg-primary dark:bg-black/70 text-white" id="hire_me">
-            <div className="px-16 py-8 max-w-[1535px] w-full h-auto md:px-4 lg:px-8">
-                    <a href="/cvfile_aboutou_review2023.pdf" download="CV ABOUTOU TINA Pierre Lewis Review 2023 FS DEV.pdf">
+        <footer className="w-full flex justify-center bg-primary dark:bg-black/70 text-white">
+            <div className="px-16 py-8 max-w-[1535px] w-full h-auto md:px-4 lg:px-8relative">
+                    <a href="/cvfile_aboutou_review2023.pdf" download="CV ABOUTOU TINA Pierre Lewis Review 2023 FS DEV.pdf" className={"md:mt-32 flex"}>
                         <CustomButton 
                             leftIcon={
                                 <span className="material-symbols-outlined pr-4">arrow_downward</span>
@@ -28,6 +29,8 @@ export default function Footer(props: any) {
                             label={t("download_resume")} 
                             action={undefined}/>
                     </a>
+
+                <VisitCard className={`${dm_sans.className} `}/>
 
                 <div className="flex justify-between py-10 items-end border-b-2 border-white/25 md:flex-col md:justify-start md:items-start lg:items-start">
                     <div className="max-w-[45%] md:max-w-full lg:max-w-[65%]">
@@ -49,20 +52,6 @@ export default function Footer(props: any) {
 
                     
                     <div className="max-w-[55%] lg:max-w-[35%] flex items-start lg:flex-col md:justify-start md:items-start md:mt-10">
-                        <div className="">
-                            <h2 className="capitalize">
-                                {t("hire_me")}
-                            </h2>
-
-                            <div className={`${dm_sans.className} flex flex-col my-3`}>
-                                <Link href="mailto:contact@lewistina.com" className="mt-1 py-1 hover:border-b-white hover:border-b">
-                                    contact@lewistina.com 
-                                </Link>
-                                <Link href="tel:+330767914587" className="mt-1 py-1 flex hover:border-b-white hover:border-b">
-                                    +33 07 67 91 45 87
-                                </Link>
-                            </div>
-                        </div>
                         <div className="mx-10 md:my-2"></div>
                         <div className="">
                             <h2 className="capitalize">

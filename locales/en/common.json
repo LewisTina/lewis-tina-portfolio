@@ -4,6 +4,7 @@
     "at": "at",
     "from": "from",
     "to": "to",
+    "your": "Your",
     "and": "and",
     "dark": "Dark Theme",
     "light": "Light Theme",
@@ -46,6 +47,21 @@
     "branding": "Branding",
     "ui_design": "UI Design",
     "seo": "SEO Referencement",
+
+    "drop_message": "Drop a message",
+    "email_me": "Email me",
+    "call_me": "Call me",
+
+    "name": "Name",
+    "first_name": "First name",
+    "email": "E-mail address",
+    "phone": "Phone",
+    "society": "Society",
+    "attachement": "Attachement",
+    "optional": "Optional",
+    "required_field": "this field is required",
+    "type_message": "Type your message here",
+    "form_intro": "Ready to start this aventure together?\n Fill the form below and let's start connect!",
     
     "conclusion": "Our passion is to transform your requirements into high-quality solutions, allowing you to expand your digital presence and make a mark for your brand in today's market."
 }

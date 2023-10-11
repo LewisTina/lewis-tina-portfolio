@@ -3,6 +3,7 @@
     "FAQ": "FAQ",
     "at": "à",
     "from": "du",
+    "your": "Votre",
     "to": "au",
     "and": "et",
     "dark": "Thème sombre",
@@ -27,7 +28,7 @@
     "my_skills": "Compétences",
     "lewis_skills": "Quelques technologies avec lesquels j'ai travaillé récemment",
     "projects": "projets",
-    "hire_me": "Embauchez moi",
+    "hire_me": "Engagez moi",
     "see_more": "Voir plus",
     "try_factauto": "Essayer FactAuto",
 
@@ -45,6 +46,21 @@
     "branding": "Branding",
     "ui_design": "UI Design",
     "seo": "Référencement SEO",
+
+    "drop_message": "Laissez un sms",
+    "email_me": "Envoyez moi un email",
+    "call_me": "Appelez moi",
+
+    "name": "Nom",
+    "first_name": "Prénom",
+    "email": "Adresse mail",
+    "phone": "Téléphone",
+    "society": "Société",
+    "attachement": "Pièce jointe",
+    "optional": "Optionnel",
+    "required_field": "Veuillez remplir ce champ",
+    "type_message": "Tapez votre message ici",
+    "form_intro": "Prêt à commencer cette nouvelle aventure ensemble?\n Remplissez le formulaire ci-dessous et commençons à discuter.",
 
     "conclusion": "Notre passion est de transformer votre besoin en solution avec des solutions de qualité en vous permettant d’étendre votre visibilité digitale et de laisser un impact de votre marque sur le marché actuel."
 }

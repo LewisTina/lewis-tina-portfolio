@@ -3,6 +3,7 @@ import Footer from '@/components/Footer'
 import Layout from '@/components/Layout'
 import Navbar from '@/components/NavBar'
 import About from '@/components/about'
+import HireMe from '@/components/hire_me'
 import Projects from '@/components/portfolio'
 import Skills from '@/components/skills'
 
@@ -16,6 +17,7 @@ export default function Home() {
         <About/>
         <Skills/>
         <Projects/>
+        <HireMe/>
         <Footer/>
       </main>
     </Layout>

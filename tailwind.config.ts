@@ -33,6 +33,44 @@ const config: Config = {
         'gradient-white': "linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.00) 50%, rgba(255, 255, 255, 1) 100%)",
       },
 
+      'animation': {
+            'gradient-x':'gradient-x 15s ease infinite',
+            'gradient-y':'gradient-y 15s ease infinite',
+            'gradient-xy':'gradient-xy 15s ease infinite',
+        },
+        'keyframes': {
+            'gradient-y': {
+                '0%, 100%': {
+                    'background-size':'400% 400%',
+                    'background-position': 'center top'
+                },
+                '50%': {
+                    'background-size':'200% 200%',
+                    'background-position': 'center center'
+                }
+            },
+            'gradient-x': {
+                '0%, 100%': {
+                    'background-size':'200% 200%',
+                    'background-position': 'left center'
+                },
+                '50%': {
+                    'background-size':'200% 200%',
+                    'background-position': 'right center'
+                }
+            },
+            'gradient-xy': {
+                '0%, 100%': {
+                    'background-size':'400% 400%',
+                    'background-position': 'left center'
+                },
+                '50%': {
+                    'background-size':'200% 200%',
+                    'background-position': 'right center'
+                }
+            }
+        },
+
       colors: {
         'darkest': "rgb(18, 18, 18)",
         'dark-grey': 'rgb(26, 26, 26)',
@@ -40,6 +78,7 @@ const config: Config = {
         'primary': 'rgb(0, 15, 255)',
         'secondary': 'rgb(0, 122, 255)',
         'deep-purple': 'rgb(134, 23, 255)',
+        "blood-red": 'rgb(255, 0, 0)',
       }
     },
   },
