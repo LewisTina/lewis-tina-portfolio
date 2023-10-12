@@ -9,21 +9,21 @@ export default function Cover(props: any){
     const router = useRouter()
     return(
         <section className="relative h-[calc(100vh+7rem)] md:h-[39rem] flex justify-center w-full bg-white dark:bg-darkest bg-cover-bg bg-no-repeat bg-right-top bg-contain z-0 max-h-[1114px]" id="home">
-            <div className="absolute h-full w-full bg-cover-glow bg-no-repeat bg-center">
+            <div className="absolute h-full w-full bg-cover-glow bg-no-repeat bg-center  md:hidden">
             </div>
 
             <div className="absolute h-full w-full bg-cover-noise bg-no-repeat bg-cover mix-blend-overlay dark:mix-blend-normal">
             </div>
             
 
-            <div className="absolute h-full sm:h-[60vh] w-full mix-blend-normal">
+            <div className="absolute h-full sm:h-[40vh] w-full mix-blend-normal">
                 <BubbleEffect/>
             </div>
             
-            <div className="absolute h-full w-full flex items-center md:items-end px-16 pb-16 md:pb-32 max-w-[1535px] md:px-4 lg:px-8">
+            <div className="absolute h-full w-full flex items-center md:items-end px-16 pb-16 md:pb-28 max-w-[1535px] md:px-4 lg:px-8">
                 <div className="flex flex-col items-start justify-start">
                     
-                    <div className="pb-8 lg:pb-0">
+                    <div className="pb-8 md:pb-4 lg:pb-0">
                         <h1 className="flex flex-col dark:mix-blend-difference">
                             <span className="text-4xl md:text-2xl leading-normal text-darkest dark:text-white block">{t("hi")}&nbsp;😃,</span>
                             <span className="text-8xl md:text-5xl text-primary">{t('iam')}&nbsp;</span>

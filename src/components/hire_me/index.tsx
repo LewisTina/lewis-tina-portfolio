@@ -20,7 +20,7 @@ function Alert(props: any){
     const {status} = props
     return (
         <div 
-            className={`flex items center p-3 pr-6 rounded-full`}
+            className={`flex items-center p-3 pr-6 rounded-full`}
             style={{backgroundColor: `${
                 status == 200 ?
                 "#35DB0030" :

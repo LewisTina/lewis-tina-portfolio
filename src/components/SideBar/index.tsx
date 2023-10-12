@@ -26,7 +26,7 @@ export default function Sidebar(props: any){
     }, [active])
     
     return(
-        <div className={`w-72 relative p-4 z-50 md:p-4 lg:p-6  ${dm_sans.className} lg:hidden`}>
+        <div className={`w-72 absolute left-0 p-4 z-50 md:p-4 lg:p-6  ${dm_sans.className} lg:hidden`}>
             <div className="w-full flex-col justify-between relative">
 
                 <div className="fixed pl-10 pr-2 flex flex-col w-72">
