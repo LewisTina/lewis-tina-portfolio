@@ -22,6 +22,7 @@ const config: Config = {
     },
     
     extend: {
+      display: ["group-hover"],
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -34,9 +35,9 @@ const config: Config = {
       },
 
       'animation': {
-            'gradient-x':'gradient-x 15s ease infinite',
-            'gradient-y':'gradient-y 15s ease infinite',
-            'gradient-xy':'gradient-xy 15s ease infinite',
+            'gradient-x':'gradient-x 5s ease infinite',
+            'gradient-y':'gradient-y 5s ease infinite',
+            'gradient-xy':'gradient-xy 5s ease infinite',
         },
         'keyframes': {
             'gradient-y': {
