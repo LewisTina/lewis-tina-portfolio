@@ -3,6 +3,7 @@ import SwitchLang from "../core/SwitchLang";
 import SwitchTheme from "../core/SwitchTheme";
 import NavBarLink from "./NavBarLink";
 import { DM_Sans } from 'next/font/google'
+import Link from "next/link";
 
 const dm_sans = DM_Sans(
     {
@@ -30,12 +31,12 @@ export default function Navbar(props: any){
         <header className="w-full fixed p-10 flex justify-center z-50 md:p-4 lg:p-6">
             <div className="max-w-[1535px] w-full flex justify-between">
 
-                <div className={`rounded-full h-10 bg-white border-2 border-light-grey/50 flex items-center p-1 backdrop-blur-xl ${dm_sans.className}`}>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" fill="none" className='h-full'>
+                <Link href='/' className={`rounded-full h-10 bg-white border-2 border-light-grey/50 flex items-center p-1 backdrop-blur-xl ${dm_sans.className}`}>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" fill="none" className='h-full'>
                             <circle cx="16.7887" cy="16.2113" r="15.7113" className='stroke-primary'/>
                             <circle cx="16.7887" cy="16.2112" r="12.2999" className='stroke-primary'/>
                         </svg>
-                </div>
+                </Link>
 
                 <div className="relative rounded-full h-10 bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl sm:hidden">
                     <div className={`absolute rounded-full h-full transition-all duration-300 bg-primary z-10`} id='selector'></div>

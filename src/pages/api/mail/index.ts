@@ -66,8 +66,10 @@ export default async function handler(req: any, res: any) {
         var templatePath = path.resolve("src/pages/api/mail/templates", `answers.html`);
         var templateHtml = fs.readFileSync(templatePath, 'utf8');
         var template = handlebars.compile(templateHtml);
+        var date = new Date(Date.now())
+        var finalDate = date.toLocaleString('fr', {year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false})
 
-        var replacements = req.body
+        var replacements = {first_name: first_name, name: name, date: finalDate}
         try {
         var htmlToSend = template(replacements);
         }
