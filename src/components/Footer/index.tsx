@@ -18,7 +18,7 @@ export default function Footer(props: any) {
     const {t} = useTranslation('common')
     return(
         <footer className="w-full flex justify-center bg-primary dark:bg-black/70 text-white">
-            <div className="px-16 py-8 max-w-[1535px] w-full h-auto md:px-4 lg:px-8relative">
+            <div className="px-16 py-8 max-w-[1535px] w-full h-auto md:px-4 lg:px-8 relative">
                     <a href="/cvfile_aboutou_review2023.pdf" download="CV ABOUTOU TINA Pierre Lewis Review 2023 FS DEV.pdf" className={"md:mt-32 flex"}>
                         <CustomButton 
                             leftIcon={
@@ -87,20 +87,20 @@ export default function Footer(props: any) {
 
                     <div className="block">
                         <span className="">Designed and powered with love and fresh water by</span>
-                        <span className="text-white font-bold dark:text-secondary">&nbsp; {t('Lewis TINA')}</span>
+                        <span className="text-white font-bold dark:text-secondary">&nbsp; {'Lewis TINA'}</span>
                     </div>
 
                     <div className="flex capitalize md:my-4">
-                        <Link href="/" className="mr-4 mt-1 py-1 hover:border-b-white hover:border-b">
+                        <Link href="/legal" className="mr-4 mt-1 py-1 hover:border-b-white hover:border-b">
+                            {t("legal")}
+                        </Link>
+                        &nbsp;
+                        <Link href="/legal#cgu" className="mr-4 mt-1 py-1 hover:border-b-white hover:border-b">
                             {t("terms_and_services")}
                         </Link>
                         &nbsp;
-                        <Link href="/" className="mr-4 mt-1 py-1 hover:border-b-white hover:border-b">
+                        <Link href="/legal#privacy" className="mr-4 mt-1 py-1 hover:border-b-white hover:border-b">
                             {t("privacy")}
-                        </Link>
-                        &nbsp;
-                        <Link href="/" className="mr-4 mt-1 py-1 hover:border-b-white hover:border-b">
-                            {t("cookies")}
                         </Link>
                     </div>
 

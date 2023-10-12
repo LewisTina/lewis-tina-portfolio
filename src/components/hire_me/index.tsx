@@ -124,14 +124,14 @@ export default function HireMe(props: any) {
 
     return(
         <section className={`bg-gray-300/50 dark:bg-dark-grey w-full flex justify-center py-20 md:pb-26`} id="hire_me">
-            <div className={`px-16 py-8 max-w-[1535px] flex w-full h-auto md:px-4 lg:px-8  md:flex-col md:justify-start md:items-start lg:items-start`}>
-            <div className={`w-2/5 md:w-full flex flex-col justify-between`}>
+            <div className={`px-16 py-8 max-w-[1535px] flex w-full h-auto md:px-4 lg:px-8  lg:flex-col lg:justify-start lg:items-start`}>
+            <div className={`w-2/5 lg:w-full flex flex-col justify-between`}>
                 <h2 className="text-4xl capitalize w-full">
                     {t('hire_me')}
                 </h2>
 
-                <div className={`${style.gradient_mask_2}`}>
-                  <div className="flex w-full justify-center">
+                <div className={`${style.gradient_mask_2} w-full flex flex-col items-center`}>
+                  <div className="flex w-full justify-center max-w-lg">
                       <div className="mx-10"></div>
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" fill="none" className='w-1/2'>
                             <circle cx="16.7887" cy="16.2113" r="15.7113" className='stroke-primary'/>
@@ -139,7 +139,7 @@ export default function HireMe(props: any) {
                         </svg>
                   </div>
 
-                  <div className="flex w-full  justify-center">
+                  <div className="flex w-full  justify-center max-w-lg">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" fill="none" className='w-1/2'>
                             <circle cx="16.7887" cy="16.2113" r="15.7113" className='stroke-primary'/>
                             <circle cx="16.7887" cy="16.2112" r="12.2999" className='stroke-primary'/>
@@ -149,14 +149,14 @@ export default function HireMe(props: any) {
 
                 <div className={``}></div>
             </div>
-            <div className={`w-3/5 md:w-full ${dm_sans.className}`}>
+            <div className={`w-3/5 lg:w-full ${dm_sans.className}`}>
                 <p className="m-3 md:mx-0 w-3/5 md:w-full">
                      {t('form_intro')}
                 </p>
 
-                <form onSubmit={handleSubmit(onSubmit)} className={`flex flex-col`}>
+                <form onSubmit={handleSubmit(onSubmit)} className={`flex flex-col w-full`}>
 
-                    <div className="flex md:flex-col">
+                    <div className="flex w-full sm:flex-col">
                       <InputTextField
                             label={t('name')}
                             placeholder={`${t('your')} ${t('name')}`} 
@@ -172,7 +172,7 @@ export default function HireMe(props: any) {
                             name={'firstName'}/>
                     </div>
 
-                    <div className="flex md:flex-col">
+                    <div className="flex w-full sm:flex-col">
                       <InputTextField
                             label={t('society')}
                             placeholder={`${t('society')} | ${t('optional')}`}

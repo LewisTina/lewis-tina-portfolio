@@ -20,7 +20,7 @@ const Layout = (props: LayoutProps) => {
     return (
         <main className={dela_gothic.className}>
             <Head>
-                <title>Lewis Tina · Portfolio</title>
+                <title>{title ? title : "Lewis Tina · Portfolio"}</title>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width,"/>
                 <meta property="og:image" content="https://www.lewistina.com/geek_apple_memoji.png"/>
