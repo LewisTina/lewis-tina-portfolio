@@ -5,6 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'coolvetica';
+  src: url('/font/coolvetica/coolvetica-crammed-rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --foreground-rgb-dark: 18, 18, 18;

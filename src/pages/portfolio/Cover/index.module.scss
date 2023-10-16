@@ -3,11 +3,21 @@
     animation: entry .8s linear;
 }
 
-.content h2 {
-	color: #fff;
-	font-size: 8em;
+.title {
+	font-family: coolvetica;
+
+	h2{
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 }
 
+.welcome{
+	font-family: coolvetica;
+}
+
+/* 
 .content h2:nth-child(1) {
     position: absolute;
 	color: transparent;
@@ -19,7 +29,7 @@
 .content h2:nth-child(2) {
 	color: rgb(var(--secondary));
 	//animation: animate 4s ease-in-out infinite;
-}
+} */
 
 @keyframes entry {
     from{

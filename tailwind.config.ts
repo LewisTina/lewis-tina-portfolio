@@ -28,7 +28,7 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'cover-bg': "url('/foreground.svg')",
-        'portfolio-cover-bg': "url('/portfolio-cover_1.png')",
+        'portfolio-cover-bg': "url('/portfolio-cover-gradient.png')",
         'cover-glow': "url('/glow.svg')",
         'cover-noise': "url('/noise.svg')",
         'gradient-darkest': "linear-gradient(270deg, rgba(18, 18, 18, 1) 0%, rgba(18, 18, 18, 0.00) 50%, rgba(18, 18, 18, 1) 100%)",
