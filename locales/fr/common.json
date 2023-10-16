@@ -12,6 +12,7 @@
     "iam": "Je suis",
     "hi": "Salut",
     "since": "depuis",
+    "this": "Ce",
 
     "experience_count": "{{counter}} ans \n d'expérience",
     "creative": "créatif",
@@ -53,6 +54,8 @@
     "drop_message": "Laissez un sms",
     "email_me": "Envoyez moi un email",
     "call_me": "Appelez moi",
+    "go_to": "Allez sur {{project_name}}",
+    "more_details": "Plus de détails",
 
     "name": "Nom",
     "first_name": "Prénom",

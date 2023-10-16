@@ -13,6 +13,7 @@
     "iam": "I'm",
     "hi": "Hi",
     "since": "since",
+    "this": "This",
 
     "experience_count": "{{counter}} years \n experience",
     "creative": "creative",
@@ -54,6 +55,8 @@
     "drop_message": "Drop a message",
     "email_me": "Email me",
     "call_me": "Call me",
+    "go_to": "Go to {{project_name}}",
+    "more_details": "More details",
 
     "name": "Name",
     "first_name": "First name",

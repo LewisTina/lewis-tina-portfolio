@@ -1,5 +1,5 @@
 import useTranslation from 'next-translate/useTranslation'
-import style from '../../portfolio/index.module.scss'
+import style from '../../projects/index.module.scss'
 import Link from 'next/link'
 import CustomButton from '@/components/button'
 

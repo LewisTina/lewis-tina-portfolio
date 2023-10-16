@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { DM_Sans } from 'next/font/google'
 import useTranslation from 'next-translate/useTranslation';
 import CustomButton from '../button';
-import style from '../portfolio/index.module.scss'
+import style from '../projects/index.module.scss'
 import Cookies from 'js-cookie'
 
 const dm_sans = DM_Sans(
