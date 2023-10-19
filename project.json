@@ -1,0 +1,292 @@
+{
+"portfolio": {
+        "logo": {
+            "link": "/fav.svg", 
+            "alt": "Logo Portfolio"
+            },
+        "activities": "Octobre 2023",
+        "owner": "Lewis TINA",
+        "title": "My Portfolio",
+        "cover": {
+            "link": "/this_portfolio/Online_Portfolio_Mockup_1.png", 
+            "alt": "this porfolio preview image"
+            },
+        "resume": {
+            "fr": "Portfolio développé avec Next.js, incluant un système de messagerie via une route API avec Nodemailer, et déployé sur le domaine lewistina.com via Vercel.",
+            "en": "Portfolio developed with Next.js, including a messaging system via an API route with Nodemailer, and deployed on the lewistina.com domain via Vercel."
+        },
+        "introduction": {
+            "fr": "Il s'agit de ce portfolio conçu et développé par mes soins pour présenter librement mon travail et mes réalisations. Certaines de mes réalisations ne sont pas partagées en fonction du niveau de confidentialité du projet en question.",
+            "en": "This is my portfolio, designed and developed by me to freely showcase my work and accomplishments. Some of my work is not shared based on the project's confidentiality level."
+        },
+        "contribution": {
+            "fr": "Bien évidemment, on pourrait considérer qu'il s'agit simplement d'un site vitrine de présentation nécessitant uniquement une maquette et une intégration frontale. Néanmoins, il comporte également un formulaire de contact avec envoi automatique de courrier électronique, ce qui en fait un projet plus complet, même s'il intègre également une page d'API. Parmi les tâches, on peut citer :\n\n- Conception de la maquette UI/UX\n- Intégration full-stack Next.js\n- Déploiement sur Vercel\n- Configuration du DNS pour le nom de domaine.",
+            "en": "Of course, one could consider it a simple presentation website, requiring only mockup and front-end integration. However, it also includes a contact form with automatic email sending, making it a more comprehensive project, even though it also incorporates an API page. Tasks include:\n\n- UI/UX mockup design\n- Full-stack integration with Next.js\n- Deployment on Vercel\n- Domain name DNS configuration."
+        },
+        "contributionBlocImg": [{"link": "/this_portfolio/Online_Portfolio_Mockup_2.png", "alt": "factauto preview image 1"}, {"link": "/this_portfolio/Online_Portfolio_Mockup_3.png", "alt": "factauto preview image 1"}],
+        "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "Versel", "Figma", "Adobe Illustrator"],
+        "technosBlocImg": [],
+        "githubLink":"https://github.com/LewisTina/lewis-tina-portfolio",
+        "behanceLink":"https://www.behance.net/gallery/181857483/Personal-Landing-Page-with-some-project/",
+        "projectLink":"https://www.lewistina.com/",
+        "projectCategories":"Dev Fullstack & UI Design"
+    },
+"factauto": {
+        "logo": {
+            "link": "/Logo_FactAuto.png", 
+            "alt": "Logo FactAuto"
+            },
+        "activities": "Since 2022",
+        "owner": "FactAuto - France",
+        "title": "FactAuto",
+        "cover": {
+            "link": "/Clay_Mockup___10_.png", 
+            "alt": "factauto preview image"
+            },
+        "resume": {
+            "fr": "Conception d’une application d’invoicing avec aide à la comptabilité avec Next.js pour le front-end, Python et Node.js pour le back-end, ainsi que Flutter pour le mobile. Cette application a un suivi de déploiement basé sur des pipelines GitLab CI/CD.",
+            "en": "Design of an invoicing and accounting assistance application with Next.js for the front-end, Python and Node.js for the back-end, as well as Flutter for mobile. This application has a deployment tracking based on GitLab CI/CD pipelines."
+        },
+        "introduction": {
+            "fr": "Ce projet vise à développer une application de facturation disponible sur plusieurs plateformes, incluant une application web ainsi qu'une application mobile hybride compatible avec Android et iOS. Ce projet est mis en œuvre selon une approche agile. Cette méthode permet d'ajuster et de modifier progressivement les étapes tout au long de la conception et du développement du projet, favorisant ainsi son évolution continue.",
+            "en": "This project aims to develop an invoicing application available on several platforms, including a web application as well as a hybrid mobile application compatible with Android and iOS. This project is implemented using an agile approach. This method allows steps to be gradually adjusted and modified throughout the design and development of the project, thus promoting its continuous evolution."
+        },
+        "contribution": {
+            "fr": "Sur ce projet, la méthodologie Agile a été adoptée, étant donné qu'il a été développé par une équipe de deux développeurs. Dans ce contexte, j'ai endossé plusieurs rôles, notamment ceux de Scrum Master, Web Designer et Développeur Fullstack.\n \n Mes responsabilités étaient variées et touchaient différents domaines. Plus précisément, j'ai accompli les tâches suivantes :\n- Mener l'étude et l'analyse approfondies du projet;\n- Rédiger le cahier des charges en tant que client, ainsi que le cahier des charges fonctionnel en qualité de Scrum Master;\n- Concevoir graphiquement différents aspects de l'identité visuelle, allant du logo aux maquettes et prototypes UI-UX;\n- Assurer le développement Front-End pour l'ensemble de la version web;\n- Développer des webservices en tant que composantes externes utilisés par l’application, tel qu’un service de mailing pour l’envoie des différents e-mail de l’application, un service de génération de pdf appelés par des requêtes https;\n- La gestion des pipeline avec GitLab CI/CD pour le suivi et le déploiement des version de l’application;\n- Mettre en œuvre le développement hybride avec Flutter.",
+            "en": "On this project, the Agile methodology was adopted, given that it was developed by a team of two developers. In this context, I took on several roles, including those of Scrum Master, Web Designer and Fullstack Developer.\n \n My responsibilities were varied and touched different areas. More precisely, I accomplished the following tasks:\n- Conduct the in-depth study and analysis of the project;\n- Write the specifications as a client, as well as the functional specifications as Scrum Master;\n- Graphically design different aspects of the visual identity, ranging from the logo to UI-UX models and prototypes;\n- Ensure Front-End development for the entire web version;\n- Develop webservices as external components used by the application, such as a mailing service for sending the application's various e-mails, a PDF generation service called by https requests;\n- Management of pipeline with GitLab CI/CD for monitoring and deployment of application versions; - Implement hybrid development with Flutter."
+        },
+        "contributionBlocImg": [{"link": "/factauto/Visuel_Doc_FactAuto.png", "alt": "factauto preview image 1"}, {"link": "/factauto/FactAuto_introduicing.png", "alt": "factauto preview image 3"}, {"link": "/factauto/Visuel_App_FactAuto.png", "alt": "factauto preview image 2"}],
+        "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "flutter", "Python", "Gitlab CI/CD", "Figma", "Adobe Illustrator"],
+        "technosBlocImg": [],
+        "behanceLink":"https://www.behance.net/lewistinaab/",
+        "projectLink":"https://www.factauto.com/",
+        "projectCategories":"Dev Fullstack & UI Design"
+    },
+
+"cadys": {
+        "logo": {
+            "link": "/cadys/logo_cadys.svg", 
+            "alt": "Logo Cadys"
+            },
+        "activities": "Juin - Août 2023",
+        "owner": "BedrineDev - France",
+        "title": "Cadys",
+        "cover": {
+            "link": "/cadys/cadys_dashboard-0.png", 
+            "alt": "Cadys preview image"
+            },
+        "resume": {
+            "fr": "Conception d'une application d'aide aux personnes âgées avec Next.js. L'application comprend un espace client et un espace partenaire, et implique du full-stack avec une API pour la gestion de l'authentification et du CRUD des missions.",
+            "en": "Design of an application to assist the elderly with Next.js. The application includes a client and partner space and involves full-stack development with an API for authentication and mission CRUD management."
+        },
+        "introduction": {
+            "fr": "Ce projet vise à développer une application visant à mettre en relation des professionnels proposant des services d'aide aux personnes âgées avec les personnes âgées elles-mêmes ou leurs proches. L'application est principalement développée à partir de zéro, en utilisant des technologies de choix. Son évolution est supervisée par un Scrum Master, qui est également le maître de stage.",
+            "en": "This project aims to develop an application for connecting professionals offering elderly assistance services with the elderly themselves or their relatives. The application is primarily developed from scratch, using chosen technologies. Its progress is supervised by a Scrum Master, who is also the mentor."
+        },
+        "contribution": {
+            "fr": "Dans le cadre de ce projet, qui a suivi la méthode Agile et dont j'ai assuré le développement moi-même, j'ai occupé les rôles de designer et de développeur Full stack.\n\nMes responsabilités ont couvert divers domaines, et j'ai notamment réalisé les tâches suivantes :\n- Réalisation d'une étude approfondie du projet et analyse détaillée.\n- Rédaction du cahier des charges fonctionnel.\n- Prise en charge de la conception graphique, y compris l'identité visuelle allant du logo aux maquettes et prototypes UI-UX.\n- Assurer le développement Full stack, couvrant le front-end, la gestion de la base de données (PostgreSQL), le back-end avec Node.js et Typescript, la création d'une API Rest, ainsi que la mise en place d'un service de messagerie (Web Service Mailer).",
+            "en": "In this project, following the Agile methodology, and handling the development myself, I assumed the roles of designer and full-stack developer.\n\nMy responsibilities encompassed various areas, and I completed the following tasks:\n- Conducting an in-depth project study and detailed analysis.\n- Writing the functional specifications document.\n- Managing the graphic design, including visual identity from logo to UI-UX mockups and prototypes.\n- Ensuring full-stack development, covering the front-end, database management (PostgreSQL), back-end with Node.js and Typescript, creating a REST API, and implementing a messaging service (Web Service Mailer)."
+        },
+        "contributionBlocImg": [ {"link": "/Cadys/userflow.png", "alt": "Cadys preview image 1"}, {"link": "/Cadys/quotation.png", "alt": "Cadys preview image 2"}, {"link": "/Cadys/quotation-1.png", "alt": "Cadys preview image 4"}, {"link": "/Cadys/swagger.png", "alt": "Cadys preview image 3"}],
+        "technos": ["Next Js", "Typescript", "Javascript", "Node Js", "API REST", "Swagger", "Figma", "Adobe Illustrator"],
+        "technosBlocImg": [],
+        "githubLink":"https://github.com/LewisTina/cadys",
+        "projectCategories":"Dev Fullstack & UI Design"
+    },
+
+"cp": {
+        "logo": {
+            "link": "/cp/Logo_CP_Final-05.png", 
+            "alt": "Cameroun in pocket Cadys"
+            },
+        "activities": "Juin - Août 2023",
+        "owner": "Cameroun In Pocket - Allemagne",
+        "title": "Cameroun In Pocket",
+        "cover": {
+            "link": "/cp/Mockups_CP_for_Instagram_First Screen.png", 
+            "alt": "Cameroun In Pocket preview image"
+            },
+        "resume": {
+            "fr": "Conception d'une application de mise en relation et de vente entre des prestataires de services et des utilisateurs de passage au Cameroun (touristes, diaspora, etc...). Application mobile hybride avec Flutter.",
+            "en": "Design of an application for connecting and selling between service providers and transient users in Cameroon (tourists, diaspora, etc.). Hybrid mobile application with Flutter."
+        },
+        "introduction": {
+            "fr": "Ce projet vise à développer une application de mise en relation des professionnels proposant des services d'aide aux personnes âgées avec les personnes âgées elles-mêmes ou leurs proches. L'application est principalement développée à partir de zéro, en utilisant des technologies de choix. Son évolution est supervisée par un Scrum Master, qui est également le maître de stage.",
+            "en": "This project aims to develop an application for connecting professionals offering elderly assistance services with the elderly themselves or their relatives. The application is primarily developed from scratch, using chosen technologies. Its progress is supervised by a Scrum Master, who is also the mentor."
+        },
+        "contribution": {
+            "fr": "Dans le cadre de ce projet, qui a suivi la méthode Agile et dont j'ai assuré le développement moi-même, j'ai occupé les rôles de designer et de développeur Full stack.\n\nMes responsabilités ont couvert divers domaines, et j'ai notamment réalisé les tâches suivantes :\n- Réalisation d'une étude approfondie du projet et analyse détaillée.\n- Rédaction du cahier des charges fonctionnel.\n- Prise en charge de la conception graphique, y compris l'identité visuelle allant du logo aux maquettes et prototypes UI-UX.\n- Assurer le développement Full stack, couvrant le front-end, la gestion de la base de données (PostgreSQL), le back-end avec Node.js et Typescript, la création d'une API Rest, ainsi que la mise en place d'un service de messagerie (Web Service Mailer).",
+            "en": "This project follows the Agile methodology, and I handled the development myself, taking on the roles of both designer and full-stack developer.\n\nMy responsibilities encompassed various areas, and I completed the following tasks:\n- Conducting an in-depth project study and detailed analysis.\n- Writing the functional specifications document.\n- Managing the graphic design, including visual identity from logo to UI-UX mockups and prototypes.\n- Ensuring full-stack development, covering the front-end, database management (PostgreSQL), back-end with Node.js and Typescript, creating a REST API, and implementing a messaging service (Web Service Mailer)."
+        },
+        "contributionBlocImg": [ {"link": "/cp/cp-0.png", "alt": "Cameroun In Pocket preview image 1"}, {"link": "/cp/cp-2.png", "alt": "Cameroun In Pocket preview image 2"}, {"link": "/cp/cp-1.png", "alt": "Cameroun In Pocket preview image 3"}],
+        "technos": ["Flutter", "Android Studio", "Figma", "Adobe Illustrator", "Adobe Xd"],
+        "technosBlocImg": [],
+        "behanceLink":"https://www.behance.net/gallery/139345263/Independants-Pages",
+        "projectCategories":"Dev Mobile & UI Design"
+    },
+
+"back_to_school": {
+        "activities": "Freelance 2020 - 2021",
+        "owner": "TinArt",
+        "title": "Back To school",
+        "cover": {
+            "link": "/backToSchool/Chemise_TinArt_Back_To_School-08.png", 
+            "alt": "Back to school preview image"
+            },
+        "resume": {
+            "fr": "Conception graphique d'objets de présentation publicitaire (goodies) pour une marque à l'occasion de la rentrée scolaire.",
+            "en": "Graphic design of advertising presentation items (goodies) for a brand during the back-to-school season."
+        },
+        "introduction": {
+            "fr": "Il s’agit de la conception de chemise à rabats en édition Back To School pour la communication habituelle de la marque. Ce projet vise à concevoir une maquette dans le thème de la rentrée suivant les couleurs de l’entreprise tout en respectant les dimensions imprimables.",
+            "en": "This is the Back To School edition flap set design for the usual brand communication. This project aims to design a model in the back-to-school theme following the company's colors while respecting the printable dimensions."
+        },
+        "contribution": {
+            "fr": "Conception de maquettes et soumission de fichiers vectoriels avec présentation de mockups.",
+            "en": "Design of mockups and submission of vector files with mockup presentation."
+        },
+        "contributionBlocImg": [ {"link": "/backToSchool/Chemise_TinArt_Back_To_School-04.png", "alt": "Back to school preview image 2"}, {"link": "/backToSchool/Chemise_Rabat_TinArt.png", "alt": "Back to school preview image 1"}],
+        "technos": ["Adobe Illustrator", "Adobe Photoshop"],
+        "technosBlocImg": [],
+        "behanceLink":"https://www.behance.net/gallery/139347065/Flyers-carte-de-visite-mockup/",
+        "projectCategories":"Banding & Graphic design"
+    },
+
+"bedrine_game": {
+        "activities": "Juin - Août 2023",
+        "owner": "BedrineDev - France",
+        "title": "BedrineGame",
+        "cover": {
+            "link": "/bedrinegame.png", 
+            "alt": "BedrineGame preview image"
+            },
+        "resume": {
+            "fr": "Conception de maquettes de la page d'accueil et intégration d'une fonctionnalité avec React JS pour un jeu de société grandeur nature.",
+            "en": "Design of landing page mockups and integration of a feature with React JS for a live-action board game."
+        },
+        "introduction": {
+            "fr": "Pour le lancement d'une filiale de jeux au sein de la structure, un nouveau service de jeu de société basé sur deux thèmes (mystère et horreur) est mis en place. On nous demande de créer un site web de présentation avec un formulaire de contact pour faciliter la communication digitale de ce service et la prise de rendez-vous liée à celui-ci.",
+            "en": "For the launch of a subsidiary game service within the organization, a new board game service based on two themes (mystery and horror) is being established. We are tasked with creating a presentation website with a contact form to facilitate the digital communication of this service and related appointment scheduling."
+        },
+        "contribution": {
+            "fr": "Dans le cadre de ce projet de stage effectué en groupe, je propose des maquettes et des prototypes intégrés par d'autres développeurs. J'interviens également pour l'intégration d'une section au sein du site, ainsi que pour l'API de messagerie et son intégration front-end avec react-hook-form.",
+            "en": "In the context of this group internship project, I provide mockups and prototypes integrated by other developers. I also work on the integration of a section within the site, as well as the messaging API and its front-end integration with react-hook-form."
+        },
+        "contributionBlocImg": [ {"link": "/bedrineGame/bedrinegame_landing-1.png", "alt": "Back to school preview image 2"}, {"link": "/bedrineGame/bedrinegame_landing.png",  "alt": "Back to school preview image 1"}],
+        "technos": ["Next Js", "Typescript", "Javascript", "Node Js", "Figma"],
+        "technosBlocImg": [],
+        "githubLink":"https://github.com/bedrinedev/bedrinegame/tree/AventureTicet/web/src/components/Tickets",
+        "projectCategories":"Dev Font-end & UI Design"
+    },
+
+"say_it": {
+    "logo": {
+        "link": "/sayIt/SayIT_Logo_Dark.png", 
+        "alt": "Logo Cadys"
+        },
+    "activities": "Mai - Juin 2023",
+    "owner": "SayIt - Belgique",
+    "title": "SayIt",
+    "cover": {
+        "link": "/sayit.png", 
+        "alt": "BedrineGame preview image"
+        },
+        
+    "resume": {
+        "fr": "Conception UI d'une application de communication sous forme de réseau social similaire à Twitter dans le cadre de la réalisation d'un projet académique par un groupe d'étudiants en vue de l'obtention de leur licence en développement back-end.",
+        "en": "UI design of a social networking communication application similar to Twitter, as part of an academic project by a group of students aiming to obtain their backend development degree."
+    },
+    "introduction": {
+        "fr": "Dans le cadre de la réalisation de leur projet de fin d'études en développement back-end, des étudiants font appel à moi pour proposer des maquettes afin d'obtenir des prototypes à intégrer dans les différentes opérations de leurs utilisateurs.",
+        "en": "As part of their end-of-studies project in backend development, students turn to me to provide mockups to obtain prototypes for integration into their users' operations."
+    },
+    "contribution": {
+        "fr": "Sur ce projet, j'interviens en tant que designer web UX pour proposer des maquettes et des prototypes pour les différents parcours utilisateurs de leurs applications web et mobiles. Je fournis donc :\n\n - Un logo utilisable sur le web et en tant qu'icône d'application;\n - Des maquettes pour les différents parcours mobiles;\n - Des maquettes pour ces parcours dans la version web également.\n - Des designs d'e-mails conformes à l'image de la marque pour les différentes interactions utilisateur.",
+        "en": "In this project, I am involved as a web UX designer to provide mockups and prototypes for the different user journeys of their web and mobile applications. Therefore, I provide:\n\n - A logo usable on the web and as an application icon;\n - Mockups for the various mobile journeys;\n - Mockups for these journeys in the web version as well.\n - Email designs consistent with the brand image for various user interactions."
+    },
+    "contributionBlocImg": [ {"link": "/sayIt/say-it-3.png", "alt": "Back to school preview image 1"}, {"link": "/sayIt/say-it-2.png",  "alt": "Back to school preview image 2"}, {"link": "/sayIt/say-it-1.png",  "alt": "Back to school preview image 3"}],
+    "technos": ["Figma", "Adobe Illustrator"],
+    "technosBlocImg": [],
+    "projectCategories":"UI Design"
+},
+
+"business_card": {
+    "activities": "Freelance 2022",
+    "owner": "Pro Déco",
+    "title": "Pro Déco business card",
+    "cover": {
+        "link": "/businessCard/business-card-1.png", 
+        "alt": "Business card preview image"
+        },
+    "resume": {
+        "fr": "Design de cartes de visite pour une entreprise de sérigraphie numérique et d'imprimerie.",
+        "en": "Business card design for a digital screen printing and printing company."
+    },
+    "introduction": {
+        "fr": "Il s'agit de la conception d'un design de cartes de visite imprimables pour une entreprise de sérigraphie numérique qui souhaite insuffler de la fraîcheur et de la couleur à sa marque avec un design à la fois vif et professionnel dans le thème graphique.",
+        "en": "Design of printable business cards for a digital screen printing company aiming to infuse freshness and color into their brand with a vibrant and professional graphic-themed design."
+    },
+    "contribution": {
+        "fr": "Conception de maquettes et soumission de fichiers vectoriels avec présentation de mockups.",
+        "en": "Design of mockups and submission of vector files with mockup presentation."
+    },
+    "contributionBlocImg": [{"link": "/businessCard/business-card-2.png", "alt": "Back to school preview image 1"}],
+    "technos": ["Adobe Illustrator", "Adobe Photoshop"],
+    "technosBlocImg": [],
+    "behanceLink":"https://www.behance.net/gallery/139345885/Carte-de-Visite",
+    "projectCategories":"Banding & Graphic design"
+},
+
+"la_jirafa": {
+    "activities": "Freelance 2022",
+    "owner": "La Jirafa consulting Sarl",
+    "title": "Branding & Logo La Jirafa",
+    "cover": {
+        "link": "/logo_jirafa.png", 
+        "alt": "La jirafa preview image"
+        },
+    "resume": {
+        "fr": "Création de logo et branding pour une entreprise de conseil en comptabilité sur le thème de la girafe.",
+        "en": "Logo creation and branding for an accounting consulting company with a giraffe theme."
+    },
+    "introduction": {
+        "fr": "Il s'agit de la conception d'un logo réutilisable sur différents supports et pour divers usages, avec une exigence particulière quant à la représentation d'une girafe complète dans ses couleurs réelles.",
+        "en": "This involves the design of a reusable logo for various platforms and purposes, with a specific requirement for the depiction of a complete giraffe in its true colors."
+    },
+    "contribution": {
+        "fr": "Conception de maquettes et soumission de fichiers vectoriels avec présentation de mockups.",
+        "en": "Design of mockups and submission of vector files with mockup presentation."
+    },
+    "contributionBlocImg": [ {"link": "/laJirafa/jirafa.png", "alt": "La jirafa preview image 2"}],
+    "technos": ["Adobe Illustrator", "Adobe Photoshop"],
+    "technosBlocImg": [],
+    "behanceLink":"https://www.behance.net/gallery/140823237/Illustration-adobe-vector",
+    "projectCategories":"Banding & Graphic design"
+},
+
+"premier_mai": {
+    "activities": "Freelance 2020 - 2021",
+    "owner": "TinArt",
+    "title": "Labour Day",
+    "cover": {
+        "link": "/tinart_premier_mai.png", 
+        "alt": "Labour day preview image"
+        },
+    "resume": {
+        "fr": "Conception de flyers sur le thème de la fête du travail.",
+        "en": "Design of flyers with a Labor Day theme."
+    },
+    "introduction": {
+        "fr": "À l'occasion de la fête du travail, afin d'assurer une bonne communication avec leurs clients, ces entreprises ont besoin de flyers dans le thème de la fête du travail pour rappeler cette journée à leurs clients respectifs.",
+        "en": "On the occasion of Labor Day, to ensure effective communication with their clients, these companies need flyers in the theme of Labor Day to provide a gentle reminder to their respective clients."
+    },
+    "contribution": {
+        "fr": "Conception graphique des différentes représentations avec mise en évidence des contacts et de l'activité principale de ces entreprises.",
+        "en": "Graphic design of the various representations with highlighting of contacts and the main activity of these companies."
+    },
+    "contributionBlocImg": [ {"link": "/premier_mai.png", "alt": "La jirafa preview image 2"}],
+    "technos": ["Adobe Illustrator"],
+    "technosBlocImg": [],
+    "projectCategories":"Graphic Design"
+}
+}

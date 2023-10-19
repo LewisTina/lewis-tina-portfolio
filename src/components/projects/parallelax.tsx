@@ -3,6 +3,7 @@ import { ParallaxProvider, useParallax} from 'react-scroll-parallax';
 import style from './index.module.scss'
 import Image from "next/image"
 import ProjectPreview from './projectPreview';
+import projects from '../../../project.json'
 
 const ParallaxEffect = (props: { isAppOrDesign: "app" | "design" } ) => {
     const [startAndEnd, setStartAndEnd] = useState({startScroll: 0, endScroll: 2700})
@@ -10,6 +11,7 @@ const ParallaxEffect = (props: { isAppOrDesign: "app" | "design" } ) => {
     const [startSecondAndEnd, setStartSecondAndEnd] = useState({startScroll: 0, endScroll: 3100})
     const [startThirdAndEnd, setStartThirdAndEnd] = useState({startScroll: 0, endScroll: 3300})
     const { isAppOrDesign } = props
+    const finalProject = projects as any
 
     useEffect(() => {
         const maProjectDiv = document.getElementById('projects');
@@ -90,69 +92,24 @@ const ParallaxEffect = (props: { isAppOrDesign: "app" | "design" } ) => {
     <div className={`w-full flex-none flex flex-col justify-start items-start transition-all duration-300 transform-gpu ${isAppOrDesign == "app" ? " translate-x-0" : "-translate-x-[100vw]"}`}>
         <div className="flex aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full my-2 sm:my-0 sm:flex-col" id="portfolio-first">
             <div ref={a.ref}  className="flex overflow-hidden rounded-2xl h-full w-[50%] sm:w-full sm:aspect-[1/0.85] sm:mb-4 bg-white/20 border-2 border-light-grey/25 mr-4">
-              <ProjectPreview 
-                  title={'FactAuto'} 
-                  technologies={["NextJs", "ReactJs", "Typescript", "Node Js", "flutter", "Python", "Gitlab CI/CD", "Figma", "Adobe Illustrator"]}
-                  description={'factauto_description'} 
-                  image={{
-                    link: '/factauto.png',
-                    alt: 'FactAuto project visual'
-                  }}
-                  githubLink='https://github.com/LewisTina'
-                  behanceLink='https://www.behance.net/lewistinaab/'
-                  projectLink='https://www.factauto.com/'
-                  projectCategories='Dev Fullstack & UI Design'
-                  objectFit={'object-contain'}
-              />
+              <ProjectPreview data={finalProject["factauto"]} id={'factauto'}/>
             </div>
             <div ref={b.ref} className="flex overflow-hidden rounded-2xl h-full w-[50%] sm:w-full sm:aspect-[1/0.83] sm:mb-4 bg-light-grey/25 border-2 border-light-grey/25">
-                <ProjectPreview 
-                    title={'BedrineGame'} 
-                    technologies={["Next Js", "Typescript", "Javascript", "Node Js", "Python", "Gitlab", "Figma", "Adobe Illustrator"]}
-                    description={'bredrine_game_description'} 
-                    image={{
-                      link: '/bedrinegame.png',
-                      alt: 'BedrineGame project visual'
-                    }}
-                    githubLink='https://github.com/LewisTina'
-                    behanceLink='https://www.behance.net/lewistinaab/'
-                    projectCategories='Dev Fullstack & UI Design'
-                    objectFit={'object-contain'}/>
+                <ProjectPreview data={finalProject["bedrine_game"]} id={'bedrine_game'}/>
             </div>
         </div>
         <div className="flex aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full my-2 sm:my-0 sm:flex-col" id="portfolio-second">
             <div ref={c.ref} className="flex rounded-2xl h-full w-[41%] sm:w-full sm:aspect-square sm:mb-4 bg-light-grey/25 border-2 border-light-grey/25 mr-4 overflow-hidden">
-                <ProjectPreview 
-                    title={'Say IT'} 
-                    technologies={["Figma", "Adobe Illustrator"]}
-                    description={'say_it_description'} 
-                    image={{
-                      link: '/sayit.png',
-                      alt: 'BedrineGame project visual'
-                    }}
-                    behanceLink='https://www.behance.net/lewistinaab/'
-                    projectCategories='UI Design'
-                    objectFit={'object-cover'}/>
+                <ProjectPreview data={finalProject["say_it"]} id={'say_it'}/>
             </div>
             <div ref={d.ref} className="flex rounded-2xl h-full w-[59%] sm:w-full sm:aspect-square sm:mb-4 bg-light-grey/25 border-2 border-light-grey/25 overflow-hidden">
-                <ProjectPreview 
-                    title={'Cadys'} 
-                    technologies={["Next Js", "Typescript", "Javascript", "Node Js", "Figma", "Adobe Illustrator"]}
-                    description={'cadys_description'} 
-                    image={{
-                      link: '/cadys_dashboard.png',
-                      alt: 'Cadys project visual'
-                    }}
-                    githubLink='https://github.com/LewisTina/cadys'
-                    behanceLink='https://www.behance.net/lewistinaab/'
-                    projectCategories='Dev Fullstack & UI Design'
-                    objectFit={'object-cover object-left'}/>
+                <ProjectPreview data={finalProject["cadys"]} id={'cadys'}/>
             </div>
         </div>
         <div className="flex h-48 w-full my-2 md:flex-wrap md:h-[unset]" id="portfolio-third">
             <div ref={e.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/3.6)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25 mr-2 md:mb-4">
                 <Image  
-                    src="/abri_solidaire.png"
+                    src="/Mockup-CP-Dash-06.png"
                     alt = "Say IT project visual"
                     className='object-cover'
                     fill/>
@@ -166,14 +123,14 @@ const ParallaxEffect = (props: { isAppOrDesign: "app" | "design" } ) => {
             </div>
             <div ref={g.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/3.6)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25 mr-2 md:mb-4">
                 <Image  
-                    src="/Clay_Mockup___10_.png"
+                    src="/factauto.png"
                     alt = "Say IT project visual"
-                    className='object-cover'
+                    className='object-cover object-right-top'
                     fill/>
             </div>
             <div ref={h.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/5.5)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25 md:mb-4">
                 <Image  
-                    src="/Mockup-CP-Dash-06.png"
+                    src="/abri_solidaire.png"
                     alt = "Say IT project visual"
                     className='object-cover'
                     fill/>

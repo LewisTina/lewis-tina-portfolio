@@ -2,44 +2,39 @@ import Link from "next/link"
 import CustomButton from "../button"
 import Image from "next/image"
 import useTranslation from "next-translate/useTranslation"
+import { useRouter } from "next/router"
+import { ProjectProps } from "../types"
 
-interface ProjectProjectProps{
-    title: string
-    technologies: string[]
-    description: string
-    githubLink?: string
-    behanceLink?: string
-    projectLink?: string
-    image: {link: string, alt: string}
-    objectFit?: string
-    className?: string
-    projectCategories: string
-    quality?: number
-}
-
-export default function ProjectPreview(props: ProjectProjectProps) {
+export default function ProjectPreview(props: {data: ProjectProps, id:string}) {
+    const {data, id} = props
     const {t} = useTranslation('common')
+    const router = useRouter()
+    const locale = router.locale as "en" | "fr"
     const {
+        logo,
+        activities,
+        owner,
         title,
-        technologies,
-        description,
-        projectCategories,
+        cover,
+        introduction,
+        contribution,
+        technos,
+        contributionBlocImg,
+        technosBlocImg,
         githubLink,
         behanceLink,
         projectLink,
-        image,
-        objectFit,
-        quality,
-        className
-    } = props
+        projectCategories,
+        resume
+    } = data
 
     return(
         <>
                 <Image  
-                    src={image.link}
-                    alt = {image.alt}
-                    className={objectFit || "object-contain"}
-                    quality={quality || 75}
+                    src={cover.link}
+                    alt = {cover.alt}
+                    className={"object-cover object-right"}
+                    quality={75}
                     fill/>
 
                 <div 
@@ -51,30 +46,30 @@ export default function ProjectPreview(props: ProjectProjectProps) {
                     transition-all duration-300
                     h-full w-full
                     p-6
+                    pb-3
                     bg-gradient-to-tr from-black from-35% to-black/0
                     ">
                 
-                <div className="flex items-center">
+                <div className="flex items-center md:flex-col md:items-start">
                     <h4 className='text-2xl font-black'>
                         {title}
                     </h4>
-                    <span className="py-1 px-4 rounded-full bg-secondary mx-4">
+                    <span className="py-1 px-4 rounded-full bg-secondary mx-4 md:mx-0">
                         {projectCategories}
                     </span>
                 </div>
                 
                 <div className="mt-2">
-                    <p className="">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a suscipit voluptas dolorem totam commodi culpa tempora exercitationem at saepe asperiores iusto nisi laboriosam vero, veritatis itaque aperiam quos eaque.
-                        {/* {t(description)} */}
+                    <p className="text-justify hyphens-auto word-space md:hidden">
+                        {resume[locale]}
                     </p>
                     
-                    <span className="my-2 text-xl flex font-extrabold">
+                    <span className="my-2 text-xl flex font-extrabold md:hidden">
                         Technologies
                     </span>
-                    <p className="flex flex-wrap">
+                    <p className="flex flex-wrap md:hidden">
                         {
-                            technologies.map((value: string, idx) => {
+                            technos.map((value: string, idx) => {
                                 return (
                                     <span className="mr-4 my-2 px-6 py-1 capitalize rounded-full bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl" key={idx}>
                                         {value}
@@ -92,10 +87,10 @@ export default function ProjectPreview(props: ProjectProjectProps) {
                                 bgColor={"bg-white"} 
                                 color={"text-black"} 
                                 label={t("more_details")} 
-                                action={undefined}/>
+                                action={()=>{router.push(`visualisation?id=${id}`)}}/>
                     </div>
 
-                    <div className="flex">
+                    <div className="flex items-center md:hidden">
                     {
                         behanceLink &&
                         <Link target="_blank" rel="noreferrer" href={behanceLink} className="bg-white/100 text-black rounded-full mr-4 flex justify-center items-center h-10 aspect-square">

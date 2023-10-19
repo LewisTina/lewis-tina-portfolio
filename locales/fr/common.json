@@ -50,12 +50,14 @@
     "branding": "Branding",
     "ui_design": "UI Design",
     "seo": "Référencement SEO",
+    "my_contributions": "Mes contributions",
 
     "drop_message": "Laissez un sms",
     "email_me": "Envoyez moi un email",
     "call_me": "Appelez moi",
     "go_to": "Allez sur {{project_name}}",
     "more_details": "Plus de détails",
+    "tools_tech": "Outils & technologies",
 
     "name": "Nom",
     "first_name": "Prénom",

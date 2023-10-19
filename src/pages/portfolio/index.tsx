@@ -2,14 +2,16 @@ import Layout from "@/components/Layout";
 import PortfolioCover from "./Cover";
 import Navbar from "@/components/NavBar";
 import Listing from "./listing";
+import Footer from "@/components/Footer";
 
 export default function FullPortfolio() {
     return(
     <Layout>
-      <main className="min-h-screen w-screen relative flex flex-col items-center">
+      <main className="min-h-screen w-full relative flex flex-col items-center">
         <Navbar/>
         <PortfolioCover/>
         <Listing/>
+        <Footer/>
       </main>
     </Layout>
     )

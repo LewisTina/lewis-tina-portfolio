@@ -1,7 +1,13 @@
 .content {
-	position: relative;
-    animation: entry .8s linear;
+    animation: entry 5s linear;
 }
+
+.gradient_mask {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom,#000000 82%, rgba(29, 29, 29, 0) 95%);
+    mask-image: linear-gradient(to bottom,#000000 82%, rgba(29, 29, 29, 0) 95%);
+    
+  }
 
 .title {
 	font-family: coolvetica;
@@ -10,6 +16,7 @@
 		-webkit-background-clip: text;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
+		// font-size: calc(20rem + 16 * (100vw - 320px) / 1535);
 	}
 }
 
@@ -32,12 +39,17 @@
 } */
 
 @keyframes entry {
-    from{
-        transform: translateY(100%);
-    }
-
-    to{
-        transform: translateY(0);
+    from{/* 
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: #000 !important;
+		margin: 0;
+		padding: 4rem calc((100vw - 680px) / 2);
+		border-radius: 0;
+		height: 100vh;
+		width: 100vw;
+		animation-delay: 3s; */
     }
 }
 

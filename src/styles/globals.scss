@@ -22,6 +22,9 @@
   --dark_grey : 26, 26, 26;
   --primary: 0, 15, 255;
   --secondary: 0, 122, 255;
+  --min-screen-width: 320px;
+  --max-screen-width: 1200px;
+  --base-font-size: 16px;
 }
 
 * {
@@ -29,6 +32,10 @@
   -moz-box-sizing: border-box;    
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+.coolvetica {
+  font-family: "coolvetica";
 }
 
 html{
@@ -44,6 +51,10 @@ input::-webkit-inner-spin-button {
   appearance: none;
   -webkit-appearance: none;
   margin: 0;
+}
+
+.word-spacing{
+  word-spacing:-2px;
 }
 
   /* custom scrollbar */
@@ -93,3 +104,41 @@ input::-webkit-inner-spin-button {
     transform: translateX(-100%);
   }
 }
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#Calque_1 path {
+  fill: none;
+  stroke: #0004ff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  // animation: draw 1.7s linear normal forwards;
+}
+
+#Calque_1 animate {
+  animation-delay: 4s;
+}
+
+#Calque_1 #Dégradé_sans_nom_17559 {
+  animation: fadein 2s forwards; opacity:0;
+}
+
+@keyframes fadein {from { opacity: 0; }to  { opacity: 1; }}
+
+#Calque_1 path:nth-child(1) { animation-delay: 0.5s;}
+#Calque_1 path:nth-child(2) { animation-delay: 1.0s;}
+#Calque_1 path:nth-child(3) { animation-delay: 1.5s;}
+#Calque_1 path:nth-child(4) { animation-delay: 2.0s;}
+#Calque_1 path:nth-child(5) { animation-delay: 2.5s;}
+#Calque_1 path:nth-child(6) { animation-delay: 2.5s;}
+#Calque_1 path:nth-child(7) { animation-delay: 2.0s;}
+#Calque_1 path:nth-child(8) { animation-delay: 1.5s;}
+#Calque_1 path:nth-child(9) { animation-delay: 0.5s;}
+

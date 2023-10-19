@@ -1,7 +1,7 @@
 .skillsMarqueeLeft{
     --play: running; 
     --direction: normal; 
-    --duration: 40s; 
+    --duration: 20s; 
     --delay: 0s; 
     --iteration-count: infinite;
 }
@@ -9,7 +9,7 @@
 .skillsMarqueeRight{
     --play: running; 
     --direction: reverse; 
-    --duration: 40s; 
+    --duration: 20s; 
     --delay: 0s; 
     --iteration-count: infinite;
 }
@@ -17,13 +17,11 @@
 @media screen and (max-width: 637px) {
     .skillsMarqueeLeft{
         min-width: unset !important;
-        --duration: 20s; 
         --direction: alternate; 
     }
     
     .skillsMarqueeRight{
         min-width: unset !important;
-        --duration: 20s; 
         --direction: alternate-reverse; 
     }
     

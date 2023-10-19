@@ -3,6 +3,7 @@ import { ParallaxProvider, useParallax} from 'react-scroll-parallax';
 import style from './index.module.scss'
 import Image from "next/image"
 import ProjectPreview from './projectPreview';
+import projects from '../../../project.json'
 
 const ParallaxEffect = (props: { isAppOrDesign: "app" | "design" } ) => {
     const [startAndEnd, setStartAndEnd] = useState({startScroll: 0, endScroll: 2700})
@@ -11,6 +12,7 @@ const ParallaxEffect = (props: { isAppOrDesign: "app" | "design" } ) => {
     const [startThirdAndEnd, setStartThirdAndEnd] = useState({startScroll: 0, endScroll: 3300})
     const { isAppOrDesign } = props
     const [isHidden, setIsHidden] = useState(false)
+    const finalProject = projects as any
 
     useEffect(() => {
       if (isAppOrDesign == "app") {
@@ -113,59 +115,23 @@ const ParallaxEffect = (props: { isAppOrDesign: "app" | "design" } ) => {
     <div className={`w-full flex-none flex flex-col justify-start items-start transition-all duration-300 transform-gpu ${isHidden ? "" : ""} ${isAppOrDesign == "design" ? "-translate-x-full" : "translate-x-[100vw]"}`}>
       <div className="flex aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full my-2 sm:my-0 sm:flex-col" id="portfolio-first">
             <div ref={b.ref}  className="flex overflow-hidden h-full w-[50%] sm:w-full sm:aspect-[1/0.85] sm:mb-4 bg-white/20 border-2 border-light-grey/25 mr-4">
-              <ProjectPreview 
-                  title={'TinArt Back To scool'} 
-                  technologies={["Adobe Illustrator", "Adobe Photoshop"]}
-                  description={'back_to_schoom_description'} 
-                  image={{
-                    link: '/branding.png',
-                    alt: 'TinArt Back To scool project visual'
-                  }}
-                  behanceLink='https://www.behance.net/gallery/139347065/Flyers-carte-de-visite-mockup'
-                  projectCategories='Banding & Graphic design'
-                  objectFit={'object-cover object-right-top'}
+              <ProjectPreview
+                  id={"back_to_school"} data={finalProject["back_to_school"]} 
               />
             </div>
             <div ref={a.ref} className="flex overflow-hidden h-full w-[50%] sm:w-full sm:aspect-[1/0.83] sm:mb-4 bg-light-grey/25 border-2 border-light-grey/25">
-                <ProjectPreview 
-                    title={'Business Card Pro Deco'} 
-                    technologies={["Adobe Illustrator", "Adobe Photoshop"]}
-                    description={'business_card_description'} 
-                    image={{
-                      link: '/visit_card.png',
-                      alt: 'Business Card Pro Deco project visual'
-                    }}
-                    behanceLink='https://www.behance.net/gallery/139345885/Carte-de-Visite'
-                    projectCategories='Banding & Graphic design'
-                    objectFit={'object-cover'}/>
+                <ProjectPreview
+                    id={"business_card"} data={finalProject["business_card"]}/>
             </div>
         </div>
         <div className="flex aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full my-2 sm:my-0 sm:flex-col" id="portfolio-second">
             <div ref={d.ref} className="flex h-full w-[59%] sm:w-full sm:aspect-square sm:mb-4 bg-light-grey/25 border-2 border-light-grey/25 mr-4 overflow-hidden">
-                <ProjectPreview 
-                    title={'La Jirafa'} 
-                    technologies={["Adobe Illustrator", "Adobe Photoshop"]}
-                    description={'jirafa_description'} 
-                    quality={20}
-                    image={{
-                      link: '/logo_jirafa.png',
-                      alt: 'Jirafa project visual'
-                    }}
-                    behanceLink='https://www.behance.net/gallery/140823237/Illustration-adobe-vector'
-                    projectCategories='Branding'
-                    objectFit={'object-cover object-right'}/>
+                <ProjectPreview
+                    id={"la_jirafa"} data={finalProject["la_jirafa"]}/>
             </div>
             <div ref={c.ref} className="flex h-full w-[42%] sm:w-full sm:aspect-square sm:mb-4 bg-light-grey/25 border-2 border-light-grey/25 overflow-hidden">
-                <ProjectPreview 
-                    title={'Flyers 1er Mai'} 
-                    technologies={["Adobe Illustrator"]}
-                    description={'flyers_description'} 
-                    image={{
-                      link: '/tinart_premier_mai.png',
-                      alt: 'Flyers 1er Mai project visual'
-                    }}
-                    projectCategories='Graphic Design'
-                    objectFit={'object-contain'}/>
+                <ProjectPreview
+                    id={"premier_mai"} data={finalProject["premier_mai"]}/>
             </div>
         </div>
         <div className="flex h-48 w-full my-2 md:flex-wrap md:h-[unset]" id="portfolio-third">
@@ -185,9 +151,9 @@ const ParallaxEffect = (props: { isAppOrDesign: "app" | "design" } ) => {
             </div>
             <div ref={g.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/3.6)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25 mr-2 md:mb-4">
                 <Image  
-                    src="/Clay_Mockup___10_.png"
+                    src="/ticket.png"
                     alt = "Say IT project visual"
-                    className='object-cover'
+                    className='object-cover object-right-top'
                     fill/>
             </div>
             <div ref={h.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/5.5)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25 md:mb-4">
