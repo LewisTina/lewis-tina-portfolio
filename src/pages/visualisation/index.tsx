@@ -12,11 +12,12 @@ export default function Visualisation(props: any){
     const projectId = query.id as string
     const data = projects as any
     const ProjectData = data[projectId] as ProjectProps
+    const locale = router.locale as "en" | "fr"
 
     return (
         <VisualisationLayout 
             cover={ProjectData?.cover?.link} 
-            resume={ProjectData?.resume} 
+            resume={ProjectData?.resume[locale]} 
             projectTitle={ProjectData?.title}>
             <main className={`min-h-screen w-full flex flex-col relative items-center`}>
                 <Navbar/>
