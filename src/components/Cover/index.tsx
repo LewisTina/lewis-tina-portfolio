@@ -75,7 +75,7 @@ export default function Cover(props: any){
                             height={500}
                             sizes="100vw"
                             draggable="false"
-                            loading="lazy"
+                            priority={true}
                             className={"min-h-full h-full md:min-h-[unset] md:h-auto md:w-full w-auto object-cover object-left"}/>
                     </div>
                 </div>
