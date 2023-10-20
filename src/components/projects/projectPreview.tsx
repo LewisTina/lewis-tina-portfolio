@@ -16,11 +16,7 @@ export default function ProjectPreview(props: {data: ProjectProps, id:string}) {
         owner,
         title,
         cover,
-        introduction,
-        contribution,
         technos,
-        contributionBlocImg,
-        technosBlocImg,
         githubLink,
         behanceLink,
         projectLink,
@@ -92,21 +88,21 @@ export default function ProjectPreview(props: {data: ProjectProps, id:string}) {
 
                     <div className="flex items-center md:hidden">
                     {
-                        behanceLink &&
+                        !!behanceLink &&
                         <Link target="_blank" rel="noreferrer" href={behanceLink} className="bg-white/100 text-black rounded-full mr-4 flex justify-center items-center h-10 aspect-square">
                             <i className="text-xl fa fa-behance transition"></i>
                         </Link>
                     }
                     
                     {
-                        githubLink &&
+                        !!githubLink &&
                         <Link target="_blank" rel="noreferrer" href={githubLink} className="bg-white/100 text-black rounded-full mr-4 flex justify-center items-center h-10 aspect-square">
                             <i className="text-3xl fa fa-github transition"></i>
                         </Link>
                     }
 
                     {
-                        projectLink &&
+                        !!projectLink &&
                         <a href={projectLink} target="_blank">
                             <CustomButton 
                                 rightIcon={

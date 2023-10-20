@@ -40,7 +40,7 @@ export default function Content (props: {data: ProjectProps}) {
         <div className={`px-16 py-8 max-w-[1535px] w-full min-h-screen h-auto md:px-4 lg:px-8 relative mt-20 mb-40 md:mt-10  ${dm_sans.className}`}>
             <div className="my-6 flex w-full items-center">
                     {
-                        logo && 
+                        !!logo && 
                         <div className="h-16 aspect-square mr-4 relative">
                             <Image  
                             src={logo.link}

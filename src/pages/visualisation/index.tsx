@@ -3,7 +3,7 @@ import Navbar from "@/components/NavBar";
 import { useRouter } from "next/router";
 import projects from '../../../project.json'
 import { ProjectProps } from "@/components/types";
-import Content from "./elementContent";
+import Content from "../../components/elementContent";
 import VisualisationLayout from "@/components/visualisationLayout";
 
 export default function Visualisation(props: any){

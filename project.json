@@ -126,6 +126,7 @@
     },
 
 "back_to_school": {
+        "logo": "",
         "activities": "Freelance 2020 - 2021",
         "owner": "TinArt",
         "title": "Back To school",
@@ -153,6 +154,7 @@
     },
 
 "bedrine_game": {
+        "logo": "",
         "activities": "Juin - Août 2023",
         "owner": "BedrineDev - France",
         "title": "BedrineGame",
@@ -211,6 +213,7 @@
 },
 
 "business_card": {
+    "logo": "",
     "activities": "Freelance 2022",
     "owner": "Pro Déco",
     "title": "Pro Déco business card",
@@ -238,6 +241,7 @@
 },
 
 "la_jirafa": {
+    "logo": "",
     "activities": "Freelance 2022",
     "owner": "La Jirafa consulting Sarl",
     "title": "Branding & Logo La Jirafa",
@@ -265,6 +269,7 @@
 },
 
 "premier_mai": {
+    "logo": "",
     "activities": "Freelance 2020 - 2021",
     "owner": "TinArt",
     "title": "Labour Day",
