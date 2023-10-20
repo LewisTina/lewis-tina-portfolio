@@ -7,7 +7,8 @@ import Image from "next/image"
 const dm_sans = DM_Sans(
     {
       subsets: ['latin'],
-      weight: ['500']
+      weight: ['500'],
+      display: 'swap',
     }
   )
 

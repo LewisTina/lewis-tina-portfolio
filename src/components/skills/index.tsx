@@ -6,7 +6,8 @@ import useTranslation from 'next-translate/useTranslation'
 const dm_sans = DM_Sans(
     {
       subsets: ['latin'],
-      weight: ['500']
+      weight: ['500'],
+      display: 'swap',
     }
   )
 

@@ -5,7 +5,8 @@ import Head from 'next/head'
 const dela_gothic = Dela_Gothic_One(
   {
     subsets: ['latin'],
-    weight: ['400']
+    weight: ['400'],
+    display: 'swap',
   }
 )
 
