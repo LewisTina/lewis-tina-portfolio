@@ -17,7 +17,7 @@ export default function Cover(props: any){
             
 
             <div className="absolute h-full sm:h-[40vh] w-full mix-blend-normal">
-                {/* <BubbleEffect/> */}
+                <BubbleEffect/>
             </div>
             
             <div className="absolute h-full w-full flex flex-col justify-center md:items-start px-16 pb-16 md:pb-4 max-w-[1535px] md:px-4 lg:px-8">
