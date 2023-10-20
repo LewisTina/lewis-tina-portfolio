@@ -13,6 +13,7 @@
     "iam": "I'm",
     "hi": "Hi",
     "since": "since",
+    "this": "This",
 
     "experience_count": "{{counter}} years \n experience",
     "creative": "creative",
@@ -50,10 +51,14 @@
     "branding": "Branding",
     "ui_design": "UI Design",
     "seo": "SEO Referencement",
+    "my_contributions": "My contributions",
 
     "drop_message": "Drop a message",
     "email_me": "Email me",
     "call_me": "Call me",
+    "go_to": "Go to {{project_name}}",
+    "more_details": "More details",
+    "tools_tech": "Tools & technologies",
 
     "name": "Name",
     "first_name": "First name",

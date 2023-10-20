@@ -86,6 +86,7 @@ export default function About(props: any){
                             {t('about_lewis')}
                         </p>
 
+                        <a href="https://www.factauto.fr/" target="_blank">
                         <CustomButton 
                             rightIcon={
                                 <span className="material-symbols-outlined pl-4">arrow_outward</span>
@@ -94,6 +95,7 @@ export default function About(props: any){
                             color={"text-white"} 
                             label={t("try_factauto")} 
                             action={undefined}/>
+                        </a>
                     </div>
                 </div>
 

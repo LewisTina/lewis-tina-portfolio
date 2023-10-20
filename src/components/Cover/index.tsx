@@ -8,7 +8,7 @@ export default function Cover(props: any){
     const {t} = useTranslation('common')
     const router = useRouter()
     return(
-        <section className="relative h-[calc(100vh+7rem)] md:h-[39rem] flex justify-center w-full bg-white dark:bg-darkest bg-cover-bg bg-no-repeat bg-right-top bg-contain z-0 max-h-[1114px]" id="home">
+        <section className="relative h-[calc(100vh+7rem)] md:h-screen flex justify-center w-full bg-white dark:bg-darkest bg-cover-bg bg-no-repeat bg-right-top bg-contain z-0 max-h-[1114px]" id="home">
             <div className="absolute h-full w-full bg-cover-glow bg-no-repeat bg-center  md:hidden">
             </div>
 
@@ -17,10 +17,12 @@ export default function Cover(props: any){
             
 
             <div className="absolute h-full sm:h-[40vh] w-full mix-blend-normal">
-                <BubbleEffect/>
+                {/* <BubbleEffect/> */}
             </div>
             
-            <div className="absolute h-full w-full flex items-center md:items-end px-16 pb-16 md:pb-28 max-w-[1535px] md:px-4 lg:px-8">
+            <div className="absolute h-full w-full flex flex-col justify-center md:items-start px-16 pb-16 md:pb-4 max-w-[1535px] md:px-4 lg:px-8">
+                <div className="my-4"></div>
+                
                 <div className="flex flex-col items-start justify-start">
                     
                     <div className="pb-8 md:pb-4 lg:pb-0">
@@ -51,6 +53,17 @@ export default function Cover(props: any){
                             label={t("download_resume")} 
                             action={undefined}/>
                     </a>
+                </div>
+                    
+                    <div className="flex items-center justify-center md:mt-10 w-full mb-10 md:mb-0">
+                    <div className="w-32 aspect-square border-2 border-secondary rounded-full flex flex-col items-center justify-center duration-700 cursor-pointer animate-pulse" onClick={() => router.push("/portfolio")}>
+                        <span className="coolvetica text-5xl">
+                            Portfolio
+                        </span>
+                        <svg className="w-6 h-6 stroke-secondary -rotate-90" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </section>

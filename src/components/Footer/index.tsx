@@ -74,7 +74,7 @@ export default function Footer(props: any) {
                                 </Link>
                                 &nbsp;
 
-                                <Link target="_blank" rel="noreferrer" href="https://www.instagram.com/" className="bg-white/25 rounded-full my-4 mr-4 flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
+                                <Link target="_blank" rel="noreferrer" href="https://www.instagram.com/" className="bg-white/25 rounded-full my-4 flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
                                     <i className="text-2xl fa fa-instagram transition"></i>
                                 </Link>
 
@@ -83,23 +83,23 @@ export default function Footer(props: any) {
                     </div>
                 </div>
 
-                <div className={`${dm_sans.className} flex items-center justify-between py-10 lg:flex-col-reverse md:items-center md:text-center md:justify-start`}>
+                <div className={`${dm_sans.className} flex items-center justify-between py-10 sm:pt-0 lg:flex-col-reverse lg:items-start md:text-start md:justify-start`}>
 
                     <div className="block">
                         <span className="">Designed and powered with love and fresh water by</span>
                         <span className="text-white font-bold dark:text-secondary">&nbsp; {'Lewis TINA'}</span>
                     </div>
 
-                    <div className="flex capitalize md:my-4">
-                        <Link href="/legal" className="mr-4 mt-1 py-1 hover:border-b-white hover:border-b">
+                    <div className="flex capitalize md:w-full lg:my-4 lg:pb-4 sm:flex-col md:border-b-2 border-white/25">
+                        <Link href="/legal" className="ml-4 lg:ml-0 lg:mr-4 flex mt-1 py-1 hover:border-b-white hover:border-b">
                             {t("legal")}
                         </Link>
                         &nbsp;
-                        <Link href="/legal#cgu" className="mr-4 mt-1 py-1 hover:border-b-white hover:border-b">
+                        <Link href="/legal#cgu" className="ml-4 lg:ml-0 lg:mr-4 flex mt-1 py-1 hover:border-b-white hover:border-b">
                             {t("terms_and_services")}
                         </Link>
                         &nbsp;
-                        <Link href="/legal#privacy" className="mr-4 mt-1 py-1 hover:border-b-white hover:border-b">
+                        <Link href="/legal#privacy" className="ml-4 lg:ml-0 lg:mr-4 flex mt-1 py-1 hover:border-b-white hover:border-b">
                             {t("privacy")}
                         </Link>
                     </div>

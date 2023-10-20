@@ -4,7 +4,7 @@ import Layout from '@/components/Layout'
 import Navbar from '@/components/NavBar'
 import About from '@/components/about'
 import HireMe from '@/components/hire_me'
-import Projects from '@/components/portfolio'
+import Projects from '@/components/projects'
 import Skills from '@/components/skills'
 
 
