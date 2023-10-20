@@ -46,11 +46,11 @@ export default function ProjectPreview(props: {data: ProjectProps, id:string}) {
                     bg-gradient-to-tr from-black from-35% to-black/0
                     ">
                 
-                <div className="flex items-center md:flex-col md:items-start">
+                <div className="flex items-center lg:flex-col lg:items-start">
                     <h4 className='text-2xl font-black'>
                         {title}
                     </h4>
-                    <span className="py-1 px-4 rounded-full bg-secondary mx-4 md:mx-0">
+                    <span className="py-1 px-4 rounded-full bg-secondary mx-4 lg:mx-0">
                         {projectCategories}
                     </span>
                 </div>
@@ -60,10 +60,10 @@ export default function ProjectPreview(props: {data: ProjectProps, id:string}) {
                         {resume[locale]}
                     </p>
                     
-                    <span className="my-2 text-xl flex font-extrabold md:hidden">
+                    <span className="my-2 text-xl flex font-extrabold lg:hidden">
                         Technologies
                     </span>
-                    <p className="flex flex-wrap md:hidden">
+                    <p className="flex flex-wrap lg:hidden">
                         {
                             technos.map((value: string, idx) => {
                                 return (
@@ -86,7 +86,7 @@ export default function ProjectPreview(props: {data: ProjectProps, id:string}) {
                                 action={()=>{router.push(`visualisation?id=${id}`)}}/>
                     </div>
 
-                    <div className="flex items-center md:hidden">
+                    <div className="flex items-center lg:hidden">
                     {
                         !!behanceLink &&
                         <Link target="_blank" rel="noreferrer" href={behanceLink} className="bg-white/100 text-black rounded-full mr-4 flex justify-center items-center h-10 aspect-square">

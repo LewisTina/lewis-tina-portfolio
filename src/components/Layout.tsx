@@ -25,6 +25,7 @@ const Layout = (props: LayoutProps) => {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width,"/>
                 <meta property="og:image" content="https://www.lewistina.com/geek_apple_memoji.png"/>
                 <meta property="twitter:image" content="https://www.lewistina.com/geek_apple_memoji.png"/>
+                <meta name="google" content="notranslate"/>
                 <meta property="twitter:card" content="summary_large_image"/>
                 <meta property="twitter:title" content="Lewis Tina's Portfolio"></meta>
                 <meta property="og:type" content="website" />
