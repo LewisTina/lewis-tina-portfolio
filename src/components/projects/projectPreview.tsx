@@ -106,7 +106,7 @@ export default function ProjectPreview(props: {data: ProjectProps, id:string}) {
                         <a href={projectLink} target="_blank">
                             <CustomButton 
                                 rightIcon={
-                                    <span className="material-symbols-outlined pl-4">arrow_outward</span>
+                                    <span className="material-symbols-outlined pl-4">&#xf8ce;</span>
                                 }
                                 bgColor={"bg-white"} 
                                 color={"text-black"} 

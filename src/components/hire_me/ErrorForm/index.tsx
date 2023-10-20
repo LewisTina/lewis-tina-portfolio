@@ -7,7 +7,7 @@ export default function ErrorForm(props: any){
   const {message} = props
     return (
         <div className={`bg-blood-red/20 rounded-md flex items-center text-blood-red p-1 my-2`}>
-          <i className= {`material-icons text-base mx-2`}>warning</i>
+          <i className= {`material-icons text-base mx-2`}>&#xe002;</i>
           <span>
           {
             message != undefined && message != "" ?

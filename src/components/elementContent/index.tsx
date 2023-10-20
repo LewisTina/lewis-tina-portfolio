@@ -108,7 +108,7 @@ export default function Content (props: {data: ProjectProps}) {
                                 <a href={projectLink} target="_blank">
                                     <CustomButton 
                                         rightIcon={
-                                            <span className="material-symbols-outlined pl-4">arrow_outward</span>
+                                            <span className="material-symbols-outlined pl-4">&#xf8ce;</span>
                                         }
                                         bgColor={"dark:bg-white bg-dark-grey"} 
                                         color={"dark:text-darkest text-white"} 
@@ -146,7 +146,7 @@ export default function Content (props: {data: ProjectProps}) {
                                 <a href={projectLink} target="_blank">
                                     <CustomButton 
                                         rightIcon={
-                                            <span className="material-symbols-outlined pl-4">arrow_outward</span>
+                                            <span className="material-symbols-outlined pl-4">&#xf8ce;</span>
                                         }
                                         bgColor={"dark:bg-white bg-dark-grey"} 
                                         color={"dark:text-darkest text-white"} 

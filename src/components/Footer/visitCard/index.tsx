@@ -47,7 +47,7 @@ export default function VisitCard(props: any) {
                     <a href="tel:+330767914587">
                     <CustomButton 
                         leftIcon={
-                            <span className="material-symbols-outlined pr-4 text-lg">phone</span>
+                            <span className="material-symbols-outlined pr-4 text-lg">&#xe0b0;</span>
                         }
                         bgColor={"bg-transparent"} 
                         color={"text-deep-purple"} 
@@ -59,7 +59,7 @@ export default function VisitCard(props: any) {
                     <a href="sms:+330767914587?body=Hey20%Lewis">
                     <CustomButton 
                         leftIcon={
-                            <span className="material-symbols-outlined pr-4 text-lg">sms</span>
+                            <span className="material-symbols-outlined pr-4 text-lg">&#xe625;</span>
                         }
                         bgColor={"bg-[#35DB00]"} 
                         color={"text-white"} 
@@ -71,7 +71,7 @@ export default function VisitCard(props: any) {
                     <a href="mailto:contact@lewistina.com">
                     <CustomButton 
                         leftIcon={
-                            <span className="material-symbols-outlined pr-4 text-lg">email</span>
+                            <span className="material-symbols-outlined pr-4 text-lg">&#xe158;</span>
                         }
                         bgColor={"bg-transparent"} 
                         color={"text-primary"} 

@@ -16,12 +16,12 @@ export default function SwitchTheme() {
 
   const getIcon = (theme: string) => {
     const icons: any = {
-      "system": "laptop_windows",
-      "light": "light_mode",
-      "dark": "dark_mode"
+      "system": "\ue321",
+      "light": "\ue518",
+      "dark": "\ue51c"
     }
 
-    return icons[theme] || "laptop_windows"
+    return icons[theme] || "\ue321"
   }
 
   useEffect(() => {

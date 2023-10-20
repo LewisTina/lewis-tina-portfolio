@@ -32,7 +32,7 @@ export default function Cover(props: any){
 
                     <CustomButton 
                         rightIcon={
-                            <span className="material-symbols-outlined pl-4">arrow_outward</span>
+                            <span className="material-symbols-outlined pl-4">&#xf8ce;</span>
                         }
                         bgColor={"bg-primary"} 
                         color={"text-white"} 
@@ -42,7 +42,7 @@ export default function Cover(props: any){
                     <a href="/cvfile_aboutou_review2023.pdf" download="CV ABOUTOU TINA Pierre Lewis Review 2023 FS DEV.pdf">
                         <CustomButton 
                             leftIcon={
-                                <span className="material-symbols-outlined pr-4">arrow_downward</span>
+                                <span className="material-symbols-outlined pr-4">&#xe5db;</span>
                             }
                             bgColor={"bg-deep-purple"} 
                             color={"text-white"} 

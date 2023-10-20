@@ -22,7 +22,7 @@ export default function Footer(props: any) {
                     <a href="/cvfile_aboutou_review2023.pdf" download="CV ABOUTOU TINA Pierre Lewis Review 2023 FS DEV.pdf" className={"md:mt-32 flex max-w-max"}>
                         <CustomButton 
                             leftIcon={
-                                <span className="material-symbols-outlined pr-4">arrow_downward</span>
+                                <span className="material-symbols-outlined pr-4">&#xe5db;</span>
                             }
                             bgColor={"bg-white dark:bg-deep-purple"} 
                             color={"text-deep-purple dark:text-white"} 
