@@ -15,11 +15,6 @@ export default function Cover(props: any){
             <div className="absolute h-full w-full bg-cover-noise bg-no-repeat bg-cover mix-blend-overlay dark:mix-blend-normal">
             </div>
             
-
-            <div className="absolute h-full sm:h-[40vh] w-full mix-blend-normal">
-                <BubbleEffect/>
-            </div>
-            
             <div className="absolute h-full w-full flex flex-col justify-center md:items-start px-16 pb-16 md:pb-4 max-w-[1535px] md:px-4 lg:px-8">
                 <div className="my-4"></div>
                 
@@ -55,7 +50,7 @@ export default function Cover(props: any){
                     </a>
                 </div>
                     
-                    <div className="flex items-center justify-center md:mt-10 w-full mb-10 md:mb-0">
+                    <div className="flex items-center justify-end md:mt-10 w-full mb-10 md:mb-0">
                     <div className="w-32 aspect-square border-2 border-secondary rounded-full flex flex-col items-center justify-center duration-700 cursor-pointer animate-pulse" onClick={() => router.push("/portfolio")}>
                         <span className="coolvetica text-5xl">
                             Portfolio
@@ -64,6 +59,13 @@ export default function Cover(props: any){
                             <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                         </svg>
                     </div>
+                </div>
+            </div>
+            
+
+            <div className="absolute h-full flex items-center justify-center sm:h-[40vh] sm:scale-50 w-full mix-blend-normal pointer-events-none">
+                <div className="w-auto h-auto pointer-events-auto">
+                    <BubbleEffect/>
                 </div>
             </div>
         </section>
