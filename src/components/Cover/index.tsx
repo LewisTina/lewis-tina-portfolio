@@ -3,12 +3,13 @@ import CustomButton from "../button";
 import DripEffect from "./abstractDrop";
 import BubbleEffect from "./abstractDrop";
 import { useRouter } from "next/router";
+import Image from 'next/image'
 
 export default function Cover(props: any){
     const {t} = useTranslation('common')
     const router = useRouter()
     return(
-        <section className="relative h-[calc(100vh+7rem)] md:h-screen flex justify-center w-full bg-white dark:bg-darkest bg-cover-bg bg-no-repeat bg-right-top bg-contain z-0 max-h-[1114px]" id="home">
+        <section className="relative h-[calc(100vh+7rem)] sm:h-screen md:min-h-[45rem] flex justify-center w-full bg-white dark:bg-darkest bg-cover-bg bg-no-repeat bg-right-top bg-contain z-0 max-h-[1114px]" id="home">
             <div className="absolute h-full w-full bg-cover-glow bg-no-repeat bg-center  md:hidden">
             </div>
 
@@ -51,7 +52,7 @@ export default function Cover(props: any){
                 </div>
                     
                     <div className="flex items-center justify-end md:mt-10 w-full mb-10 md:mb-0">
-                    <div className="w-32 aspect-square border-2 border-secondary rounded-full flex flex-col items-center justify-center duration-700 cursor-pointer animate-pulse" onClick={() => router.push("/portfolio")}>
+                    <div className="w-32 aspect-square border-2 border-secondary rounded-full flex flex-col items-center justify-center duration-700 cursor-pointer animate-pulse delay-1000" onClick={() => router.push("/portfolio")} style={{animationDelay: "3s"}}>
                         <span className="coolvetica text-5xl">
                             Portfolio
                         </span>
@@ -63,9 +64,20 @@ export default function Cover(props: any){
             </div>
             
 
-            <div className="absolute h-full flex items-center justify-center sm:h-[40vh] sm:scale-50 w-full mix-blend-normal pointer-events-none">
-                <div className="w-auto h-auto pointer-events-auto">
-                    <BubbleEffect/>
+            <div className="absolute h-full flex items-center justify-center sm:h-[50vh] transition-all w-full pointer-events-none">
+                <div className="h-auto lg:w-1/2 sm:w-3/5 w-[35rem] aspect-square animate-float">
+                    {/* <BubbleEffect/> */}
+                    <div className="w-full h-full relative">
+                        <Image  
+                            src={"/static_bubble.png"}
+                            alt = {"static abstract bubble"}
+                            width={500}
+                            height={500}
+                            sizes="100vw"
+                            draggable="false"
+                            loading="lazy"
+                            className={"min-h-full h-full md:min-h-[unset] md:h-auto md:w-full w-auto object-cover object-left"}/>
+                    </div>
                 </div>
             </div>
         </section>

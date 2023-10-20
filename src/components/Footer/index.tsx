@@ -19,7 +19,7 @@ export default function Footer(props: any) {
     return(
         <footer className="w-full flex justify-center bg-primary dark:bg-black/70 text-white">
             <div className="px-16 py-8 max-w-[1535px] w-full h-auto md:px-4 lg:px-8 relative">
-                    <a href="/cvfile_aboutou_review2023.pdf" download="CV ABOUTOU TINA Pierre Lewis Review 2023 FS DEV.pdf" className={"md:mt-32 flex"}>
+                    <a href="/cvfile_aboutou_review2023.pdf" download="CV ABOUTOU TINA Pierre Lewis Review 2023 FS DEV.pdf" className={"md:mt-32 flex max-w-max"}>
                         <CustomButton 
                             leftIcon={
                                 <span className="material-symbols-outlined pr-4">arrow_downward</span>
