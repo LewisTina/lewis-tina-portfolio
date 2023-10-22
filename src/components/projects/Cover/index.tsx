@@ -5,7 +5,8 @@ import { DM_Sans } from 'next/font/google'
 const dm_sans = DM_Sans(
     {
       subsets: ['latin'],
-      weight: ['400', '500', '600', '700', '800', '900']
+      weight: ['400', '500', '600', '700', '800', '900'],
+      display: 'swap',
     }
   )
 
@@ -14,7 +15,7 @@ export default function PortfolioCover(){
     return(
         <div className={`relative h-screen sm:h-[45rem] flex justify-center w-full z-0 snap-y max-h-[1114px]`}>
             <div className="flex items-center px-16 md:pb-28 max-w-[1535px] w-full h-full bg-portfolio-cover-bg bg-no-repeat bg-contain sm:bg-cover bg-right md:px-4 lg:px-8 overflow-hidden">
-            <div className={`${style.content}  ${style.gradient_mask} ${dm_sans.className} overflow-hidden whitespace-pre-line bg-white/25 dark:bg-black/25 border-2 border-light-grey/50 flex flex-col items-start justify-between backdrop-blur-xl rounded-t-3xl w-1/2 sm:w-full lg:w-full lg:min-w-[unset] xl:min-w-[600px] mx-8 md:mx-0 p-16 md:p-6 mt-32 md:mt-40 h-[calc(100%-7rem)] md:h-full`}>
+            <div className={`${style.content}  ${style.gradient_mask} ${dm_sans.className} overflow-hidden whitespace-pre-line bg-white/25 dark:bg-black/25 border-2 border-light-grey/50 flex flex-col items-start justify-between backdrop-blur-xl rounded-3xl w-1/2 sm:w-full lg:w-full lg:min-w-[unset] xl:min-w-[600px] mx-8 md:mx-0 p-16 md:p-6 mt-32 md:mt-40 h-[calc(100%-7rem)] md:h-full`}>
                 {/* <div className="-z-10 opacity-50 top-0 absolute h-full w-full bg-cover-noise bg-no-repeat bg-content mix-blend-multiply dark:mix-blend-normal">
                 </div> */}
                 <div className=""></div>
@@ -66,7 +67,7 @@ export default function PortfolioCover(){
                 </div>
 
                 <div className="flex items-center justify-center w-full">
-                    <div className="w-32 md:w-20 aspect-square border-2 border-secondary rounded-full flex flex-col items-center justify-center duration-700 animate-pulse cursor-pointer" onClick={() => router.push("#my_project")}>
+                    <div className="w-32 md:w-20 aspect-square border-2 border-secondary rounded-full flex flex-col items-center justify-center duration-700 animate-float cursor-pointer" onClick={() => router.push("#my_project")}>
                         <svg className="w-6 h-6 stroke-secondary" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                             <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                         </svg>

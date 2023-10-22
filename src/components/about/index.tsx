@@ -7,18 +7,19 @@ import Image from "next/image"
 const dm_sans = DM_Sans(
     {
       subsets: ['latin'],
-      weight: ['500']
+      weight: ['500'],
+      display: 'swap',
     }
   )
 
-const focus = ["web_dev", "mobile_dev", "graphic_design", "branding", "ui_design", "seo"]
+const focus = ["web_dev", "ui_design", "mobile_dev", "branding", "seo", "graphic_design"]
 
 export default function About(props: any){
     const {t} = useTranslation('common')
     const actualYear = parseFloat((new Date().getFullYear()).toString())
     return(
-        <section className="w-full relative overflow-hidden -top-32 md:top-unset" id="about">
-            <div className="bg-primary py-4 px-16 md:px-4 lg:px-6 mt-20 relative -left-8 md:-left-2 w-[calc(100%+4rem)] md:w-[calc(100%+1rem)] rotate-[-3.15deg] md:rotate-0 flex justify-center md:flex-wrap text-white">
+        <section className="w-full relative overflow-hidden -top-32 md:top-0" id="about">
+            <div className="bg-primary py-4 px-16 md:px-4 lg:px-6 mt-20 md:mt-0 relative -left-8 md:-left-2 w-[calc(100%+4rem)] md:w-[calc(100%+1rem)] rotate-[-3.15deg] md:rotate-0 flex justify-center md:flex-wrap text-white">
                 <div className=" flex md:flex-wrap max-w-[1535px] md:max-w-full ">
                 
                 <div className="px-20 flex lg:px-6 md:px-0">
@@ -82,7 +83,7 @@ export default function About(props: any){
                         <h2 className="text-4xl capitalize mt-10 md:mt-0">
                             {t('about_me')}
                         </h2>
-                        <p className={`py-2 ${dm_sans.className} whitespace-pre-line`}>
+                        <p className={`py-2 ${dm_sans.className} whitespace-pre-line text-justify word-spacing`}>
                             {t('about_lewis')}
                         </p>
 
@@ -104,14 +105,14 @@ export default function About(props: any){
                         <h2 className="text-4xl capitalize">
                             {t('my_focus')}
                         </h2>
-                        <p className={`py-3 ${dm_sans.className} whitespace-pre-line`}>
+                        <p className={`py-3 ${dm_sans.className} whitespace-pre-line text-justify word-spacing`}>
                             {t('focus_text')}
 
                             <span className="flex flex-wrap py-2">
                                 {
                                     focus.map((element: any, idx: number)=> {
                                         return(
-                                            <span className="mr-4 my-2 px-6 py-1 capitalize rounded-full bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl" key={idx}>
+                                            <span className="mr-3 my-2 px-6 py-1 capitalize rounded-full bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl" key={idx}>
                                                 {t(element)}
                                             </span>
                                         )

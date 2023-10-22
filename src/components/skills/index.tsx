@@ -6,17 +6,21 @@ import useTranslation from 'next-translate/useTranslation'
 const dm_sans = DM_Sans(
     {
       subsets: ['latin'],
-      weight: ['500']
+      weight: ['500'],
+      display: 'swap',
     }
   )
+
+ const hardSkills =  ["NextJs", "ReactJs", "HTML", "NodeJs", "Typescript", "Javascript", "SQL", "Java", "C#", "Dart", "flutter", "Python", "Sass/Scss", "CSS", "PHP", "Docker", "UML", "Merise", "Swagger", "github", "Tailwind Css", "PostgreSQL", "Angular Js", "Adobe Illustrator", "Figma", "Adobe Photoshop", "Adobe Xd"]
+
 
 export default function Skills(props: any) {
     const {t} = useTranslation('common')
     return (
         <section className="flex flex-col items-center justify-start w-full" id='skills'>
-            <div className="px-16 md:px-4 lg:px-6 max-w-[1535px] w-full ">
-                <div className="flex flex-col rounded-3xl bg-dark-grey py-8 text-white">
-                <div className="px-10">
+            <div className="px-16 md:px-0 lg:px-6 max-w-[1535px] w-full ">
+                <div className="flex flex-col rounded-3xl md:rounded-none bg-dark-grey py-8 md:pt-5 text-white">
+                <div className="px-10 md:px-4">
                         <h2 className="text-4xl capitalize">
                             {t('my_skills')}
                         </h2>
@@ -24,6 +28,18 @@ export default function Skills(props: any) {
                             {t('lewis_skills')}
                         </p>
                 </div>
+
+                <p className={`w-full flex flex-wrap pl-10 pr-7 md:pl-4 md:pr-0 mb-6 ${dm_sans.className}`}>
+                            {
+                                    hardSkills.map((element: any, idx: number)=> {
+                                        return(
+                                            <span className="mr-3 mt-3 px-3 py-1 capitalize rounded-full bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl" key={idx}>
+                                                {t(element)}
+                                            </span>
+                                        )
+                                    })
+                                }
+                </p>
 
                 
                 <div className="overflow-hidden flex items-center my-10 md:my-6">

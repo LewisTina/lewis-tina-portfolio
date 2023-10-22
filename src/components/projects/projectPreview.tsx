@@ -29,7 +29,7 @@ export default function ProjectPreview(props: {data: ProjectProps, id:string}) {
                 <Image  
                     src={cover.link}
                     alt = {cover.alt}
-                    className={"object-cover object-right"}
+                    className={"object-cover"}
                     quality={75}
                     fill/>
 
@@ -56,7 +56,7 @@ export default function ProjectPreview(props: {data: ProjectProps, id:string}) {
                 </div>
                 
                 <div className="mt-2">
-                    <p className="text-justify hyphens-auto word-space md:hidden">
+                    <p className="word-space lg:text-xs">
                         {resume[locale]}
                     </p>
                     
@@ -106,7 +106,7 @@ export default function ProjectPreview(props: {data: ProjectProps, id:string}) {
                         <a href={projectLink} target="_blank">
                             <CustomButton 
                                 rightIcon={
-                                    <span className="material-symbols-outlined pl-4">arrow_outward</span>
+                                    <span className="material-symbols-outlined pl-4">&#xf8ce;</span>
                                 }
                                 bgColor={"bg-white"} 
                                 color={"text-black"} 

@@ -83,3 +83,11 @@
 		);
 	}
 }
+@media screen and (max-width: 639px) {
+	.gradient_mask {
+		overflow: hidden;
+		-webkit-mask-image: unset;
+		mask-image: unset;
+		
+	  }
+}

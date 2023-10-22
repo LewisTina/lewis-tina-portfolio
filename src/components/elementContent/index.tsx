@@ -9,7 +9,8 @@ import { useRouter } from "next/router";
 const dm_sans = DM_Sans(
     {
       subsets: ['latin'],
-      weight: ['500', '600', '700', '800', '900']
+      weight: ['500', '600', '700', '800', '900'],
+      display: 'swap',
     }
   )
 
@@ -108,7 +109,7 @@ export default function Content (props: {data: ProjectProps}) {
                                 <a href={projectLink} target="_blank">
                                     <CustomButton 
                                         rightIcon={
-                                            <span className="material-symbols-outlined pl-4">arrow_outward</span>
+                                            <span className="material-symbols-outlined pl-4">&#xf8ce;</span>
                                         }
                                         bgColor={"dark:bg-white bg-dark-grey"} 
                                         color={"dark:text-darkest text-white"} 
@@ -146,7 +147,7 @@ export default function Content (props: {data: ProjectProps}) {
                                 <a href={projectLink} target="_blank">
                                     <CustomButton 
                                         rightIcon={
-                                            <span className="material-symbols-outlined pl-4">arrow_outward</span>
+                                            <span className="material-symbols-outlined pl-4">&#xf8ce;</span>
                                         }
                                         bgColor={"dark:bg-white bg-dark-grey"} 
                                         color={"dark:text-darkest text-white"} 
