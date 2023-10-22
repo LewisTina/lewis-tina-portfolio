@@ -27,8 +27,10 @@ export default function NavBarLink(props: linkProps) {
     },[activePath, path, action])
 
     return (
-            <Link href={path} onClick={action} id={label + 'Link'} className="z-20">
-                <div className={`flex text-xs h-full px-10 lg:px-6 items-center`}>
+            <Link href={path} onClick={action} id={label + 'Link'} className="z-20 h-full">
+                <div className={`flex text-xs h-full px-10 lg:px-6 items-center duration-300 rounded-full
+                    transition-all
+                    ${isActive ? "bg-primary" : "text-darkest dark:text-light-grey"}`}>
                     <span className={`
                     capitalize transition-all duration-300
                     ${isActive ? "text-white" : "text-darkest dark:text-light-grey"}`}>

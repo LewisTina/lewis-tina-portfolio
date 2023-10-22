@@ -46,7 +46,7 @@ export default function Footer(props: any) {
                         </span>
                         </div>
 
-                        <p className={`${dm_sans.className} py-4`}>
+                        <p className={`${dm_sans.className} py-4  text-justify word-spacing`}>
                             {t('conclusion')}
                         </p>
                     </div>

@@ -47,7 +47,7 @@ export default function SwitchTheme() {
       <div className={style.preview}>
         <button 
           type="button"
-          className="flex w-full items-center gap-x-1.5 rounded-md text-primary px-3 py-2 text-sm font-semibold" id="theme-button" 
+          className="flex w-full items-center gap-x-1.5 rounded-md text-secondary px-3 py-2 text-sm font-semibold" id="theme-button" 
           aria-expanded="true"
           aria-haspopup="true"
           onClick={() => {setIsOpen(!isOpen)}}>

@@ -39,15 +39,24 @@ export default function Navbar(props: any){
                         </svg>
                 </Link>
 
-                <div className="relative rounded-full h-10 bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl sm:hidden">
-                    <div className={`absolute rounded-full h-full transition-all duration-300 bg-primary z-10`} id='selector'></div>
-                    <NavBarLink path={"/"} label={"home"} action={()=> {setActive(0)}}/>
-                    <NavBarLink path={"/#about"} label={"about"} action={()=> {setActive(1)}}/>
-                    <NavBarLink path={"/#skills"} label={"skills"} action={()=> {setActive(2)}}/>
-                    <NavBarLink path={"/#projects"} label={"projects"} action={()=> {setActive(3)}}/>
-                    <NavBarLink path={"/#hire_me"} label={"hire_me"} action={()=> {setActive(4)}}/>
+                <div className="flex sm:w-full sm:flex-1 sm:justify-end sm:mr-2">
+                    <div className="relative rounded-full h-10 bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl sm:hidden">
+                        <div className={`absolute rounded-full h-full transition-all duration-300 bg-primary z-10`} id='selector'></div>
+                        <NavBarLink path={"/"} label={"home"} action={()=> {setActive(0)}}/>
+                        <NavBarLink path={"/#about"} label={"about"} action={()=> {setActive(1)}}/>
+                        <NavBarLink path={"/#skills"} label={"skills"} action={()=> {setActive(2)}}/>
+                        <NavBarLink path={"/#hire_me"} label={"hire_me"} action={()=> {setActive(4)}}/>
+                    </div>
+
+                    <div className="relative rounded-full h-10 bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl ml-4 items-center transition-all cursor-pointer">
+                        <NavBarLink path={"/portfolio"} label={"portfolio"} action={()=> {setActive(5)}}/>
+                        {/* <svg className="w-6 h-6 stroke-secondary -rotate-90 mr-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg> */}
+                    </div>
                 </div>
 
+                
                 <div className={`rounded-full h-10 bg-light-grey/25 flex items-center px-1 backdrop-blur-xl border-2 border-light-grey/25 font-semibold ${dm_sans.className}`}>
                     <SwitchLang></SwitchLang>
                     <SwitchTheme></SwitchTheme>
