@@ -11,6 +11,7 @@
   "dependencies": {
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.473",
+    "@vercel/analytics": "^1.1.1",
     "babel": "^6.23.0",
     "handlebars": "^4.7.8",
     "js-cookie": "^3.0.5",
