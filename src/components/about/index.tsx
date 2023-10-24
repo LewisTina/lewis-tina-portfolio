@@ -87,7 +87,7 @@ export default function About(props: any){
                             {t('about_lewis')}
                         </p>
 
-                        <a href="https://www.factauto.fr/" target="_blank">
+                        <a href="https://www.factauto.com/" target="_blank">
                         <CustomButton 
                             rightIcon={
                                 <span className="material-symbols-outlined pl-4">arrow_outward</span>
