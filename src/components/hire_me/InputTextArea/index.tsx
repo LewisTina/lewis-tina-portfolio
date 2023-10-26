@@ -29,7 +29,7 @@ export default function InputTextArea(props: formInput){
                         }
                         )}
                     min ="0"
-                    className='rounded-md p-2 px-4 w-[41.5rem] md:w-full h-40' 
+                    className='rounded-md p-2 px-4 w-[41.5rem] md:w-full max-w-full h-40' 
                     placeholder={placeholder}
                     onKeyUp={onChange}
                     />

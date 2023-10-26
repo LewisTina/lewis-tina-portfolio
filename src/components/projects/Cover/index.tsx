@@ -13,15 +13,15 @@ const dm_sans = DM_Sans(
 export default function PortfolioCover(){
     const router = useRouter()
     return(
-        <div className={`relative h-screen sm:h-[45rem] flex justify-center w-full z-0 snap-y max-h-[1114px]`}>
+        <div className={`relative h-screen min-h-[700px] sm:h-[45rem] flex justify-center w-full z-0 snap-y max-h-[1114px]`}>
             <div className="flex items-center px-16 md:pb-28 max-w-[1535px] w-full h-full bg-portfolio-cover-bg bg-no-repeat bg-contain sm:bg-cover bg-right md:px-4 lg:px-8 overflow-hidden">
-            <div className={`${style.content}  ${style.gradient_mask} ${dm_sans.className} overflow-hidden whitespace-pre-line bg-white/25 dark:bg-black/25 border-2 border-light-grey/50 flex flex-col items-start justify-between backdrop-blur-xl rounded-3xl w-1/2 sm:w-full lg:w-full lg:min-w-[unset] xl:min-w-[600px] mx-8 md:mx-0 p-16 md:p-6 mt-32 md:mt-40 h-[calc(100%-7rem)] md:h-full`}>
+            <div className={`${style.content}  ${style.gradient_mask} ${dm_sans.className} overflow-hidden whitespace-pre-line bg-white/25 dark:bg-black/25 border-2 border-light-grey/50 flex flex-col items-start justify-between backdrop-blur-xl rounded-3xl w-2/5 min-w-[500px] sm:w-full lg:w-full lg:min-w-[unset] mx-8 md:mx-0 p-[4%] md:p-6 mt-32 md:mt-40 h-[calc(100%-7rem)] md:h-full`}>
                 {/* <div className="-z-10 opacity-50 top-0 absolute h-full w-full bg-cover-noise bg-no-repeat bg-content mix-blend-multiply dark:mix-blend-normal">
                 </div> */}
                 <div className=""></div>
 
-                <div className={`${style.title} flex flex-col items-start w-full`}>
-                    <span className="text-9xl xl:text-7xl text-white leading-[0.70] flex mx-2 before:block before:absolute before:-z-10 before:-inset-4 xl:before:-inset-2 before:-skew-y-3 before:bg-deep-purple relative">
+                <div className={`${style.title} flex flex-col items-start w-full mb-10`}>
+                    <span className="text-7xl text-white leading-[0.70] flex mx-2 before:block before:absolute before:-z-10 before:-inset-4 xl:before:-inset-2 before:-skew-y-3 before:bg-deep-purple relative">
                         {"Lewis Tina's"}
                     </span>
                     {/* 
@@ -51,15 +51,15 @@ export default function PortfolioCover(){
                         </g>
                     </svg>
                     
-                    <div className={`w-full flex items-center ${style.welcome} text-gray-700 dark:text-gray-400 text-6xl md:text-4xl`}>
+                    <div className={`w-full flex items-center ${style.welcome} text-gray-700 dark:text-gray-400 text-5xl leading-[0.5] md:text-4xl`}>
                                 <div className="">
-                                    <span className="uppercase">
+                                    <span className="uppercase leading-[0.75]">
                                         {"Welcome to my wonderful word"}
                                     </span>
                                 </div>
-                                <div className="flex-1 h-[2px] bg-gray-700 dark:bg-gray-400 my-10 mx-4"></div>
+                                <div className="flex-1 h-[2px] bg-gray-700 dark:bg-gray-400 mx-4"></div>
                                 <div className="">
-                                    <span className="">
+                                    <span className="leading-[0.75]">
                                         2023
                                     </span>
                                 </div>
@@ -67,7 +67,7 @@ export default function PortfolioCover(){
                 </div>
 
                 <div className="flex items-center justify-center w-full">
-                    <div className="w-32 md:w-20 aspect-square border-2 border-secondary rounded-full flex flex-col items-center justify-center duration-700 animate-float cursor-pointer" onClick={() => router.push("#my_project")}>
+                    <div className="w-24 md:w-20 aspect-square border-2 border-secondary rounded-full flex flex-col items-center justify-center duration-700 animate-float cursor-pointer" onClick={() => router.push("#my_project")}>
                         <svg className="w-6 h-6 stroke-secondary" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                             <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                         </svg>
