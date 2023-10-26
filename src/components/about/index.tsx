@@ -19,7 +19,7 @@ export default function About(props: any){
     const actualYear = parseFloat((new Date().getFullYear()).toString())
     return(
         <section className="w-full relative overflow-hidden -top-32 md:top-0" id="about">
-            <div className="bg-primary py-4 px-16 md:px-4 lg:px-6 mt-20 md:mt-0 relative -left-8 md:-left-2 w-[calc(100%+4rem)] md:w-[calc(100%+1rem)] rotate-[-3.15deg] md:rotate-0 flex justify-center md:flex-wrap text-white">
+            <div className="bg-primary py-4 px-16 xl:px-4 mt-20 md:mt-0 relative -left-8 md:-left-2 w-[calc(100%+4rem)] md:w-[calc(100%+1rem)] rotate-[-3.15deg] md:rotate-0 flex justify-start md:flex-wrap text-white">
                 <div className=" flex md:flex-wrap max-w-[1535px] md:max-w-full ">
                 
                 <div className="px-20 flex lg:px-6 md:px-0">

@@ -9,7 +9,7 @@ export default function Cover(props: any){
     const {t} = useTranslation('common')
     const router = useRouter()
     return(
-        <section className="relative h-[calc(100vh+7rem)] md:h-[calc(100vh-7rem)] lg:h-[calc(70vh)] md:min-h-[45rem] flex justify-center w-full bg-white dark:bg-darkest bg-cover-bg bg-no-repeat bg-right-top bg-contain z-0 max-h-[1114px]" id="home">
+        <section className="relative h-[calc(100vh+7rem)] md:h-[calc(100vh-7rem)] lg:h-[calc(70vh)] min-h-[700px] md:min-h-[45rem] flex justify-center w-full bg-white dark:bg-darkest bg-cover-bg bg-no-repeat bg-right-top bg-contain z-0 max-h-[1114px]" id="home">
             <div className="absolute h-full w-full flex items-center justify-center lg:h-[50vh] bg-cover-glow lg:bg-contain bg-no-repeat bg-center">
             </div>
 
@@ -23,11 +23,11 @@ export default function Cover(props: any){
                     
                     <div className="pb-8 md:pb-4 lg:pb-0">
                         <h1 className="flex flex-col dark:mix-blend-difference">
-                            <span className="text-4xl md:text-2xl leading-normal text-darkest dark:text-white block">{t("hi")}&nbsp;😃,</span>
-                            <span className="text-8xl md:text-5xl text-secondary">{t('iam')}&nbsp;</span>
-                            <span className="text-8xl md:text-5xl text-secondary ">Lewis TINA</span>
+                            <span className="text-4xl xl:text-3xl md:text-2xl leading-normal text-darkest dark:text-white block">{t("hi")}&nbsp;😃,</span>
+                            <span className="text-8xl xl:text-7xl md:text-5xl text-secondary">{t('iam')}&nbsp;</span>
+                            <span className="text-8xl xl:text-7xl md:text-5xl text-secondary ">Lewis TINA</span>
                             <span className="hidden">&nbsp;</span>
-                            <span className="text-4xl md:text-2xl leading-normal text-darkest dark:text-white block">Web & Mobile Dev <br/> Graphic & UI Designer</span>
+                            <span className="text-4xl xl:text-3xl md:text-2xl leading-normal text-darkest dark:text-white block">Web & Mobile Dev <br/> Graphic & UI Designer</span>
                         </h1>
                     </div>
 
@@ -55,7 +55,7 @@ export default function Cover(props: any){
             
 
             <div className="absolute h-full flex items-center justify-center lg:h-[50vh] transition-all w-full pointer-events-none">
-                <div className="h-auto lg:w-1/2 sm:w-3/5 w-[30rem] mr-[5rem] lg:mr-0 aspect-square animate-float">
+                <div className="h-auto lg:w-2/6 sm:w-3/5 w-[30rem] mr-[5rem] lg:mr-0 aspect-square animate-float">
                     {/* <BubbleEffect/> */}
                     <div className="w-full h-full relative">
                         <Image  
