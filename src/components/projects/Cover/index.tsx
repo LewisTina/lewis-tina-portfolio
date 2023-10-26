@@ -67,7 +67,7 @@ export default function PortfolioCover(){
                 </div>
 
                 <div className="flex items-center justify-center w-full">
-                    <div className="w-28 md:w-20 aspect-square border-2 border-secondary rounded-full flex flex-col items-center justify-center duration-700 animate-float cursor-pointer" onClick={() => router.push("#my_project")}>
+                    <div className="w-24 md:w-20 aspect-square border-2 border-secondary rounded-full flex flex-col items-center justify-center duration-700 animate-float cursor-pointer" onClick={() => router.push("#my_project")}>
                         <svg className="w-6 h-6 stroke-secondary" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                             <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                         </svg>
