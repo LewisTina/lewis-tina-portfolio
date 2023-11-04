@@ -36,7 +36,7 @@ const Layout = (props: LayoutProps) => {
                 <meta property="og:description" content="Lewis tina's presentation website and portfolio" />
                 <meta property="twitter:description" content="Lewis tina's presentation website and portfolio"></meta>
                 <meta name="description" content="Lewis tina's presentation site and portfolio" />
-                <meta name="keywords" content="lewis - tina - lewistina - profolio - ternay - lyon - developper - développeur - fullstack - frontend - backend - mobile - dev - designer - graphic - design - designer - skills"></meta> 
+                <meta name="keywords" content="lewis - tina - Lewis TINA - ABOUTOU - Pierre - Pierre Lewis - Pierre TINA - ABOUTOU TINA - lewistina - portfolio - ternay - lyon - developer - développeur - fullstack - frontend - backend - mobile - dev - designer - graphic - design - designer - skills"></meta> 
             </Head>
                   {children}
         </main>
