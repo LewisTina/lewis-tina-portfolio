@@ -73,11 +73,6 @@ export default function Footer(props: any) {
                                 <Link target="_blank" rel="noreferrer" href="https://github.com/LewisTina" className="bg-white/25 rounded-full my-4 mr-4 flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
                                     <i className="text-3xl fa fa-github transition"></i>
                                 </Link>
-                                &nbsp;
-
-                                <Link target="_blank" rel="noreferrer" href="https://www.instagram.com/" className="bg-white/25 rounded-full my-4 flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
-                                    <i className="text-2xl fa fa-instagram transition"></i>
-                                </Link>
 
                             </div>
                         </div>
