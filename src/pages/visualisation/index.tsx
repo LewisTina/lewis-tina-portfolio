@@ -1,17 +1,15 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/NavBar";
-import { useRouter } from "next/router";
 import projects from '../../../project.json'
 import { ProjectProps } from "@/components/types";
 import Content from "../../components/elementContent";
 import VisualisationLayout from "@/components/visualisationLayout";
+import { withRouter, NextRouter } from 'next/router';
+import { WithRouterProps } from 'next/dist/client/with-router';
 
-export default function Visualisation(props: any){
-    const router = useRouter()
-    const forcedId = router.asPath.match(new RegExp(`[&?]id=(.*)(&|$)`));
+export function Visualisation({ router}: WithRouterProps){
 
-    const query = router.query
-    const projectId = (query.id as string) || (!!forcedId ? forcedId[1] : "")
+    let projectId = router.query.id as string;
     const data = projects as any
     const ProjectData = data[projectId] as ProjectProps
     const locale = router.locale as "en" | "fr"
@@ -36,3 +34,11 @@ export default function Visualisation(props: any){
         </VisualisationLayout>
     )
 }
+
+Visualisation.getInitialProps = async ({ query, router }: { query: any; router: NextRouter }) => {
+    const { param } = query;
+  
+    return { param };
+  };
+
+export default withRouter(Visualisation);
