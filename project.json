@@ -1,4 +1,36 @@
 {
+"pkarenov": {
+        "logo": {
+            "link": "/pkarenov/logo_pka.svg", 
+            "alt": "Logo PKA Rénov"
+            },
+        "activities": "Novembre 2023",
+        "owner": "PKA Rénov EI",
+        "title": "PKA Rénov",
+        "cover": {
+            "link": "/pkarenov/PKARENOV_03.png", 
+            "alt": "pka rénov preview image"
+            },
+        "resume": {
+            "fr": "Développement et hébergement d'un site web de présentation d'une entreprise de rénovation française avec NextJs et déploiement vercel",
+            "en": "Development and hosting of a website presenting a French renovation company with NextJs and vercel deployment"
+        },
+        "introduction": {
+            "fr": "Il s'agit principalement du développement d'une landing page pour présenter les activités d'une entreprise rénovation, avec en pages annexes une politique de confidentialité, des conditions générales de ventes, et des mentions légales",
+            "en": "This mainly involves the development of a landing page to present the activities of a renovation company, with additional pages including a confidentiality policy, general conditions of sale, and legal notices."
+        },
+        "contribution": {
+            "fr": "Bien évidemment, on pourrait considérer qu'il s'agit simplement d'un site vitrine de présentation nécessitant uniquement une maquette et une intégration frontend. Néanmoins, il comporte également un formulaire de contact avec envoi automatique de courrier électronique, ce qui en fait un projet plus complet, même s'il intègre également une page d'API. Parmi les tâches, on peut citer :\n\n- Conception de la maquette UI/UX\n- Intégration full-stack Next.js\n- Déploiement sur Vercel\n- Configuration du DNS pour le nom de domaine.",
+            "en": "Of course, one could consider it a simple presentation website, requiring only mockup and front-end integration. However, it also includes a contact form with automatic email sending, making it a more comprehensive project, even though it also incorporates an API page. Tasks include:\n\n- UI/UX mockup design\n- Full-stack integration with Next.js\n- Deployment on Vercel\n- Domain name DNS configuration."
+        },
+        "contributionBlocImg": [{"link": "/pkarenov/PKARENOV_02.png", "alt": "pka rénov preview image 1"}, {"link": "/pkarenov/PKARENOV_01.png", "alt": "pka rénov preview image 2"}, {"link": "/pkarenov/Landing-Page -RETRACTED.png", "alt": "pka rénov preview image 2"}, {"link": "/pkarenov/pkarenov_full_landing_page.png", "alt": "pka rénov preview image 3"}],
+        "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "Versel", "Figma", "Adobe Illustrator"],
+        "technosBlocImg": [],
+        "githubLink":"https://github.com/LewisTina/pkarenov",
+        "behanceLink":"https://www.behance.net/gallery/185362625/Landing-page",
+        "projectLink":"https://www.pkarenov.fr/",
+        "projectCategories":"Dev Fullstack & UI Design"
+    },
 "portfolio": {
         "logo": {
             "link": "/fav.svg", 
@@ -20,7 +52,7 @@
             "en": "This is my portfolio, designed and developed by me to freely showcase my work and accomplishments. Some of my work is not shared based on the project's confidentiality level."
         },
         "contribution": {
-            "fr": "Bien évidemment, on pourrait considérer qu'il s'agit simplement d'un site vitrine de présentation nécessitant uniquement une maquette et une intégration frontale. Néanmoins, il comporte également un formulaire de contact avec envoi automatique de courrier électronique, ce qui en fait un projet plus complet, même s'il intègre également une page d'API. Parmi les tâches, on peut citer :\n\n- Conception de la maquette UI/UX\n- Intégration full-stack Next.js\n- Déploiement sur Vercel\n- Configuration du DNS pour le nom de domaine.",
+            "fr": "Bien évidemment, on pourrait considérer qu'il s'agit simplement d'un site vitrine de présentation nécessitant uniquement une maquette et une intégration frontend. Néanmoins, il comporte également un formulaire de contact avec envoi automatique de courrier électronique, ce qui en fait un projet plus complet, même s'il intègre également une page d'API. Parmi les tâches, on peut citer :\n\n- Conception de la maquette UI/UX\n- Intégration full-stack Next.js\n- Déploiement sur Vercel\n- Configuration du DNS pour le nom de domaine.",
             "en": "Of course, one could consider it a simple presentation website, requiring only mockup and front-end integration. However, it also includes a contact form with automatic email sending, making it a more comprehensive project, even though it also incorporates an API page. Tasks include:\n\n- UI/UX mockup design\n- Full-stack integration with Next.js\n- Deployment on Vercel\n- Domain name DNS configuration."
         },
         "contributionBlocImg": [{"link": "/this_portfolio/Online_Portfolio_Mockup_2.png", "alt": "factauto preview image 1"}, {"link": "/this_portfolio/Online_Portfolio_Mockup_3.png", "alt": "factauto preview image 1"}],
@@ -111,15 +143,15 @@
             "en": "Design of an application for connecting and selling between service providers and transient users in Cameroon (tourists, diaspora, etc.). Hybrid mobile application with Flutter."
         },
         "introduction": {
-            "fr": "Ce projet vise à développer une application de mise en relation des professionnels proposant des services d'aide aux personnes âgées avec les personnes âgées elles-mêmes ou leurs proches. L'application est principalement développée à partir de zéro, en utilisant des technologies de choix. Son évolution est supervisée par un Scrum Master, qui est également le maître de stage.",
-            "en": "This project aims to develop an application for connecting professionals offering elderly assistance services with the elderly themselves or their relatives. The application is primarily developed from scratch, using chosen technologies. Its progress is supervised by a Scrum Master, who is also the mentor."
+            "fr": "Ce projet vise à développer une application visant à mettre en relation des professionnels offrant divers services avec des utilisateurs non résidents permanents du Cameroun. L'application est principalement conçue pour les smartphones et inclut une vitrine de visite pour présenter les produits et les actualités",
+            "en": "This project aims to develop an application aimed at connecting professionals offering various services with users who are not permanent residents of Cameroon. The application is mainly designed for smartphones and includes a visit showcase to present the products and the news"
         },
         "contribution": {
-            "fr": "Dans le cadre de ce projet, qui a suivi la méthode Agile et dont j'ai assuré le développement moi-même, j'ai occupé les rôles de designer et de développeur Full stack.\n\nMes responsabilités ont couvert divers domaines, et j'ai notamment réalisé les tâches suivantes :\n- Réalisation d'une étude approfondie du projet et analyse détaillée.\n- Rédaction du cahier des charges fonctionnel.\n- Prise en charge de la conception graphique, y compris l'identité visuelle allant du logo aux maquettes et prototypes UI-UX.\n- Assurer le développement Full stack, couvrant le front-end, la gestion de la base de données (PostgreSQL), le back-end avec Node.js et Typescript, la création d'une API Rest, ainsi que la mise en place d'un service de messagerie (Web Service Mailer).",
-            "en": "This project follows the Agile methodology, and I handled the development myself, taking on the roles of both designer and full-stack developer.\n\nMy responsibilities encompassed various areas, and I completed the following tasks:\n- Conducting an in-depth project study and detailed analysis.\n- Writing the functional specifications document.\n- Managing the graphic design, including visual identity from logo to UI-UX mockups and prototypes.\n- Ensuring full-stack development, covering the front-end, database management (PostgreSQL), back-end with Node.js and Typescript, creating a REST API, and implementing a messaging service (Web Service Mailer)."
+            "fr": "Sur ce projet, qui a été abordé selon la méthode Agile et dont le développement a été assuré par une équipe de plusieurs développeurs, j'ai occupé les rôles de Designer et de Développeur Front-end & mobile\nMes responsabilités ont couvert divers domaines, et j'ai notamment réalisé les tâches suivantes :\n-  L'étude et l'analyse approfondies du projet.\n- Rédaction du cahier des charges fonctionnel.\n- Prise en charge de la conception graphique, y compris l'identité visuelle allant du logo aux maquettes et prototypes UI-UX.\n- Le développement, à la fois du Front-End et de la version mobile en utilisant Flutter.",
+            "en": "On this project, which was approached using the Agile method and whose development was carried out by a team of several developers, I occupied the roles of Designer and Front-end & mobile Developer\nMy responsibilities covered various areas, and I notably carried out the following tasks:\n- In-depth study and analysis of the project.\n- Drafting of functional specifications.\n- Responsibility for graphic design, including the visual identity ranging from the logo to the UI-UX mockups and prototypes.\n- Development, both of the Front-End and the mobile version using Flutter."
         },
         "contributionBlocImg": [ {"link": "/cp/cp-0.png", "alt": "Cameroun In Pocket preview image 1"}, {"link": "/cp/cp-2.png", "alt": "Cameroun In Pocket preview image 2"}, {"link": "/cp/cp-1.png", "alt": "Cameroun In Pocket preview image 3"}],
-        "technos": ["Flutter", "Android Studio", "Figma", "Adobe Illustrator", "Adobe Xd"],
+        "technos": ["Flutter", "Android Studio", "Angular Js", "Adobe Illustrator", "Adobe Xd"],
         "technosBlocImg": [],
         "behanceLink":"https://www.behance.net/gallery/139345263/Independants-Pages",
         "projectCategories":"Dev Mobile & UI Design"

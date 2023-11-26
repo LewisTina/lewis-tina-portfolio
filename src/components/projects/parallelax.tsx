@@ -95,7 +95,7 @@ const ParallaxEffect = (props: { isAppOrDesign: "app" | "design" } ) => {
               <ProjectPreview data={finalProject["factauto"]} id={'factauto'}/>
             </div>
             <div ref={b.ref} className="flex overflow-hidden rounded-2xl h-full w-[50%] sm:w-full sm:aspect-[1/0.83] sm:mb-4 bg-light-grey/25 border-2 border-light-grey/25">
-                <ProjectPreview data={finalProject["bedrine_game"]} id={'bedrine_game'}/>
+                <ProjectPreview data={finalProject["pkarenov"]} id={'pkarenov'}/>
             </div>
         </div>
         <div className="flex aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full my-2 sm:my-0 sm:flex-col" id="portfolio-second">

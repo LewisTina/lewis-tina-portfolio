@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import SwitchLang from "../core/SwitchLang";
 import SwitchTheme from "../core/SwitchTheme";
 import NavBarLink from "./NavBarLink";
-import { DM_Sans } from 'next/font/google'
+import { DM_Sans, Dela_Gothic_One } from 'next/font/google'
 import Link from "next/link";
 
 const dm_sans = DM_Sans(
@@ -12,6 +12,14 @@ const dm_sans = DM_Sans(
       display: 'swap',
     }
   )
+
+const dela_gothic = Dela_Gothic_One(
+  {
+    subsets: ['latin'],
+    weight: ['400'],
+    display: 'swap',
+  }
+)
 
 export default function Navbar(props: any){
     const [active, setActive] = useState(99)
@@ -39,7 +47,7 @@ export default function Navbar(props: any){
                         </svg>
                 </Link>
 
-                <div className="flex sm:w-full sm:flex-1 sm:justify-end sm:mr-2">
+                <div className={`flex sm:w-full sm:flex-1 sm:justify-end sm:mr-2 ${dela_gothic.className}`}>
                     <div className="relative rounded-full h-10 bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl sm:hidden">
                         <div className={`absolute rounded-full h-full transition-all duration-300 bg-primary z-10`} id='selector'></div>
                         <NavBarLink path={"/"} label={"home"} action={()=> {setActive(0)}}/>

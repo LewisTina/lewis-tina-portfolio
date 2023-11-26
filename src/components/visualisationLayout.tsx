@@ -30,7 +30,7 @@ const VisualisationLayout = (props: VisualisationLayoutProps) => {
                 <meta property="og:description" content={`${resume}`} />
                 <meta property="twitter:description" content={`${resume}`}></meta>
                 <meta name="description" content={`${resume}`} />
-                <meta name="keywords" content="lewis - tina - lewistina - profolio - ternay - lyon - developper - développeur - fullstack - frontend - backend - mobile - dev - designer - graphic - design - designer - skills"></meta> 
+                <meta name="keywords" content="lewis - tina - lewis tina - pierre lewis - pierre aboutou - aboutou - pierre lewis aboutou tina - aboutou tina - pierre aboutou - lewistina - profolio - ternay - lyon - developper - développeur - fullstack - frontend - backend - mobile - dev - designer - graphic - design - designer - skills"></meta> 
             </Head>
 
                   {children}
