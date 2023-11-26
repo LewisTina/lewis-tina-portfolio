@@ -1,4 +1,3 @@
-
 import { Dela_Gothic_One } from 'next/font/google'
 import Head from 'next/head'
 

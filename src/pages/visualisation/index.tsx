@@ -8,11 +8,15 @@ import VisualisationLayout from "@/components/visualisationLayout";
 
 export default function Visualisation(props: any){
     const router = useRouter()
+    const forcedId = router.asPath.match(new RegExp(`[&?]id=(.*)(&|$)`));
+
     const query = router.query
-    const projectId = query.id as string
+    const projectId = query.id as string || forcedId![1]
     const data = projects as any
     const ProjectData = data[projectId] as ProjectProps
     const locale = router.locale as "en" | "fr"
+
+    console.log(projectId)
 
     return (
         <VisualisationLayout 
