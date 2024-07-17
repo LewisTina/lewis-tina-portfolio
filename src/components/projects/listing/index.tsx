@@ -14,7 +14,7 @@ export default function Listing(){
 
     return(
         <section className={`flex flex-col items-center justify-start py-20 pb-52`} id="my_project">
-            <div className={` flex flex-col justify-start relative items-start max-w-[1535px] w-full rounded-3xl px-16 md:px-4 lg:px-8 text-darkest dark:text-white`}>
+            <div className={` flex flex-col justify-start relative items-start max-w-[1535px] w-full rounded-3xl px-10 md:px-4 lg:px-6 text-darkest dark:text-white`}>
                 <div className={`w-full flex flex-wrap justify-start relative items-start`}>
                     {
                             Object.keys(projects).map((_keyName) => {

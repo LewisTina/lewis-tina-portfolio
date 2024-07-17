@@ -13,9 +13,9 @@ export default function Skills(props: any) {
 
     return (
         <section className="flex flex-col items-center justify-start w-full" id='skills'>
-            <div className="max-w-[calc(1535px+8rem)] w-full -mx-16">
+            <div className="max-w-[calc(1535px+5rem)] w-full -mx-10">
                 <div className="flex flex-col gap-3 3xl:rounded-3xl bg-dark-grey py-16 md:pt-5 text-white">
-                    <div className="px-16 md:px-4 lg:px-6">
+                    <div className="px-10 md:px-4 lg:px-6">
                         <h2 className="text-title capitalize">
                             {t('my_skills')}
                         </h2>
@@ -24,7 +24,7 @@ export default function Skills(props: any) {
                         </p>
                     </div>
 
-                    <p className={`w-full flex flex-wrap gap-3 px-16 md:px-4 lg:px-6 mb-6 `}>
+                    <p className={`w-full flex flex-wrap gap-3 px-10 md:px-4 lg:px-6 mb-6 `}>
                         {
                             hardSkills.map((element: any, idx: number)=> {
                                 return(
@@ -50,6 +50,7 @@ export default function Skills(props: any) {
                                                             <Image  
                                                                 src={`/${e}.svg`}
                                                                 alt = {`${e} logo`}
+                                                                draggable='false'
                                                                 height={500}
                                                                 width={500}
                                                                 className='h-14 w-auto max-w-none'/>
@@ -78,6 +79,7 @@ export default function Skills(props: any) {
                                                                 <Image  
                                                                     src={`/${e}.svg`}
                                                                     alt = {`${e} logo`}
+                                                                    draggable='false'
                                                                     height={500}
                                                                     width={500}
                                                                     className='h-14 w-auto max-w-none'/>

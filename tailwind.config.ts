@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     
     screens: {
-      '3xl': {'min': '1663px'},
+      '3xl': {'min': '1615px'},
       
       '2xl': {'max': '1535px'},
 
@@ -81,6 +81,7 @@ const config: Config = {
       colors: {
         'darkest': "rgb(18, 18, 18)",
         'dark-grey': 'rgb(26, 26, 26)',
+        'custom-light-gray': 'rgb(232, 234, 237)',
         'light-grey': 'rgb(169, 169, 169)',
         'primary': 'rgb(0, 15, 255)',
         'secondary': 'rgb(0, 122, 255)',

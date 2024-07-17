@@ -14,7 +14,7 @@ export default function CGU(props: any) {
                 <div className="w-full flex justify-center ">
                     <div className="w-full flex justify-center py-32 min-h-screen max-w-[1535px] relative">
                         <Sidebar/>
-                        <div className="px-16 pt-8 w-[840px] h-auto md:px-4 lg:px-8 relative text-gray-500">
+                        <div className="px-10 pt-8 w-[840px] h-auto md:px-4 lg:px-6 relative text-gray-500">
 
                         <div className="relative">
                             <h1 className="text-5xl capitalize sticky text-darkest dark:text-light-grey">

@@ -1,30 +1,21 @@
 import useTranslation from "next-translate/useTranslation";
 import CustomButton from "../button";
-import style from './index.module.scss'
-import Image from "next/image"
 import Link from "next/link";
+import styles from './footer.module.scss'
 import VisitCard from "./visitCard";
 
 export default function Footer(props: any) {
     const {t} = useTranslation('common')
     return(
-        <footer className="w-full flex justify-center bg-primary dark:bg-black/70 text-white">
-            <div className="px-16 py-8 max-w-[1535px] w-full h-auto md:px-4 lg:px-8 relative">
-                    <a href="/cvfile_aboutou_review2023.pdf" download="CV ABOUTOU TINA Pierre Lewis Review 2023 FS DEV.pdf" className={"md:mt-32 flex max-w-max dela-gothic-one"}>
-                        <CustomButton 
-                            leftIcon={
-                                <span className="material-symbols-outlined pr-4">&#xe5db;</span>
-                            }
-                            bgColor={"bg-white dark:bg-deep-purple"} 
-                            color={"text-deep-purple dark:text-white"} 
-                            label={t("download_resume")} 
-                            action={undefined}/>
-                    </a>
+        <footer className="w-full flex justify-center bg-primary dark:bg-black text-white px-10 md:px-4 lg:px-6 sm:mt-16 relative">
+            <div className={`${styles.contactFrame} bg-primary dark:bg-black before:bg-custom-light-gray before:dark:bg-dark-grey after:bg-custom-light-gray after:dark:bg-dark-grey`}>
+                <div className={`${styles.fakeBand} bg-primary dark:bg-black`}></div>
+                <VisitCard/>
+            </div>
+            <div className="pt-16 max-w-[1535px] w-full h-auto relative flex flex-col gap-10">
 
-                <VisitCard className={` `}/>
-
-                <div className="flex justify-between py-10 items-end border-b-2 border-white/25 md:flex-col md:justify-start md:items-start lg:items-start">
-                    <div className="max-w-[45%] md:max-w-full lg:max-w-[65%]">
+                <div className="flex justify-between items-end gap-6 md:flex-col md:justify-start md:items-start lg:items-start">
+                    <div className="max-w-[45%] md:max-w-full lg:max-w-[65%] flex flex-col gap-6">
                         <div className="flex items-center gap-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
                             <circle cx="16.7887" cy="16.2113" r="15.7113" stroke="white"/>
@@ -36,31 +27,28 @@ export default function Footer(props: any) {
                         </h2>
                         </div>
 
-                        <p className={` py-4  text-justify word-spacing`}>
+                        <p className={`text-justify word-spacing`}>
                             {t('conclusion')}
                         </p>
                     </div>
 
                     
-                    <div className="max-w-[55%] lg:max-w-[35%] flex items-start lg:flex-col md:justify-start md:items-start md:mt-10">
-                        <div className="mx-10 md:my-2"></div>
-                        <div className="">
+                    <div className="max-w-[55%] md:max-w-full lg:max-w-[35%] flex items-start lg:flex-col md:justify-start md:items-start">
+                        <div className="flex flex-col gap-6">
                             <h2 className="capitalize">
                                 {t("social_media")}
                             </h2>
 
-                            <div className="flex my-3">
-                                <Link target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/pierre-lewis-aboutou-tina-113810234/" className="bg-white/25 rounded-full my-4 mr-4 flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
+                            <div className="flex gap-4">
+                                <Link target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/pierre-lewis-aboutou-tina-113810234/" className="bg-white/25 rounded-full flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
                                     <i className="text-xl fa fa-linkedin transition"></i>
                                 </Link>
-                                &nbsp;
 
-                                <Link target="_blank" rel="noreferrer" href="https://www.behance.net/lewistinaab" className="bg-white/25 rounded-full my-4 mr-4 flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
+                                <Link target="_blank" rel="noreferrer" href="https://www.behance.net/lewistinaab" className="bg-white/25 rounded-full flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
                                     <i className="text-xl fa fa-behance transition"></i>
                                 </Link>
-                                &nbsp;
                                 
-                                <Link target="_blank" rel="noreferrer" href="https://github.com/LewisTina" className="bg-white/25 rounded-full my-4 mr-4 flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
+                                <Link target="_blank" rel="noreferrer" href="https://github.com/LewisTina" className="bg-white/25 rounded-full flex justify-center items-center h-10 aspect-square hover:bg-white hover:text-primary hover:dark:text-black ">
                                     <i className="text-3xl fa fa-github transition"></i>
                                 </Link>
 
@@ -69,7 +57,18 @@ export default function Footer(props: any) {
                     </div>
                 </div>
 
-                <div className={` flex items-center justify-between py-10 sm:pt-0 lg:flex-col-reverse lg:items-start md:text-start md:justify-start`}>
+                <a href="/cvfile_aboutou_review2023.pdf" download="CV ABOUTOU TINA Pierre Lewis Review 2023 FS DEV.pdf" className={"flex max-w-max dela-gothic-one"}>
+                    <CustomButton 
+                        leftIcon={
+                            <span className="material-symbols-outlined pr-4">&#xe5db;</span>
+                        }
+                        bgColor={"bg-white dark:bg-deep-purple"} 
+                        color={"text-deep-purple dark:text-white"} 
+                        label={t("download_resume")} 
+                        action={undefined}/>
+                </a>
+
+                <div className={`flex items-center justify-between py-10 sm:pt-0 lg:flex-col-reverse lg:items-start md:text-start md:justify-start border-t-2 border-white/25`}>
 
                     <div className="block">
                         <span className="">Designed and powered with love and fresh water by</span>

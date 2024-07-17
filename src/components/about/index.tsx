@@ -45,7 +45,7 @@ export default function About(){
                 </div>
             </div>
 
-            <div className="flex gap-16 flex-col items-center justify-start w-full px-16 md:px-4 lg:px-6">
+            <div className="flex gap-16 flex-col items-center justify-start w-full px-10 md:px-4 lg:px-6">
                 <div className="flex gap-16 justify-between lg:items-start md:my-0 md:flex-col max-w-[1535px] w-full">
                     <div className="dela-gothic-one text-[max(4rem,min(6.5vw,7rem))] leading-none flex flex-col select-none after:block after:absolute after:-inset-1 after:bg-gradient-white after:dark:bg-gradient-darkest relative -z-10">
                         <span className="block text-light-grey dark:text-light-grey/25">Web & <br/> Mobile</span>  

@@ -57,6 +57,8 @@ html{
 
 body{
   transition: background 0.3s;
+  font-family: var(--system-ui-font);
+  scroll-padding-top: 4rem;
 }
 
 h1, h2, h3, h4 {
@@ -116,6 +118,11 @@ input::-webkit-inner-spin-button {
   animation-play-state: var(--play);
   animation-delay: var(--delay);
   animation-direction: var(--direction);
+  user-select: none;
+
+  &:hover {
+      --play: paused !important;
+  }
 
   &.reverse {
     animation: marquee-scroll-reverse var(--duration) linear infinite;
