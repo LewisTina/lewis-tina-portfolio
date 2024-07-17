@@ -10,6 +10,8 @@ const config: Config = {
   theme: {
     
     screens: {
+      '3xl': {'min': '1663px'},
+      
       '2xl': {'max': '1535px'},
 
       'xl': {'max': '1280px'},
@@ -33,6 +35,9 @@ const config: Config = {
         'gradient-darkest': "linear-gradient(270deg, rgba(18, 18, 18, 1) 0%, rgba(18, 18, 18, 0.00) 50%, rgba(18, 18, 18, 1) 100%)",
         'gradient-white': "linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.00) 50%, rgba(255, 255, 255, 1) 100%)",
         'yearXp': "linear-gradient(165deg, rgba(0,15,255,1) 45%, rgba(0, 0, 0, 1))",
+      },
+      fontSize: {
+        title: 'max(1.5rem,min(3.5vw,2.25rem))',
       },
 
       'animation': {

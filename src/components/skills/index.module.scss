@@ -1,0 +1,28 @@
+.skillsMarqueeLeft{
+    --play: running; 
+    --direction: normal; 
+    --duration: 20s; 
+    --delay: 0s; 
+    --iteration-count: infinite;
+}
+
+.skillsMarqueeRight{
+    --play: running; 
+    --direction: reverse; 
+    --duration: 20s; 
+    --delay: 0s; 
+    --iteration-count: infinite;
+}
+
+@media screen and (max-width: 637px) {
+    .skillsMarqueeLeft{
+        min-width: unset !important;
+        --direction: alternate; 
+    }
+    
+    .skillsMarqueeRight{
+        min-width: unset !important;
+        --direction: alternate-reverse; 
+    }
+    
+}

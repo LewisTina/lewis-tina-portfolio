@@ -2,65 +2,33 @@ import useTranslation from "next-translate/useTranslation"
 import styles from './about.module.scss'
 import CustomButton from "../button"
 import Image from "next/image"
-import { useCallback, useEffect, useMemo, useRef, useState } from "react"
+import { useMarquee } from "../hooks/use_marquee"
 
 const focus = ["web_dev", "ui_design", "mobile_dev", "branding", "seo", "graphic_design"]
 
-export default function About(props: any){
+export default function About(){
     const {t} = useTranslation('common')
     const actualYear = parseFloat((new Date().getFullYear()).toString())
-    const [ frameWidth, setFrameWidth ] = useState<number>();
-    const frameRef = useRef<HTMLDivElement>(null);
-
-    const onResize = useCallback<ResizeObserverCallback>((entries) => {
-        if (entries.length > 0) {
-            const entry = entries[0];
-            setFrameWidth(entry.contentRect.width - 32);
-        }
-    }, []);
-
-    useEffect(() => {
-        const frame = frameRef.current;
-        const resizeObserver = new ResizeObserver(onResize);
-        if (frame) resizeObserver.observe(frame);
-
-        return () => {
-            if (frame) {
-                resizeObserver.unobserve(frame);
-            }
-            resizeObserver.disconnect();
-        };
-    }, [onResize]);
-
-    const marqueeCount = useMemo(() => {
-        const _count = (frameWidth??2000) / 2000
-        return Math.round(_count) + 1
-    }, [frameWidth])
+    const {ref, count} = useMarquee(2000)
 
     return(
         <section className="w-full relative overflow-x-clip-overflow-y-visible -top-10" id="about">
-            <div className={`bg-primary text-white shadow-[0px_7px_29px_0px] shadow-[rgba(0,0,0,0.3)] relative flex py-4 pl-10 -left-8 w-[calc(100%+4rem)] rotate-[3.15deg] divide-x-2`}>
-                <p className="px-4 py-1 dela-gothic-one">
-                    <span className="block text-base leading-4 capitalize">
-                        {t('since')}
-                    </span>
-
-                    <span className="block text-3xl leading-6">
-                        2020
-                    </span>
-                </p>
-                <p className={`px-4 py-1`}>
-                    <span className="block text-base whitespace-pre-line">
+            <div className={`bg-primary text-white shadow-[0px_7px_29px_0px] shadow-[rgba(0,0,0,0.3)] relative flex py-4 pl-10 -left-8 w-[calc(100%+4rem)] rotate-[3.15deg]`}>
+               <div className="flex w-full items-center max-w-[1536px] mx-auto divide-x-2">
+                    <p className="px-5 py-1 capitalize dela-gothic-one text-title leading-none">
+                        {t('since')} 2020
+                    </p>
+                    <p className={`px-5 py-1 text-base whitespace-pre-line`}>
                         {t('experience_count', {counter: (actualYear - 2020)})}
-                    </span>
-                </p>
+                    </p>
+               </div>
             </div>
 
-            <div ref={frameRef} className="bg-primary shadow-[0px_7px_29px_0px] shadow-[rgba(0,0,0,0.3)] py-4 relative -left-4 w-[calc(100%+2rem)] rotate-[-3.15deg] flex justify-start text-white">
-                <div className={`overflow-hidden flex md:my-4 dela-gothic-one ${styles.marqueeFrame}`}>
+            <div ref={ref} className="bg-primary shadow-[0px_7px_29px_0px] shadow-[rgba(0,0,0,0.3)] py-4 relative -left-4 w-[calc(100%+2rem)] rotate-[-3.15deg] flex justify-start text-white">
+                <div className={`overflow-hidden flex md:my-4 dela-gothic-one text-title ${styles.marqueeFrame}`}>
                     <div className={`flex gap-12 w-fit items-center marquee`}>
                         {
-                             Array.from(new Array(marqueeCount),(e, i) => {
+                             Array.from(new Array(count),(e, i) => {
                                 return (
                                     <ul className={`uppercase ${styles.aboutMarquee}`} key={`marquee${i}`}>
                                         <li>{t('creative')}</li>
@@ -79,16 +47,16 @@ export default function About(props: any){
 
             <div className="flex gap-16 flex-col items-center justify-start w-full px-16 md:px-4 lg:px-6">
                 <div className="flex gap-16 justify-between lg:items-start md:my-0 md:flex-col max-w-[1535px] w-full">
-                    <div className="dela-gothic-one text-[max(4rem,min(9vw,7rem))] leading-none flex flex-col select-none after:block after:absolute after:-inset-1 after:bg-gradient-white after:dark:bg-gradient-darkest relative -z-10">
+                    <div className="dela-gothic-one text-[max(4rem,min(6.5vw,7rem))] leading-none flex flex-col select-none after:block after:absolute after:-inset-1 after:bg-gradient-white after:dark:bg-gradient-darkest relative -z-10">
                         <span className="block text-light-grey dark:text-light-grey/25">Web & <br/> Mobile</span>  
                         <span className="block text-secondary">Dev</span>  
                     </div>
 
                     <div className="text-darkest dark:text-white">
-                        <h2 className="text-4xl capitalize mt-10 mb-4 md:mt-0">
+                        <h2 className="text-title capitalize mt-10 mb-4 md:mt-0">
                             {t('about_me')}
                         </h2>
-                        <p className={`py-2 text-lg whitespace-pre-line text-justify word-spacing`}>
+                        <p className={`py-2 whitespace-pre-line text-justify word-spacing`}>
                             {t('about_lewis')}
                         </p>
 
@@ -107,7 +75,7 @@ export default function About(props: any){
 
                 <div className="flex justify-between items-center md:items-start md:flex-col-reverse max-w-[1535px] w-full">
                     <div className="max-w-[50rem] text-darkest dark:text-white lg:max-w-[30rem] md:max-w-full md:mt-8">
-                        <h2 className="text-4xl capitalize">
+                        <h2 className="text-title capitalize">
                             {t('my_focus')}
                         </h2>
                         <p className={`py-3  whitespace-pre-line text-justify word-spacing`}>

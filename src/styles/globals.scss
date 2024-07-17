@@ -116,6 +116,10 @@ input::-webkit-inner-spin-button {
   animation-play-state: var(--play);
   animation-delay: var(--delay);
   animation-direction: var(--direction);
+
+  &.reverse {
+    animation: marquee-scroll-reverse var(--duration) linear infinite;
+  }
 }
 
 .animate-float {
@@ -140,6 +144,15 @@ input::-webkit-inner-spin-button {
   }
   100% {
     transform: translate3d(calc(-50% - 16px), 0px, 0px);
+  }
+}
+
+@keyframes marquee-scroll-reverse {
+  0% {
+    transform: translate3d(calc(-50% - 16px), 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
   }
 }
 
