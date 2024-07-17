@@ -1,13 +1,4 @@
-import { Dela_Gothic_One } from 'next/font/google'
 import Head from 'next/head'
-
-const dela_gothic = Dela_Gothic_One(
-  {
-    subsets: ['latin'],
-    weight: ['400'],
-    display: 'swap',
-  }
-)
 
 interface LayoutProps {
     title?: string,
@@ -18,7 +9,7 @@ const Layout = (props: LayoutProps) => {
     const {title, children} = props
 
     return (
-        <main className={dela_gothic.className}>
+        <main className='dm-sans'>
             <Head>
                 <title>{title ? title : "Lewis Tina · Portfolio"}</title>
                 <meta charSet="utf-8" />

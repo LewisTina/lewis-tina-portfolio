@@ -1,4 +1,3 @@
-import { DM_Sans } from "next/font/google"
 import projects from '../../../../project.json'
 import ProjectPreview from "@/components/projects/projectPreview"
 import Image from "next/image"
@@ -7,14 +6,6 @@ import SwitchToggle from "@/components/projects/toogle"
 import { useState } from "react"
 import CustomButton from "@/components/button"
 import useTranslation from "next-translate/useTranslation"
-
-const dm_sans = DM_Sans(
-    {
-      subsets: ['latin'],
-      weight: ['400','500','600', '700','800','900'],
-      display: 'swap',
-    }
-  )
 
 export default function Listing(){
     const finalProject = projects as any
@@ -25,7 +16,7 @@ export default function Listing(){
 
     return(
         <section className={`flex flex-col items-center justify-start py-20 pb-52`} id="my_project">
-            <div className={`${dm_sans.className} flex flex-col justify-start relative items-start max-w-[1535px] w-full rounded-3xl px-16 md:px-4 lg:px-8 text-darkest dark:text-white`}>
+            <div className={` flex flex-col justify-start relative items-start max-w-[1535px] w-full rounded-3xl px-16 md:px-4 lg:px-8 text-darkest dark:text-white`}>
                 {/* <SwitchToggle activeSkills={activeSkills} setActiveSkills={setActiveSkills}/> */}
                 <div className={`w-full flex flex-wrap justify-start relative items-start`}>
                     {

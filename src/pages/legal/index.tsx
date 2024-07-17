@@ -4,15 +4,6 @@ import Navbar from "@/components/NavBar";
 import Sidebar from "@/components/SideBar";
 import TextPoint from "@/components/textPoint";
 import useTranslation from "next-translate/useTranslation";
-import { DM_Sans } from 'next/font/google'
-
-const dm_sans = DM_Sans(
-    {
-      subsets: ['latin'],
-      weight: ['400', '500', '600', '700'],
-      display: 'swap',
-    }
-  )
 
 export default function CGU(props: any) {
     const {t} = useTranslation('common')
@@ -43,7 +34,7 @@ export default function CGU(props: any) {
                                 {t('legal')}
                             </h2>
 
-                            <p className={`text-justify sm:text-left my-4 ${dm_sans.className}`}>
+                            <p className={`text-justify sm:text-left my-4 `}>
                                 {t('owner')} : <strong>{"Pierre Lewis ABOUTOU TINA"}</strong> <br />
                                 {t('owner_address')} :  <strong>{"5 Chemin de Garvignan 69360 - Ternay"}</strong> <br/>
                              <br/>

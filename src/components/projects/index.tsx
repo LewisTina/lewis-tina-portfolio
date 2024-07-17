@@ -1,4 +1,3 @@
-import { DM_Sans } from 'next/font/google'
 import style from './index.module.scss'
 import CustomButton from "../button"
 import Image from "next/image"
@@ -8,15 +7,6 @@ import ParallaxApp from './parallelax'
 import ParallaxDesign from './parallelax-design'
 import { useRouter } from 'next/router'
 import SwitchToggle from './toogle'
-
-const dm_sans = DM_Sans(
-    {
-      subsets: ['latin'],
-      weight: ['400','500','600', '700','800','900'],
-      display: 'swap',
-    }
-  )
-
 
 export default function Projects(props: any){
     const {t} = useTranslation('common')
@@ -32,7 +22,7 @@ export default function Projects(props: any){
                         Portfolio
                     </h2>
 
-                    <div className={`${dm_sans.className} w-full flex-col justify-start relative items-start`}>
+                    <div className={` w-full flex-col justify-start relative items-start`}>
                         <SwitchToggle activeSkills={activeSkills} setActiveSkills={setActiveSkills}/>
 
                         <div className="flex w-full justify-start flex-nowrap">
@@ -44,7 +34,7 @@ export default function Projects(props: any){
                 
             </div>
 
-            <div className={`absolute bottom-16 flex justify-center ${dm_sans.className}`}>
+            <div className={`absolute bottom-16 flex justify-center `}>
                 <CustomButton 
                     bgColor={"bg-primary"} 
                     color={"text-white"} 

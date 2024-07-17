@@ -2,24 +2,7 @@ import { useEffect, useState } from "react";
 import SwitchLang from "../core/SwitchLang";
 import SwitchTheme from "../core/SwitchTheme";
 import NavBarLink from "./NavBarLink";
-import { DM_Sans, Dela_Gothic_One } from 'next/font/google'
 import Link from "next/link";
-
-const dm_sans = DM_Sans(
-    {
-      subsets: ['latin'],
-      weight: ['400', '500', '600', '700'],
-      display: 'swap',
-    }
-  )
-
-const dela_gothic = Dela_Gothic_One(
-  {
-    subsets: ['latin'],
-    weight: ['400'],
-    display: 'swap',
-  }
-)
 
 export default function Navbar(props: any){
     const [active, setActive] = useState(99)
@@ -40,14 +23,14 @@ export default function Navbar(props: any){
         <header className="w-full fixed p-10 flex justify-center z-50 md:p-4 lg:p-6">
             <div className="max-w-[1535px] w-full flex justify-between">
 
-                <Link href='/' className={`rounded-full h-10 bg-white border-2 border-light-grey/50 flex items-center p-1 backdrop-blur-xl ${dm_sans.className}`}>
+                <Link href='/' className={`rounded-full h-10 bg-white border-2 border-light-grey/50 flex items-center p-1 backdrop-blur-xl `}>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" fill="none" className='h-full'>
                             <circle cx="16.7887" cy="16.2113" r="15.7113" className='stroke-primary'/>
                             <circle cx="16.7887" cy="16.2112" r="12.2999" className='stroke-primary'/>
                         </svg>
                 </Link>
 
-                <div className={`flex sm:w-full sm:flex-1 sm:justify-end sm:mr-2 ${dela_gothic.className}`}>
+                <div className={`flex sm:w-full sm:flex-1 sm:justify-end sm:mr-2 dela-gothic-one`}>
                     <div className="relative rounded-full h-10 bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl sm:hidden">
                         <div className={`absolute rounded-full h-full transition-all duration-300 bg-primary z-10`} id='selector'></div>
                         <NavBarLink path={"/"} label={"home"} action={()=> {setActive(0)}}/>
@@ -65,7 +48,7 @@ export default function Navbar(props: any){
                 </div>
 
                 
-                <div className={`rounded-full h-10 bg-light-grey/25 flex items-center px-1 backdrop-blur-xl border-2 border-light-grey/25 font-semibold ${dm_sans.className}`}>
+                <div className={`rounded-full h-10 bg-light-grey/25 flex items-center px-1 backdrop-blur-xl border-2 border-light-grey/25 font-semibold `}>
                     <SwitchLang></SwitchLang>
                     <SwitchTheme></SwitchTheme>
                 </div>

@@ -2,15 +2,6 @@ import { useEffect, useState } from "react";
 import SwitchLang from "../core/SwitchLang";
 import SwitchTheme from "../core/SwitchTheme";
 import SideBarLink from "./SideBarLink";
-import { DM_Sans } from 'next/font/google'
-
-const dm_sans = DM_Sans(
-    {
-      subsets: ['latin'],
-      weight: ['400', '500', '600', '700'],
-      display: 'swap',
-    }
-  )
 
 export default function Sidebar(props: any){
     const [active, setActive] = useState(99)
@@ -27,7 +18,7 @@ export default function Sidebar(props: any){
     }, [active])
     
     return(
-        <div className={`w-72 absolute left-0 p-4 z-50 md:p-4 lg:p-6  ${dm_sans.className} lg:hidden`}>
+        <div className={`w-72 absolute left-0 p-4 z-50 md:p-4 lg:p-6   lg:hidden`}>
             <div className="w-full flex-col justify-between relative">
 
                 <div className="fixed pl-10 pr-2 flex flex-col w-72">

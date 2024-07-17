@@ -3,24 +3,14 @@ import CustomButton from "../button";
 import style from './index.module.scss'
 import Image from "next/image"
 import Link from "next/link";
-import { DM_Sans } from 'next/font/google'
 import VisitCard from "./visitCard";
-
-const dm_sans = DM_Sans(
-    {
-      subsets: ['latin'],
-      weight: ['400', '500', '600', '700'],
-      display: 'swap',
-    }
-  )
-
 
 export default function Footer(props: any) {
     const {t} = useTranslation('common')
     return(
         <footer className="w-full flex justify-center bg-primary dark:bg-black/70 text-white">
             <div className="px-16 py-8 max-w-[1535px] w-full h-auto md:px-4 lg:px-8 relative">
-                    <a href="/cvfile_aboutou_review2023.pdf" download="CV ABOUTOU TINA Pierre Lewis Review 2023 FS DEV.pdf" className={"md:mt-32 flex max-w-max"}>
+                    <a href="/cvfile_aboutou_review2023.pdf" download="CV ABOUTOU TINA Pierre Lewis Review 2023 FS DEV.pdf" className={"md:mt-32 flex max-w-max dela-gothic-one"}>
                         <CustomButton 
                             leftIcon={
                                 <span className="material-symbols-outlined pr-4">&#xe5db;</span>
@@ -31,22 +21,22 @@ export default function Footer(props: any) {
                             action={undefined}/>
                     </a>
 
-                <VisitCard className={`${dm_sans.className} `}/>
+                <VisitCard className={` `}/>
 
                 <div className="flex justify-between py-10 items-end border-b-2 border-white/25 md:flex-col md:justify-start md:items-start lg:items-start">
                     <div className="max-w-[45%] md:max-w-full lg:max-w-[65%]">
-                        <div className="flex items-center">
+                        <div className="flex items-center gap-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
                             <circle cx="16.7887" cy="16.2113" r="15.7113" stroke="white"/>
                             <circle cx="16.7887" cy="16.2112" r="12.2999" stroke="white"/>
                         </svg>
 
-                        <span className="text-4xl flex mx-2">
+                        <h2 className="text-4xl flex">
                             Lewis Tina
-                        </span>
+                        </h2>
                         </div>
 
-                        <p className={`${dm_sans.className} py-4  text-justify word-spacing`}>
+                        <p className={` py-4  text-justify word-spacing`}>
                             {t('conclusion')}
                         </p>
                     </div>
@@ -79,7 +69,7 @@ export default function Footer(props: any) {
                     </div>
                 </div>
 
-                <div className={`${dm_sans.className} flex items-center justify-between py-10 sm:pt-0 lg:flex-col-reverse lg:items-start md:text-start md:justify-start`}>
+                <div className={` flex items-center justify-between py-10 sm:pt-0 lg:flex-col-reverse lg:items-start md:text-start md:justify-start`}>
 
                     <div className="block">
                         <span className="">Designed and powered with love and fresh water by</span>

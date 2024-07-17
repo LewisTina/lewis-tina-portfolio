@@ -1,15 +1,6 @@
-import { DM_Sans } from 'next/font/google'
 import style from './index.module.scss'
 import Image from "next/image"
 import useTranslation from 'next-translate/useTranslation'
-
-const dm_sans = DM_Sans(
-    {
-      subsets: ['latin'],
-      weight: ['500'],
-      display: 'swap',
-    }
-  )
 
  const hardSkills =  ["NextJs", "ReactJs", "HTML", "NodeJs", "Typescript", "Javascript", "SQL", "Java", "C#", "Dart", "flutter", "Python", "Sass/Scss", "CSS", "PHP", "Docker", "UML", "Merise", "Swagger", "github", "Tailwind Css", "PostgreSQL", "Angular Js", "Adobe Illustrator", "Figma", "Adobe Photoshop", "Adobe Xd"]
 
@@ -17,278 +8,278 @@ const dm_sans = DM_Sans(
 export default function Skills(props: any) {
     const {t} = useTranslation('common')
     return (
-        <section className="flex flex-col items-center justify-start w-full" id='skills'>
-            <div className="px-16 md:px-0 lg:px-6 max-w-[1535px] w-full ">
-                <div className="flex flex-col rounded-3xl md:rounded-none bg-dark-grey py-8 md:pt-5 text-white">
-                <div className="px-10 md:px-4">
-                        <h2 className="text-4xl capitalize">
+        <section className="flex flex-col items-center justify-start w-full px-16 md:px-0 lg:px-6" id='skills'>
+            <div className="max-w-[1535px] w-full">
+                <div className="flex flex-col rounded-3xl md:rounded-none bg-dark-grey py-16 md:pt-5 text-white">
+                    <div className="px-16 md:px-4">
+                        <h2 className="text-4xl capitalize mb-8">
                             {t('my_skills')}
                         </h2>
-                        <p className={`py-2 ${dm_sans.className} whitespace-pre-line`}>
+                        <p className={`py-2  whitespace-pre-line`}>
                             {t('lewis_skills')}
                         </p>
-                </div>
+                    </div>
 
-                <p className={`w-full flex flex-wrap pl-10 pr-7 md:pl-4 md:pr-0 mb-6 ${dm_sans.className}`}>
-                            {
-                                    hardSkills.map((element: any, idx: number)=> {
-                                        return(
-                                            <span className="mr-3 mt-3 px-3 py-1 capitalize rounded-full bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl" key={idx}>
-                                                {t(element)}
-                                            </span>
-                                        )
-                                    })
-                                }
-                </p>
+                    <p className={`w-full flex flex-wrap pl-16 pr-7 md:pl-4 md:pr-0 mb-6 `}>
+                        {
+                            hardSkills.map((element: any, idx: number)=> {
+                                return(
+                                    <span className="mr-3 mt-3 px-3 py-1 capitalize rounded-full bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl" key={idx}>
+                                        {t(element)}
+                                    </span>
+                                )
+                            })
+                        }
+                    </p>
 
-                
-                <div className="overflow-hidden flex items-center my-10 md:my-6">
-                    <ul className={`marquee capitalize text-xl ${style.skillsMarqueeLeft}`}>
-                        <li>
-                        <Image  
-                            src="/git.svg"
-                            alt = "git logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-
-                        <li>
-                        <Image  
-                            src="/typescript.svg"
-                            alt = "typescript logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-
-                        <li>
-                        <Image  
-                            src="/react.svg"
-                            alt = "react logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-                        
-                        <li>
-                        <Image  
-                            src="/next.svg"
-                            alt = "next logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-                        
-                        <li>
-                        <Image  
-                            src="/node.svg"
-                            alt = "node logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-                        
-                        <li>
-                        <Image  
-                            src="/angular.svg"
-                            alt = "angular logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-                        
-                        <li>
-                        <Image  
-                            src="/python.svg"
-                            alt = "python logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-                        
-                        <li>
-                        <Image  
-                            src="/sass.svg"
-                            alt = "sass logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-                        
-                        <li>
-                        <Image  
-                            src="/figma.svg"
-                            alt = "figma logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-                        
-                        <li>
-                        <Image  
-                            src="/tailwind.svg"
-                            alt = "tailwind logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-                    </ul>
                     
-                    <ul className={`marquee capitalize text-xl md:hidden ${style.skillsMarqueeLeft}`}>
-                        <li>
-                        <Image  
-                            src="/git.svg"
-                            alt = "git logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
+                    <div className="overflow-hidden flex items-center my-10 md:my-6">
+                        <ul className={`marquee capitalize text-xl ${style.skillsMarqueeLeft}`}>
+                            <li>
+                            <Image  
+                                src="/git.svg"
+                                alt = "git logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
 
-                        <li>
-                        <Image  
-                            src="/typescript.svg"
-                            alt = "typescript logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
+                            <li>
+                            <Image  
+                                src="/typescript.svg"
+                                alt = "typescript logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
 
-                        <li>
-                        <Image  
-                            src="/react.svg"
-                            alt = "react logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
+                            <li>
+                            <Image  
+                                src="/react.svg"
+                                alt = "react logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                            
+                            <li>
+                            <Image  
+                                src="/next.svg"
+                                alt = "next logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                            
+                            <li>
+                            <Image  
+                                src="/node.svg"
+                                alt = "node logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                            
+                            <li>
+                            <Image  
+                                src="/angular.svg"
+                                alt = "angular logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                            
+                            <li>
+                            <Image  
+                                src="/python.svg"
+                                alt = "python logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                            
+                            <li>
+                            <Image  
+                                src="/sass.svg"
+                                alt = "sass logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                            
+                            <li>
+                            <Image  
+                                src="/figma.svg"
+                                alt = "figma logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                            
+                            <li>
+                            <Image  
+                                src="/tailwind.svg"
+                                alt = "tailwind logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                        </ul>
                         
-                        <li>
-                        <Image  
-                            src="/next.svg"
-                            alt = "next logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-                        
-                        <li>
-                        <Image  
-                            src="/node.svg"
-                            alt = "node logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-                        
-                        <li>
-                        <Image  
-                            src="/angular.svg"
-                            alt = "angular logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-                        
-                        <li>
-                        <Image  
-                            src="/python.svg"
-                            alt = "python logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-                        
-                        <li>
-                        <Image  
-                            src="/sass.svg"
-                            alt = "sass logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-                        
-                        <li>
-                        <Image  
-                            src="/figma.svg"
-                            alt = "figma logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-                        
-                        <li>
-                        <Image  
-                            src="/tailwind.svg"
-                            alt = "tailwind logo"
-                            height={500}
-                            width={500}
-                            className='mr-20 h-14 md:mr-10'
-                            style={{
-                                width: 'auto',
-                              }}/>
-                        </li>
-                    </ul>
-                </div>
+                        <ul className={`marquee capitalize text-xl md:hidden ${style.skillsMarqueeLeft}`}>
+                            <li>
+                            <Image  
+                                src="/git.svg"
+                                alt = "git logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
 
-                <div className="overflow-hidden flex items-center my-10 md:my-6">
+                            <li>
+                            <Image  
+                                src="/typescript.svg"
+                                alt = "typescript logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+
+                            <li>
+                            <Image  
+                                src="/react.svg"
+                                alt = "react logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                            
+                            <li>
+                            <Image  
+                                src="/next.svg"
+                                alt = "next logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                            
+                            <li>
+                            <Image  
+                                src="/node.svg"
+                                alt = "node logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                            
+                            <li>
+                            <Image  
+                                src="/angular.svg"
+                                alt = "angular logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                            
+                            <li>
+                            <Image  
+                                src="/python.svg"
+                                alt = "python logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                            
+                            <li>
+                            <Image  
+                                src="/sass.svg"
+                                alt = "sass logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                            
+                            <li>
+                            <Image  
+                                src="/figma.svg"
+                                alt = "figma logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                            
+                            <li>
+                            <Image  
+                                src="/tailwind.svg"
+                                alt = "tailwind logo"
+                                height={500}
+                                width={500}
+                                className='mr-20 h-14 md:mr-10'
+                                style={{
+                                    width: 'auto',
+                                }}/>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="overflow-hidden flex items-center my-10 md:my-6">
                     <ul className={`marquee capitalize text-xl ${style.skillsMarqueeRight}`}>
                         <li>
                         <Image  

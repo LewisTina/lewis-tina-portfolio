@@ -1,15 +1,7 @@
 import Layout from "@/components/Layout";
 import Navbar from "@/components/NavBar";
 import useTranslation from "next-translate/useTranslation";
-import { DM_Sans } from 'next/font/google'
 
-const dm_sans = DM_Sans(
-    {
-      subsets: ['latin'],
-      weight: ['400', '500', '600', '700'],
-      display: 'swap',
-    }
-  )
 const Content404 = () => {
     const {t} = useTranslation('common')
     return(
@@ -31,7 +23,7 @@ const Content404 = () => {
                     </div>
                     <div className="flex items-center">
                         <div className="px-6 sm:px-0 sm:py-5">
-                            <span className={`${dm_sans.className} font-semibold`}>
+                            <span className={` font-semibold`}>
                                 {t('page_not_found')}
                             </span>
                         </div>

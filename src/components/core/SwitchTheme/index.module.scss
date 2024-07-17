@@ -1,13 +1,20 @@
 .themeMenu{
+  @apply relative inline-block text-left capitalize;
   .preview{
     i{
       font-size: 1.5em;
     }
   }
   .menuButton{
+    @apply absolute right-0 z-10 mt-5 w-48 origin-top-right text-xs rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none;
+    
     i{
       font-size: 1em;
       margin-right: 1em;
     }
   }
+}
+
+.button {
+  @apply flex w-full items-center px-4 py-2 text-sm gap-4
 }

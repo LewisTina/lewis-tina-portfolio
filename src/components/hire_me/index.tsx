@@ -1,21 +1,11 @@
 import { useForm } from 'react-hook-form';
 import InputTextField from './InputTextField'
-import Image from 'next/image'
 import InputTextArea from './InputTextArea';
 import { useEffect, useState } from 'react';
-import { DM_Sans } from 'next/font/google'
 import useTranslation from 'next-translate/useTranslation';
 import CustomButton from '../button';
 import style from '../projects/index.module.scss'
 import Cookies from 'js-cookie'
-
-const dm_sans = DM_Sans(
-    {
-      subsets: ['latin'],
-      weight: ['400', '500', '600', '700'],
-      display: 'swap',
-    }
-  )
 
 function Alert(props: any){
     const {status} = props
@@ -150,7 +140,7 @@ export default function HireMe(props: any) {
 
                 <div className={``}></div>
             </div>
-            <div className={`w-4/6 lg:w-full ${dm_sans.className}`}>
+            <div className={`w-4/6 lg:w-full `}>
                 <p className="m-3 md:mx-0 w-3/5 md:w-full">
                      {t('form_intro')}
                 </p>
