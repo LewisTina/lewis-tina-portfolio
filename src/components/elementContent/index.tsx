@@ -1,19 +1,9 @@
 import CustomButton from "@/components/button";
 import { ProjectProps, imageProps } from "@/components/types";
 import useTranslation from "next-translate/useTranslation";
-import { DM_Sans } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
-const dm_sans = DM_Sans(
-    {
-      subsets: ['latin'],
-      weight: ['500', '600', '700', '800', '900'],
-      display: 'swap',
-    }
-  )
-
 
 export default function Content (props: {data: ProjectProps}) {
     const {data} = props
@@ -38,7 +28,7 @@ export default function Content (props: {data: ProjectProps}) {
     } = data
     
     return(
-        <div className={`px-16 py-8 max-w-[1535px] w-full min-h-screen h-auto md:px-4 lg:px-8 relative mt-20 mb-40 md:mt-10  ${dm_sans.className}`}>
+        <div className={`px-10 py-8 max-w-[1535px] w-full min-h-screen h-auto md:px-4 lg:px-6 relative mt-20 mb-40 md:mt-10  `}>
             <div className="my-6 flex w-full items-center">
                     {
                         !!logo && 

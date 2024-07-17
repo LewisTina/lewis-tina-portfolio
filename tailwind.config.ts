@@ -10,6 +10,8 @@ const config: Config = {
   theme: {
     
     screens: {
+      '3xl': {'min': '1615px'},
+      
       '2xl': {'max': '1535px'},
 
       'xl': {'max': '1280px'},
@@ -25,14 +27,17 @@ const config: Config = {
       display: ["group-hover"],
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'cover-bg': "url('/foreground.svg')",
         'portfolio-cover-bg': "url('/Portfolio-cover-gradient.png')",
         'cover-glow': "url('/glow.svg')",
         'cover-noise': "url('/noise.svg')",
         'gradient-darkest': "linear-gradient(270deg, rgba(18, 18, 18, 1) 0%, rgba(18, 18, 18, 0.00) 50%, rgba(18, 18, 18, 1) 100%)",
         'gradient-white': "linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.00) 50%, rgba(255, 255, 255, 1) 100%)",
+        'yearXp': "linear-gradient(165deg, rgba(0,15,255,1) 45%, rgba(0, 0, 0, 1))",
+      },
+      fontSize: {
+        title: 'max(1.5rem,min(3.5vw,2.25rem))',
       },
 
       'animation': {
@@ -76,6 +81,7 @@ const config: Config = {
       colors: {
         'darkest': "rgb(18, 18, 18)",
         'dark-grey': 'rgb(26, 26, 26)',
+        'custom-light-gray': 'rgb(232, 234, 237)',
         'light-grey': 'rgb(169, 169, 169)',
         'primary': 'rgb(0, 15, 255)',
         'secondary': 'rgb(0, 122, 255)',

@@ -1,21 +1,12 @@
 import { useRouter } from "next/router"
 import style from "./index.module.scss"
-import { DM_Sans } from 'next/font/google'
-
-const dm_sans = DM_Sans(
-    {
-      subsets: ['latin'],
-      weight: ['400', '500', '600', '700', '800', '900'],
-      display: 'swap',
-    }
-  )
 
 export default function PortfolioCover(){
     const router = useRouter()
     return(
-        <div className={`relative h-screen min-h-[700px] sm:h-[45rem] flex justify-center w-full z-0 snap-y max-h-[1114px]`}>
-            <div className="flex items-center px-16 md:pb-28 max-w-[1535px] w-full h-full bg-portfolio-cover-bg bg-no-repeat bg-contain sm:bg-cover bg-right md:px-4 lg:px-8 overflow-hidden">
-            <div className={`${style.content}  ${style.gradient_mask} ${dm_sans.className} overflow-hidden whitespace-pre-line bg-white/25 dark:bg-black/25 border-2 border-light-grey/50 flex flex-col items-start justify-between backdrop-blur-xl rounded-3xl w-2/5 min-w-[500px] sm:w-full lg:w-full lg:min-w-[unset] mx-8 md:mx-0 p-[4%] md:p-6 mt-32 md:mt-40 h-[calc(100%-7rem)] md:h-full`}>
+        <div className={`relative h-screen min-h-[700px] sm:min-h-[unset] sm:h-[100svh] flex justify-center w-full z-0 snap-y max-h-[1114px]`}>
+            <div className="flex items-center px-10 md:pb-28 max-w-[1535px] w-full h-full bg-portfolio-cover-bg bg-no-repeat bg-contain sm:bg-cover bg-right md:px-4 lg:px-6 overflow-hidden">
+            <div className={`${style.content}  ${style.gradient_mask}  overflow-hidden whitespace-pre-line bg-white/25 dark:bg-black/25 border-2 border-light-grey/50 flex flex-col items-start justify-between backdrop-blur-xl rounded-3xl w-2/5 min-w-[500px] sm:w-full lg:w-full lg:min-w-[unset] mx-8 md:mx-0 p-[4%] md:p-6 mt-32 md:mt-40 h-[calc(100%-7rem)] md:h-full`}>
                 {/* <div className="-z-10 opacity-50 top-0 absolute h-full w-full bg-cover-noise bg-no-repeat bg-content mix-blend-multiply dark:mix-blend-normal">
                 </div> */}
                 <div className=""></div>

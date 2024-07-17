@@ -1,0 +1,10 @@
+.skillsMarquee{
+    --play: running; 
+    --duration: 40s; 
+    --delay: 0s; 
+    --iteration-count: infinite;
+
+    &:hover {
+        --play: paused;
+    }
+}

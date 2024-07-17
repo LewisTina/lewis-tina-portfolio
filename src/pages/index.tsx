@@ -11,7 +11,7 @@ import Skills from '@/components/skills'
 export default function Home() {
   return (
     <Layout>
-      <main className="min-h-screen w-full relative flex flex-col items-center">
+      <main className="min-h-screen w-full relative flex flex-col items-center overflow-x-hidden scroll-pl-32 snap-y">
         <Navbar/>
         <Cover/>
         <About/>

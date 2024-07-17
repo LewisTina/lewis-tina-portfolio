@@ -1,20 +1,11 @@
-import { Dela_Gothic_One } from 'next/font/google'
 import Head from 'next/head'
 import { VisualisationLayoutProps } from './types'
-
-const dela_gothic = Dela_Gothic_One(
-  {
-    subsets: ['latin'],
-    weight: ['400'],
-    display: 'swap',
-  }
-)
 
 const VisualisationLayout = (props: VisualisationLayoutProps) => {
     const {cover, resume, projectTitle, children} = props
 
     return (
-        <main className={dela_gothic.className}>
+        <main className="">
             <Head>
                 <title>{`${projectTitle} | Lewis Tina's Portfolio`}</title>
                 <meta charSet="utf-8" />

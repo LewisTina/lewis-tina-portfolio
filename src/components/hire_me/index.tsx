@@ -1,21 +1,11 @@
 import { useForm } from 'react-hook-form';
 import InputTextField from './InputTextField'
-import Image from 'next/image'
 import InputTextArea from './InputTextArea';
 import { useEffect, useState } from 'react';
-import { DM_Sans } from 'next/font/google'
 import useTranslation from 'next-translate/useTranslation';
 import CustomButton from '../button';
 import style from '../projects/index.module.scss'
 import Cookies from 'js-cookie'
-
-const dm_sans = DM_Sans(
-    {
-      subsets: ['latin'],
-      weight: ['400', '500', '600', '700'],
-      display: 'swap',
-    }
-  )
 
 function Alert(props: any){
     const {status} = props
@@ -124,8 +114,8 @@ export default function HireMe(props: any) {
     
 
     return(
-        <section className={`bg-gray-300/50 dark:bg-dark-grey w-full flex justify-center py-20 md:pb-26 overflow-hidden`} id="hire_me">
-            <div className={`px-16 py-8 max-w-[1535px] flex w-full h-auto md:px-4 lg:px-8  lg:flex-col lg:justify-start lg:items-start`}>
+        <section className={`bg-custom-light-gray dark:bg-dark-grey w-full flex justify-center px-10 md:px-4 lg:px-6 py-20 md:pb-26 overflow-hidden`} id="hire_me">
+            <div className={`max-w-[1535px] flex w-full h-auto lg:flex-col lg:justify-start lg:items-start`}>
             <div className={`w-2/6 lg:w-full flex flex-col justify-start`}>
                 <h2 className="text-4xl capitalize w-full">
                     {t('hire_me')}
@@ -150,7 +140,7 @@ export default function HireMe(props: any) {
 
                 <div className={``}></div>
             </div>
-            <div className={`w-4/6 lg:w-full ${dm_sans.className}`}>
+            <div className={`w-4/6 lg:w-full `}>
                 <p className="m-3 md:mx-0 w-3/5 md:w-full">
                      {t('form_intro')}
                 </p>

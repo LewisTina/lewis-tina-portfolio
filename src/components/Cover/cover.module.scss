@@ -1,0 +1,43 @@
+.frame {
+    @apply 
+    relative z-0
+    h-[100svh] min-h-[800px] max-h-[1114px] md:h-[100svh] md:min-h-[unset]
+    flex justify-center
+    w-full
+    bg-cover-bg bg-no-repeat bg-right-top bg-contain
+    px-10 pb-10 md:pb-0 md:pt-10 md:px-4 lg:px-6;
+
+    * {
+        white-space: pre-line;
+    }
+}
+
+.colorSplash {
+    @apply
+    absolute
+    h-full lg:h-[50vh]
+    w-full
+    flex items-center justify-center
+    bg-cover-glow bg-no-repeat bg-center lg:bg-contain
+}
+
+.noise {
+    @apply
+    absolute top-0
+    h-full
+    w-full
+    bg-cover-noise bg-no-repeat bg-cover
+}
+
+.title-large {
+    @apply text-primary;
+    font-size: max(3rem,min(6.5vw,6rem));
+    line-height: 1;
+
+}
+
+.title-medium {
+    @apply leading-normal block;
+    font-size: max(1.5rem,min(2.5vw,2.25rem));
+    line-height: 1;
+}
