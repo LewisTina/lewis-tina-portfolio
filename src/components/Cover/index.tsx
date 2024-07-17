@@ -29,7 +29,7 @@ export default function Cover(props: any){
                         rightIcon={
                             <span className="material-symbols-outlined pl-4">&#xf8ce;</span>
                         }
-                        bgColor={"bg-secondary"} 
+                        bgColor={"bg-primary"} 
                         color={"text-white"} 
                         label={t("hire_me")} 
                         action={() => {router.push("#hire_me")}}/>

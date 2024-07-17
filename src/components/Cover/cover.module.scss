@@ -1,7 +1,7 @@
 .frame {
     @apply 
     relative z-0
-    h-[100svh] min-h-[700px] max-h-[1114px] md:h-[100svh]
+    h-[100svh] min-h-[800px] max-h-[1114px] md:h-[100svh] md:min-h-[unset]
     flex justify-center
     w-full
     bg-cover-bg bg-no-repeat bg-right-top bg-contain
@@ -23,21 +23,21 @@
 
 .noise {
     @apply
-    absolute
+    absolute top-0
     h-full
     w-full
     bg-cover-noise bg-no-repeat bg-cover
 }
 
 .title-large {
-    @apply text-secondary;
-    font-size: max(3rem,min(9vw,6rem));
+    @apply text-primary;
+    font-size: max(3rem,min(6.5vw,6rem));
     line-height: 1;
 
 }
 
 .title-medium {
     @apply leading-normal block;
-    font-size: max(1.5rem,min(3.5vw,2.25rem));
+    font-size: max(1.5rem,min(2.5vw,2.25rem));
     line-height: 1;
 }

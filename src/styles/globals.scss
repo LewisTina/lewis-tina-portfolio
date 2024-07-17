@@ -112,7 +112,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation: marquee-scroll var(--duration) linear infinite;
   animation-play-state: var(--play);
   animation-delay: var(--delay);
   animation-direction: var(--direction);
@@ -134,12 +134,12 @@ input::-webkit-inner-spin-button {
   }
 }
 
-@keyframes scroll {
+@keyframes marquee-scroll {
   0% {
-    transform: translateX(0%);
+    transform: translate3d(0px, 0px, 0px);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translate3d(calc(-50% - 16px), 0px, 0px);
   }
 }
 

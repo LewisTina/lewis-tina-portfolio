@@ -25,14 +25,14 @@ const config: Config = {
       display: ["group-hover"],
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'cover-bg': "url('/foreground.svg')",
         'portfolio-cover-bg': "url('/Portfolio-cover-gradient.png')",
         'cover-glow': "url('/glow.svg')",
         'cover-noise': "url('/noise.svg')",
         'gradient-darkest': "linear-gradient(270deg, rgba(18, 18, 18, 1) 0%, rgba(18, 18, 18, 0.00) 50%, rgba(18, 18, 18, 1) 100%)",
         'gradient-white': "linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.00) 50%, rgba(255, 255, 255, 1) 100%)",
+        'yearXp': "linear-gradient(165deg, rgba(0,15,255,1) 45%, rgba(0, 0, 0, 1))",
       },
 
       'animation': {

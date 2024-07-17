@@ -1,7 +1,26 @@
-.aboutMarquee{
+.marqueeFrame {
+    -webkit-mask-image: linear-gradient(to right,rgba(0,0,0,0) 0%, rgb(255, 255, 255) 6%, rgb(255, 255, 255) 94%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to right,rgba(0,0,0,0) 0%, rgb(255, 255, 255) 6%, rgb(255, 255, 255) 94%, rgba(0,0,0,0) 100%);
+    padding-left: 4rem;
     --play: running; 
     --direction: normal; 
     --duration: 20s; 
     --delay: 5s; 
     --iteration-count: infinite;
+
+    &:hover {
+        --play: paused;
+    }
+}
+
+.aboutMarquee{
+    z-index: 1;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    font-size: max(1.5rem,min(3.5vw,2.25rem));
+}
+
+.yearXp {
+    background: linear-gradient(155deg, rgba(0,15,255,1) 45%, rgba(0, 0, 0, 1));
 }
