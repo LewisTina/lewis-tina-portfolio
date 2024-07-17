@@ -30,8 +30,8 @@ export default function Navbar(props: any){
                         </svg>
                 </Link>
 
-                <div className={`flex sm:w-full sm:flex-1 sm:justify-end sm:mr-2 dela-gothic-one`}>
-                    <div className="relative rounded-full h-10 bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl sm:hidden">
+                <div className={`flex md:w-full md:flex-1 md:justify-end md:mr-2 dela-gothic-one`}>
+                    <div className="relative rounded-full h-10 bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl md:hidden">
                         <div className={`absolute rounded-full h-full transition-all duration-300 bg-primary z-10`} id='selector'></div>
                         <NavBarLink path={"/"} label={"home"} action={()=> {setActive(0)}}/>
                         <NavBarLink path={"/#about"} label={"about"} action={()=> {setActive(1)}}/>

@@ -92,6 +92,7 @@ input::-webkit-inner-spin-button {
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   background-clip: content-box;
+  padding: 0 !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {
