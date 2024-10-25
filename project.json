@@ -1,36 +1,191 @@
 {
-"pkarenov": {
-        "logo": {
-            "link": "/pkarenov/logo_pka.svg", 
-            "alt": "Logo PKA Rénov"
-            },
-        "activities": "Novembre 2023",
-        "owner": "PKA Rénov EI",
-        "title": "PKA Rénov",
-        "cover": {
-            "link": "/pkarenov/PKARENOV_03.png", 
-            "alt": "pka rénov preview image"
-            },
-        "resume": {
-            "fr": "Développement et hébergement d'un site web de présentation d'une entreprise de rénovation française avec NextJs et déploiement vercel",
-            "en": "Development and hosting of a website presenting a French renovation company with NextJs and vercel deployment"
-        },
-        "introduction": {
-            "fr": "Il s'agit principalement du développement d'une landing page pour présenter les activités d'une entreprise rénovation, avec en pages annexes une politique de confidentialité, des conditions générales de ventes, et des mentions légales",
-            "en": "This mainly involves the development of a landing page to present the activities of a renovation company, with additional pages including a confidentiality policy, general conditions of sale, and legal notices."
-        },
-        "contribution": {
-            "fr": "Bien évidemment, on pourrait considérer qu'il s'agit simplement d'un site vitrine de présentation nécessitant uniquement une maquette et une intégration frontend. Néanmoins, il comporte également un formulaire de contact avec envoi automatique de courrier électronique, ce qui en fait un projet plus complet, même s'il intègre également une page d'API. Parmi les tâches, on peut citer :\n\n- Conception de la maquette UI/UX\n- Intégration full-stack Next.js\n- Déploiement sur Vercel\n- Configuration du DNS pour le nom de domaine.",
-            "en": "Of course, one could consider it a simple presentation website, requiring only mockup and front-end integration. However, it also includes a contact form with automatic email sending, making it a more comprehensive project, even though it also incorporates an API page. Tasks include:\n\n- UI/UX mockup design\n- Full-stack integration with Next.js\n- Deployment on Vercel\n- Domain name DNS configuration."
-        },
-        "contributionBlocImg": [{"link": "/pkarenov/PKARENOV_02.png", "alt": "pka rénov preview image 1"}, {"link": "/pkarenov/PKARENOV_01.png", "alt": "pka rénov preview image 2"}, {"link": "/pkarenov/Landing-Page -RETRACTED.png", "alt": "pka rénov preview image 2"}, {"link": "/pkarenov/pkarenov_full_landing_page.png", "alt": "pka rénov preview image 3"}],
-        "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "Versel", "Figma", "Adobe Illustrator"],
-        "technosBlocImg": [],
-        "githubLink":"https://github.com/LewisTina/pkarenov",
-        "behanceLink":"https://www.behance.net/gallery/185362625/Landing-page",
-        "projectLink":"https://www.pkarenov.fr/",
-        "projectCategories":"Dev Fullstack & UI Design"
+"jobm-landing": {
+    "logo": {
+        "link": "/jobm/jobm_logo.svg", 
+        "alt": "Logo JobM"
     },
+    "activities": "Sept 2024",
+    "owner": "CPG Consulting Sarl",
+    "title": "JobM's Landing page",
+    "cover": {
+        "link": "/jobm/jobm-home-mockup-laptop-cropped.jpeg", 
+        "alt": "JobM's Landing page preview image"
+        },
+    "resume": {
+        "fr": "Développement d'un site web de présentation d'un produit de la marque CPG Consulting. Il s'agit d'un outil de monitoring de tâches/jobs automatisées par des orchestrateurs ou des ordonnanceur de tâches.",
+        "en": "Development of a website to present a CPG Consulting product. This is a tool for monitoring tasks/jobs automated by orchestrators or task schedulers."
+    },
+    
+    "introduction": {
+        "fr": "Job M est un outil de monitoring de tâche conçu par la société CPG Consulting, cette Landing Page a pour but de présenter ce produit Job M avec la possibilité de demander une démo, elle a en pages annexes une politique de confidentialité, des conditions générales de ventes, et des mentions légales",
+        "en": "Job M is a task monitoring tool designed by CPG Consulting, this Landing Page aims to present this Job M product with the possibility of requesting a demo, it has additional pages including a privacy policy, general sales conditions, and legal notices."
+    },
+    "contribution": {
+        "fr": "Comme toute landing page moderne, en plus de la présentation du produit, elle comporte également un formulaire de contact avec envoi automatique de courrier électronique, ce qui en fait un projet plus complet, même s'il intègre également une page d'API. Parmi les tâches, on peut citer :\n\n- Conception de la maquette UI/UX\n- Intégration full-stack Next.js\n- Déploiement sur l'infra de la société CPG Consulting",
+        "en": "Like any modern landing page, in addition to the product presentation, it also includes a contact form with automatic email sending, making it a more comprehensive project, even though it also incorporates an API page. Tasks include:\n\n- UI/UX mockup design\n- Full-stack integration with Next.js\n- Deployment on CPG Consulting's infrastructure"
+    },
+    "contributionBlocImg": [{"link": "/jobm/jobm-home-mockup-laptop.jpg", "alt": "Job M Landing page image 1"}],
+    "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "Github", "gsap", "i18n", "Figma", "nodemailer"],
+    "technosBlocImg": [],
+    "projectLink":"https://www.jobm.fr/",
+    "projectCategories":"Dev Fullstack & UI Design"
+},
+
+"ach": {
+    "logo": {
+        "link": "/ach/ach.png", 
+        "alt": "Logo Alwan Color Hub"
+    },
+    "activities": "Mai - Juin 2024",
+    "owner": "Alwan Color Expertise",
+    "title": "Alwan Color Hub",
+    "cover": {
+        "link": "/ach/ach-sco-mockup-2.jpg", 
+        "alt": "Alwan Color Hub preview image"
+        },
+    "resume": {
+        "fr": "Intégration front-end de nouvelles fonctionnalités/interfaces pour une application de gestion et optimisation de couleurs avec gestion de librairies/palettes du groupe Alwan Color Expertise, avec portage d'une ancienne version d'application jQuery vers la stack NextJs en collaboration avec l'équipe active du groupe.",
+        "en": "Front-end integration of new functionalities/interfaces for a color management and optimization application with library/palette management for the Alwan Color Expertise group, with porting of an old jQuery application version to the NextJs stack in collaboration with the group's active team."
+    },
+    "introduction": {
+        "fr": "check",
+        "en": "check"
+    },
+    "contribution": {
+        "fr": "check",
+        "en": "check"
+    },
+    "contributionBlocImg": [],
+    "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "Github"],
+    "technosBlocImg": [],
+    "projectCategories":"Dev Frontend"
+},
+
+"lienou": {
+    "logo": {
+        "link": "/lienou/liénou_logo.svg", 
+        "alt": "Logo lienou group"
+    },
+    "activities": "Avril - Mai 2024",
+    "owner": "Lienou Group",
+    "title": "Lienou Group Store",
+    "cover": {
+        "link": "/lienou/tablet-lienou-mockup-home-cropped.jpg", 
+        "alt": "Lienou group preview image"
+        },
+    "resume": {
+        "fr": "Refonte visuelle d'un site web e-commerce wordpress avec intégration des moyens de paiements et mise en production",
+        "en": "Visual redesign of a wordpress e-commerce website with payment integration and production launch."
+    },
+    "introduction": {
+        "fr": "check",
+        "en": "check"
+    },
+    "contribution": {
+        "fr": "check",
+        "en": "check"
+    },
+    "contributionBlocImg": [],
+    "technos": ["Wordpress", "elementor", "woo commerce", "stripe", "paypal"],
+    "technosBlocImg": [],
+    "projectLink":"https://www.lienou.fr",
+    "projectCategories":"Dev Frontend"
+
+},
+
+"jobm": {
+    "logo": {
+        "link": "/jobm/jobm_logo.svg", 
+        "alt": "Logo JobM"
+    },
+    "activities": "Dec 2023 - Mars 2024",
+    "owner": "CPG Consulting Sarl",
+    "title": "JobM",
+    "cover": {
+        "link": "/jobm/jobm-events-mockup.jpg", 
+        "alt": "JobM App preview image"
+        },
+    "resume": {
+        "fr": "Développement d'un module API d'exposition des requêtes d'une application pour faciliter son exploitation de façon externe, avec création d'un module client front-end de monitoring et de définition des ressources utilisateur.",
+        "en": "Development of an API module for exposing an application's requests to facilitate external use, with the creation of a front-end client module for monitoring and defining user resources."
+    },
+    "introduction": {
+        "fr": "check",
+        "en": "check"
+    },
+    "contribution": {
+        "fr": "check",
+        "en": "check"
+    },
+    "contributionBlocImg": [],
+    "technos": ["Lua", "Tarantool DB", "MySQL", "NextJs", "ReactJs", "Typescript", "Node Js", "Github"],
+    "technosBlocImg": [],
+    "projectCategories":"Dev Fullstack & UI Design"
+},
+
+"acc": {
+    "logo": {
+        "link": "/acc/colorcloud.svg", 
+        "alt": "Logo Alwan Color Cloud"
+    },
+    "activities": "Mai - Juin 2024",
+    "owner": "Alwan Color Expertise",
+    "title": "Alwan Color Cloud",
+    "cover": {
+        "link": "/acc/colorcloud-mockup-laptop-cropped.jpg", 
+        "alt": "Alwan Color Cloud preview image"
+        },
+    "resume": {
+        "fr": "Intégration front-end de nouvelles fonctionnalités/interfaces pour une application du groupe Alwan Color Expertise anciennement disponible uniquement en version desktop vers une version web, avec une landing page à l'appuie en collaboration avec l'équipe active du groupe.",
+        "en": "Front-end integration of new functionalities/interfaces for an Alwan Color Expertise group application formerly available only in desktop version to a web version, supported by a landing page in collaboration with the group's active team."
+    },
+    "introduction": {
+        "fr": "check",
+        "en": "check"
+    },
+    "contribution": {
+        "fr": "check",
+        "en": "check"
+    },
+    "contributionBlocImg": [],
+    "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "Github"],
+    "technosBlocImg": [],
+    "projectLink":"https://colorcloud.alwancolor.com/",
+    "projectCategories":"Dev Frontend"
+},
+
+"pkarenov": {
+    "logo": {
+        "link": "/pkarenov/logo_pka.svg", 
+        "alt": "Logo PKA Rénov"
+    },
+    "activities": "Novembre 2023",
+    "owner": "PKA Rénov EI",
+    "title": "PKA Rénov",
+    "cover": {
+        "link": "/pkarenov/pka-mockup-tablet-cropped.jpg", 
+        "alt": "pka rénov preview image"
+        },
+    "resume": {
+        "fr": "Développement et hébergement d'un site web de présentation d'une entreprise de rénovation française avec NextJs et déploiement vercel",
+        "en": "Development and hosting of a website presenting a French renovation company with NextJs and vercel deployment"
+    },
+    "introduction": {
+        "fr": "Il s'agit principalement du développement d'une landing page pour présenter les activités d'une entreprise rénovation, avec en pages annexes une politique de confidentialité, des conditions générales de ventes, et des mentions légales",
+        "en": "This mainly involves the development of a landing page to present the activities of a renovation company, with additional pages including a confidentiality policy, general conditions of sale, and legal notices."
+    },
+    "contribution": {
+        "fr": "Bien évidemment, on pourrait considérer qu'il s'agit simplement d'un site vitrine de présentation nécessitant uniquement une maquette et une intégration frontend. Néanmoins, il comporte également un formulaire de contact avec envoi automatique de courrier électronique, ce qui en fait un projet plus complet, même s'il intègre également une page d'API. Parmi les tâches, on peut citer :\n\n- Conception de la maquette UI/UX\n- Intégration full-stack Next.js\n- Déploiement sur Vercel\n- Configuration du DNS pour le nom de domaine.",
+        "en": "Of course, one could consider it a simple presentation website, requiring only mockup and front-end integration. However, it also includes a contact form with automatic email sending, making it a more comprehensive project, even though it also incorporates an API page. Tasks include:\n\n- UI/UX mockup design\n- Full-stack integration with Next.js\n- Deployment on Vercel\n- Domain name DNS configuration."
+    },
+    "contributionBlocImg": [{"link": "/pkarenov/PKARENOV_02.png", "alt": "pka rénov preview image 1"}, {"link": "/pkarenov/PKARENOV_01.png", "alt": "pka rénov preview image 2"}, {"link": "/pkarenov/Landing-Page -RETRACTED.png", "alt": "pka rénov preview image 2"}, {"link": "/pkarenov/pkarenov_full_landing_page.png", "alt": "pka rénov preview image 3"}],
+    "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "Vercel", "Figma", "Adobe Illustrator"],
+    "technosBlocImg": [],
+    "githubLink":"https://github.com/LewisTina/pkarenov",
+    "behanceLink":"https://www.behance.net/gallery/185362625/Landing-page",
+    "projectLink":"https://www.pkarenov.fr/",
+    "projectCategories":"Dev Fullstack & UI Design"
+},
 "portfolio": {
         "logo": {
             "link": "/fav.svg", 
@@ -56,7 +211,7 @@
             "en": "Of course, one could consider it a simple presentation website, requiring only mockup and front-end integration. However, it also includes a contact form with automatic email sending, making it a more comprehensive project, even though it also incorporates an API page. Tasks include:\n\n- UI/UX mockup design\n- Full-stack integration with Next.js\n- Deployment on Vercel\n- Domain name DNS configuration."
         },
         "contributionBlocImg": [{"link": "/this_portfolio/Online_Portfolio_Mockup_2.png", "alt": "factauto preview image 1"}, {"link": "/this_portfolio/Online_Portfolio_Mockup_3.png", "alt": "factauto preview image 1"}],
-        "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "Versel", "Figma", "Adobe Illustrator"],
+        "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "Vercel", "Figma", "Adobe Illustrator"],
         "technosBlocImg": [],
         "githubLink":"https://github.com/LewisTina/lewis-tina-portfolio",
         "behanceLink":"https://www.behance.net/gallery/181857483/Personal-Landing-Page-with-some-project/",
@@ -64,36 +219,36 @@
         "projectCategories":"Dev Fullstack & UI Design"
     },
 "factauto": {
-        "logo": {
-            "link": "/Logo_FactAuto.png", 
-            "alt": "Logo FactAuto"
-            },
-        "activities": "Since 2022",
-        "owner": "FactAuto - France",
-        "title": "FactAuto",
-        "cover": {
-            "link": "/Clay_Mockup___10_.png", 
-            "alt": "factauto preview image"
-            },
-        "resume": {
-            "fr": "Conception d’une application d’invoicing avec aide à la comptabilité avec Next.js pour le front-end, Python et Node.js pour le back-end, ainsi que Flutter pour le mobile. Cette application a un suivi de déploiement basé sur des pipelines GitLab CI/CD.",
-            "en": "Design of an invoicing and accounting assistance application with Next.js for the front-end, Python and Node.js for the back-end, as well as Flutter for mobile. This application has a deployment tracking based on GitLab CI/CD pipelines."
+    "logo": {
+        "link": "/Logo_FactAuto.png", 
+        "alt": "Logo FactAuto"
         },
-        "introduction": {
-            "fr": "Ce projet vise à développer une application de facturation disponible sur plusieurs plateformes, incluant une application web ainsi qu'une application mobile hybride compatible avec Android et iOS. Ce projet est mis en œuvre selon une approche agile. Cette méthode permet d'ajuster et de modifier progressivement les étapes tout au long de la conception et du développement du projet, favorisant ainsi son évolution continue.",
-            "en": "This project aims to develop an invoicing application available on several platforms, including a web application as well as a hybrid mobile application compatible with Android and iOS. This project is implemented using an agile approach. This method allows steps to be gradually adjusted and modified throughout the design and development of the project, thus promoting its continuous evolution."
+    "activities": "Since 2022",
+    "owner": "FactAuto - France",
+    "title": "FactAuto",
+    "cover": {
+        "link": "/Clay_Mockup___10_.png", 
+        "alt": "factauto preview image"
         },
-        "contribution": {
-            "fr": "Sur ce projet, la méthodologie Agile a été adoptée, étant donné qu'il a été développé par une équipe de deux développeurs. Dans ce contexte, j'ai endossé plusieurs rôles, notamment ceux de Scrum Master, Web Designer et Développeur Fullstack.\n \n Mes responsabilités étaient variées et touchaient différents domaines. Plus précisément, j'ai accompli les tâches suivantes :\n- Mener l'étude et l'analyse approfondies du projet;\n- Rédiger le cahier des charges en tant que client, ainsi que le cahier des charges fonctionnel en qualité de Scrum Master;\n- Concevoir graphiquement différents aspects de l'identité visuelle, allant du logo aux maquettes et prototypes UI-UX;\n- Assurer le développement Front-End pour l'ensemble de la version web;\n- Développer des webservices en tant que composantes externes utilisés par l’application, tel qu’un service de mailing pour l’envoie des différents e-mail de l’application, un service de génération de pdf appelés par des requêtes https;\n- La gestion des pipeline avec GitLab CI/CD pour le suivi et le déploiement des version de l’application;\n- Mettre en œuvre le développement hybride avec Flutter.",
-            "en": "On this project, the Agile methodology was adopted, given that it was developed by a team of two developers. In this context, I took on several roles, including those of Scrum Master, Web Designer and Fullstack Developer.\n \n My responsibilities were varied and touched different areas. More precisely, I accomplished the following tasks:\n- Conduct the in-depth study and analysis of the project;\n- Write the specifications as a client, as well as the functional specifications as Scrum Master;\n- Graphically design different aspects of the visual identity, ranging from the logo to UI-UX models and prototypes;\n- Ensure Front-End development for the entire web version;\n- Develop webservices as external components used by the application, such as a mailing service for sending the application's various e-mails, a PDF generation service called by https requests;\n- Management of pipeline with GitLab CI/CD for monitoring and deployment of application versions; - Implement hybrid development with Flutter."
-        },
-        "contributionBlocImg": [{"link": "/factauto/Visuel_Doc_FactAuto.png", "alt": "factauto preview image 1"}, {"link": "/factauto/FactAuto_introduicing.png", "alt": "factauto preview image 3"}, {"link": "/factauto/Visuel_App_FactAuto.png", "alt": "factauto preview image 2"}],
-        "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "flutter", "Python", "Gitlab CI/CD", "Figma", "Adobe Illustrator"],
-        "technosBlocImg": [],
-        "behanceLink":"https://www.behance.net/lewistinaab/",
-        "projectLink":"https://www.factauto.com/",
-        "projectCategories":"Dev Fullstack & UI Design"
+    "resume": {
+        "fr": "Conception d’une application d’invoicing avec aide à la comptabilité avec Next.js pour le front-end, Python et Node.js pour le back-end, ainsi que Flutter pour le mobile. Cette application a un suivi de déploiement basé sur des pipelines GitLab CI/CD.",
+        "en": "Design of an invoicing and accounting assistance application with Next.js for the front-end, Python and Node.js for the back-end, as well as Flutter for mobile. This application has a deployment tracking based on GitLab CI/CD pipelines."
     },
+    "introduction": {
+        "fr": "Ce projet vise à développer une application de facturation disponible sur plusieurs plateformes, incluant une application web ainsi qu'une application mobile hybride compatible avec Android et iOS. Ce projet est mis en œuvre selon une approche agile. Cette méthode permet d'ajuster et de modifier progressivement les étapes tout au long de la conception et du développement du projet, favorisant ainsi son évolution continue.",
+        "en": "This project aims to develop an invoicing application available on several platforms, including a web application as well as a hybrid mobile application compatible with Android and iOS. This project is implemented using an agile approach. This method allows steps to be gradually adjusted and modified throughout the design and development of the project, thus promoting its continuous evolution."
+    },
+    "contribution": {
+        "fr": "Sur ce projet, la méthodologie Agile a été adoptée, étant donné qu'il a été développé par une équipe de deux développeurs. Dans ce contexte, j'ai endossé plusieurs rôles, notamment ceux de Scrum Master, Web Designer et Développeur Fullstack.\n \n Mes responsabilités étaient variées et touchaient différents domaines. Plus précisément, j'ai accompli les tâches suivantes :\n- Mener l'étude et l'analyse approfondies du projet;\n- Rédiger le cahier des charges en tant que client, ainsi que le cahier des charges fonctionnel en qualité de Scrum Master;\n- Concevoir graphiquement différents aspects de l'identité visuelle, allant du logo aux maquettes et prototypes UI-UX;\n- Assurer le développement Front-End pour l'ensemble de la version web;\n- Développer des webservices en tant que composantes externes utilisés par l’application, tel qu’un service de mailing pour l’envoie des différents e-mail de l’application, un service de génération de pdf appelés par des requêtes https;\n- La gestion des pipeline avec GitLab CI/CD pour le suivi et le déploiement des version de l’application;\n- Mettre en œuvre le développement hybride avec Flutter.",
+        "en": "On this project, the Agile methodology was adopted, given that it was developed by a team of two developers. In this context, I took on several roles, including those of Scrum Master, Web Designer and Fullstack Developer.\n \n My responsibilities were varied and touched different areas. More precisely, I accomplished the following tasks:\n- Conduct the in-depth study and analysis of the project;\n- Write the specifications as a client, as well as the functional specifications as Scrum Master;\n- Graphically design different aspects of the visual identity, ranging from the logo to UI-UX models and prototypes;\n- Ensure Front-End development for the entire web version;\n- Develop webservices as external components used by the application, such as a mailing service for sending the application's various e-mails, a PDF generation service called by https requests;\n- Management of pipeline with GitLab CI/CD for monitoring and deployment of application versions; - Implement hybrid development with Flutter."
+    },
+    "contributionBlocImg": [{"link": "/factauto/Visuel_Doc_FactAuto.png", "alt": "factauto preview image 1"}, {"link": "/factauto/FactAuto_introduicing.png", "alt": "factauto preview image 3"}, {"link": "/factauto/Visuel_App_FactAuto.png", "alt": "factauto preview image 2"}],
+    "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "flutter", "Python", "Gitlab CI/CD", "Figma", "Adobe Illustrator"],
+    "technosBlocImg": [],
+    "behanceLink":"https://www.behance.net/lewistinaab/",
+    "projectLink":"https://www.factauto.com/",
+    "projectCategories":"Dev Fullstack & UI Design"
+},
 
 "cadys": {
         "logo": {
@@ -158,90 +313,31 @@
     },
 
 "back_to_school": {
-        "logo": "",
-        "activities": "Freelance 2020 - 2021",
-        "owner": "TinArt",
-        "title": "Back To school",
-        "cover": {
-            "link": "/backToSchool/Chemise_TinArt_Back_To_School-08.png", 
-            "alt": "Back to school preview image"
-            },
-        "resume": {
-            "fr": "Conception graphique d'objets de présentation publicitaire (goodies) pour une marque à l'occasion de la rentrée scolaire.",
-            "en": "Graphic design of advertising presentation items (goodies) for a brand during the back-to-school season."
-        },
-        "introduction": {
-            "fr": "Il s’agit de la conception de chemise à rabats en édition Back To School pour la communication habituelle de la marque. Ce projet vise à concevoir une maquette dans le thème de la rentrée suivant les couleurs de l’entreprise tout en respectant les dimensions imprimables.",
-            "en": "This is the Back To School edition flap set design for the usual brand communication. This project aims to design a model in the back-to-school theme following the company's colors while respecting the printable dimensions."
-        },
-        "contribution": {
-            "fr": "Conception de maquettes et soumission de fichiers vectoriels avec présentation de mockups.",
-            "en": "Design of mockups and submission of vector files with mockup presentation."
-        },
-        "contributionBlocImg": [ {"link": "/backToSchool/Chemise_TinArt_Back_To_School-04.png", "alt": "Back to school preview image 2"}, {"link": "/backToSchool/Chemise_Rabat_TinArt.png", "alt": "Back to school preview image 1"}],
-        "technos": ["Adobe Illustrator", "Adobe Photoshop"],
-        "technosBlocImg": [],
-        "behanceLink":"https://www.behance.net/gallery/139347065/Flyers-carte-de-visite-mockup/",
-        "projectCategories":"Banding & Graphic design"
-    },
-
-"bedrine_game": {
-        "logo": "",
-        "activities": "Juin - Août 2023",
-        "owner": "BedrineDev - France",
-        "title": "BedrineGame",
-        "cover": {
-            "link": "/bedrinegame.png", 
-            "alt": "BedrineGame preview image"
-            },
-        "resume": {
-            "fr": "Conception de maquettes de la page d'accueil et intégration d'une fonctionnalité avec React JS pour un jeu de société grandeur nature.",
-            "en": "Design of landing page mockups and integration of a feature with React JS for a live-action board game."
-        },
-        "introduction": {
-            "fr": "Pour le lancement d'une filiale de jeux au sein de la structure, un nouveau service de jeu de société basé sur deux thèmes (mystère et horreur) est mis en place. On nous demande de créer un site web de présentation avec un formulaire de contact pour faciliter la communication digitale de ce service et la prise de rendez-vous liée à celui-ci.",
-            "en": "For the launch of a subsidiary game service within the organization, a new board game service based on two themes (mystery and horror) is being established. We are tasked with creating a presentation website with a contact form to facilitate the digital communication of this service and related appointment scheduling."
-        },
-        "contribution": {
-            "fr": "Dans le cadre de ce projet de stage effectué en groupe, je propose des maquettes et des prototypes intégrés par d'autres développeurs. J'interviens également pour l'intégration d'une section au sein du site, ainsi que pour l'API de messagerie et son intégration front-end avec react-hook-form.",
-            "en": "In the context of this group internship project, I provide mockups and prototypes integrated by other developers. I also work on the integration of a section within the site, as well as the messaging API and its front-end integration with react-hook-form."
-        },
-        "contributionBlocImg": [ {"link": "/bedrineGame/bedrinegame_landing-1.png", "alt": "Back to school preview image 2"}, {"link": "/bedrineGame/bedrinegame_landing.png",  "alt": "Back to school preview image 1"}],
-        "technos": ["Next Js", "Typescript", "Javascript", "Node Js", "Figma"],
-        "technosBlocImg": [],
-        "githubLink":"https://github.com/bedrinedev/bedrinegame/tree/AventureTicet/web/src/components/Tickets",
-        "projectCategories":"Dev Font-end & UI Design"
-    },
-
-"say_it": {
-    "logo": {
-        "link": "/sayIt/SayIT_Logo_Dark.png", 
-        "alt": "Logo Cadys"
-        },
-    "activities": "Mai - Juin 2023",
-    "owner": "SayIt - Belgique",
-    "title": "SayIt",
+    "logo": "",
+    "activities": "Freelance 2020 - 2021",
+    "owner": "TinArt",
+    "title": "Back To school",
     "cover": {
-        "link": "/sayit.png", 
-        "alt": "BedrineGame preview image"
+        "link": "/backToSchool/Chemise_TinArt_Back_To_School-08.png", 
+        "alt": "Back to school preview image"
         },
-        
     "resume": {
-        "fr": "Conception UI d'une application de communication sous forme de réseau social similaire à Twitter dans le cadre de la réalisation d'un projet académique par un groupe d'étudiants en vue de l'obtention de leur licence en développement back-end.",
-        "en": "UI design of a social networking communication application similar to Twitter, as part of an academic project by a group of students aiming to obtain their backend development degree."
+        "fr": "Conception graphique d'objets de présentation publicitaire (goodies) pour une marque à l'occasion de la rentrée scolaire.",
+        "en": "Graphic design of advertising presentation items (goodies) for a brand during the back-to-school season."
     },
     "introduction": {
-        "fr": "Dans le cadre de la réalisation de leur projet de fin d'études en développement back-end, des étudiants font appel à moi pour proposer des maquettes afin d'obtenir des prototypes à intégrer dans les différentes opérations de leurs utilisateurs.",
-        "en": "As part of their end-of-studies project in backend development, students turn to me to provide mockups to obtain prototypes for integration into their users' operations."
+        "fr": "Il s’agit de la conception de chemise à rabats en édition Back To School pour la communication habituelle de la marque. Ce projet vise à concevoir une maquette dans le thème de la rentrée suivant les couleurs de l’entreprise tout en respectant les dimensions imprimables.",
+        "en": "This is the Back To School edition flap set design for the usual brand communication. This project aims to design a model in the back-to-school theme following the company's colors while respecting the printable dimensions."
     },
     "contribution": {
-        "fr": "Sur ce projet, j'interviens en tant que designer web UX pour proposer des maquettes et des prototypes pour les différents parcours utilisateurs de leurs applications web et mobiles. Je fournis donc :\n\n - Un logo utilisable sur le web et en tant qu'icône d'application;\n - Des maquettes pour les différents parcours mobiles;\n - Des maquettes pour ces parcours dans la version web également.\n - Des designs d'e-mails conformes à l'image de la marque pour les différentes interactions utilisateur.",
-        "en": "In this project, I am involved as a web UX designer to provide mockups and prototypes for the different user journeys of their web and mobile applications. Therefore, I provide:\n\n - A logo usable on the web and as an application icon;\n - Mockups for the various mobile journeys;\n - Mockups for these journeys in the web version as well.\n - Email designs consistent with the brand image for various user interactions."
+        "fr": "Conception de maquettes et soumission de fichiers vectoriels avec présentation de mockups.",
+        "en": "Design of mockups and submission of vector files with mockup presentation."
     },
-    "contributionBlocImg": [ {"link": "/sayIt/say-it-3.png", "alt": "Back to school preview image 1"}, {"link": "/sayIt/say-it-2.png",  "alt": "Back to school preview image 2"}, {"link": "/sayIt/say-it-1.png",  "alt": "Back to school preview image 3"}],
-    "technos": ["Figma", "Adobe Illustrator"],
+    "contributionBlocImg": [ {"link": "/backToSchool/Chemise_TinArt_Back_To_School-04.png", "alt": "Back to school preview image 2"}, {"link": "/backToSchool/Chemise_Rabat_TinArt.png", "alt": "Back to school preview image 1"}],
+    "technos": ["Adobe Illustrator", "Adobe Photoshop"],
     "technosBlocImg": [],
-    "projectCategories":"UI Design"
+    "behanceLink":"https://www.behance.net/gallery/139347065/Flyers-carte-de-visite-mockup/",
+    "projectCategories":"Banding & Graphic design"
 },
 
 "business_card": {

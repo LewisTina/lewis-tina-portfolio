@@ -100,38 +100,38 @@ const ParallaxEffect = (props: { isAppOrDesign: "app" | "design" } ) => {
         </div>
         <div className="flex aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full my-2 sm:my-0 sm:flex-col" id="portfolio-second">
             <div ref={c.ref} className="flex rounded-2xl h-full w-[41%] sm:w-full sm:aspect-square sm:mb-4 bg-light-grey/25 border-2 border-light-grey/25 mr-4 overflow-hidden">
-                <ProjectPreview data={finalProject["say_it"]} id={'say_it'}/>
+                <ProjectPreview data={finalProject["lienou"]} id={'lienou'}/>
             </div>
             <div ref={d.ref} className="flex rounded-2xl h-full w-[59%] sm:w-full sm:aspect-square sm:mb-4 bg-light-grey/25 border-2 border-light-grey/25 overflow-hidden">
-                <ProjectPreview data={finalProject["cadys"]} id={'cadys'}/>
-            </div>
+                <ProjectPreview data={finalProject["acc"]} id={'acc'}/>
+              </div>
         </div>
         <div className="flex h-48 w-full my-2 md:flex-wrap md:h-[unset]" id="portfolio-third">
             <div ref={e.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/3.6)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25 mr-2 md:mb-4">
                 <Image  
-                    src="/Mockup-CP-Dash-06.png"
+                    src="/sayit.png"
                     alt = "Say IT project visual"
                     className='object-cover'
                     fill/>
             </div>
             <div ref={f.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/3.6)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25 mr-2 md:mb-4 md:mr-0">
                 <Image  
-                    src="/cadys_login.png"
-                    alt = "Say IT project visual"
+                    src="/cadys/cadys_dashboard-0.png"
+                    alt = "Cadys project visual"
                     className='object-cover'
                     fill/>
             </div>
             <div ref={g.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/3.6)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25 mr-2 md:mb-4">
                 <Image  
                     src="/factauto.png"
-                    alt = "Say IT project visual"
+                    alt = "Factauto project visual"
                     className='object-cover object-right-top'
                     fill/>
             </div>
             <div ref={h.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/5.5)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25 md:mb-4">
                 <Image  
                     src="/abri_solidaire.png"
-                    alt = "Say IT project visual"
+                    alt = "abri solidaire project visual"
                     className='object-cover'
                     fill/>
             </div>

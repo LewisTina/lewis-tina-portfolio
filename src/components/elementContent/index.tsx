@@ -60,7 +60,6 @@ export default function Content (props: {data: ProjectProps}) {
                                 height={500}
                                 sizes="100vw"
                                 className={"min-h-full h-full md:min-h-[unset] md:h-auto md:w-full w-auto object-cover object-left"}/>
-
                         </div>
                     </div>
 
@@ -70,45 +69,49 @@ export default function Content (props: {data: ProjectProps}) {
                                 {title}
                             </h2>
 
-                            <span className="py-1 px-4 inline-block text-white rounded-full bg-secondary mt-4">
+                            <span className="py-1 px-4 inline-block text-primary text-xs rounded-full bg-primary/10 mt-4">
                                 {projectCategories}
                             </span>
 
-                            <p className="py-4  text-justify hyphens-auto spacing word-spacing">
+                            <p className="py-4 md:text-justify md:hyphens-auto text-base">
                                 {introduction[locale]}
                             </p>
                         </div>
-
-                        <div className="p-4 w-full border-t-2 border-light-grey/50 flex flex-wrap justify-start items-center">
-                            {
-                                behanceLink &&
-                                <Link target="_blank" rel="noreferrer" href={behanceLink} className="dark:bg-white bg-dark-grey dark:text-darkest text-white rounded-full mr-4 flex justify-center items-center h-10 aspect-square">
-                                    <i className="text-xl fa fa-behance transition"></i>
-                                </Link>
-                            }
-                            
-                            {
-                                githubLink &&
-                                <Link target="_blank" rel="noreferrer" href={githubLink} className="dark:bg-white bg-dark-grey dark:text-darkest text-white rounded-full mr-4 flex justify-center items-center h-10 aspect-square">
-                                    <i className="text-3xl fa fa-github transition"></i>
-                                </Link>
-                            }
-
-                            {
-                                projectLink &&
-                                <a href={projectLink} target="_blank">
-                                    <CustomButton 
-                                        rightIcon={
-                                            <span className="material-symbols-outlined pl-4">&#xf8ce;</span>
-                                        }
-                                        bgColor={"dark:bg-white bg-dark-grey"} 
-                                        color={"dark:text-darkest text-white"} 
-                                        className={"my-0"}
-                                        label={t("go_to", {project_name: title})} 
-                                        action={undefined}/>
-                                </a>
-                            }
-                        </div>
+                        {
+                            !behanceLink && !githubLink && !projectLink ?
+                            <></>
+                            :
+                            <div className="p-4 w-full border-t-2 border-light-grey/50 flex flex-wrap justify-start items-center">
+                                {
+                                    behanceLink &&
+                                    <Link target="_blank" rel="noreferrer" href={behanceLink} className="dark:bg-white bg-dark-grey dark:text-darkest text-white rounded-full mr-4 flex justify-center items-center h-10 aspect-square">
+                                        <i className="text-xl fa fa-behance transition"></i>
+                                    </Link>
+                                }
+                                
+                                {
+                                    githubLink &&
+                                    <Link target="_blank" rel="noreferrer" href={githubLink} className="dark:bg-white bg-dark-grey dark:text-darkest text-white rounded-full mr-4 flex justify-center items-center h-10 aspect-square">
+                                        <i className="text-3xl fa fa-github transition"></i>
+                                    </Link>
+                                }
+    
+                                {
+                                    projectLink &&
+                                    <a href={projectLink} target="_blank">
+                                        <CustomButton 
+                                            rightIcon={
+                                                <span className="material-symbols-outlined pl-4">&#xf8ce;</span>
+                                            }
+                                            bgColor={"dark:bg-white bg-dark-grey"} 
+                                            color={"dark:text-darkest text-white"} 
+                                            className={"my-0"}
+                                            label={t("go_to", {project_name: title})} 
+                                            action={undefined}/>
+                                    </a>
+                                }
+                            </div>
+                        }
                         
                     </div>
                 </div>
@@ -120,12 +123,12 @@ export default function Content (props: {data: ProjectProps}) {
                             </h2>  
                     </div>
 
-                    <div className="p-4 w-2/5 lg:w-4/5 md:w-full lg:border-r-0 border-r-2 md:pt-0 border-light-grey/50 text-justify hyphens-auto word-spacing">
+                    <div className="p-4 w-2/5 lg:w-4/5 md:w-full lg:border-r-0 border-r-2 md:pt-0 border-light-grey/50 md:text-justify md:hyphens-auto">
                         <div className="w-full relative ">
                             <h2 className=" text-7xl coolvetica capitalize">
                                 {t('my_contributions')}
                             </h2> 
-                            <p className="py-4">
+                            <p className="py-4 text-base">
                                 {contribution[locale]}
                             </p>
 

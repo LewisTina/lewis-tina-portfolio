@@ -1,9 +1,10 @@
 import projects from '../../../../project.json'
 import Image from "next/image"
 import { useRouter } from "next/router"
-import { useState } from "react"
 import CustomButton from "@/components/button"
 import useTranslation from "next-translate/useTranslation"
+import Link from 'next/link'
+import { ProjectProps } from '@/components/types'
 
 export default function Listing(){
     const finalProject = projects
@@ -13,23 +14,34 @@ export default function Listing(){
     const locale = router.locale as "en" | "fr"
 
     return(
-        <section className={`flex flex-col items-center justify-start py-20 pb-52`} id="my_project">
+        <section className={`flex flex-col items-center justify-start py-40 pb-52`} id="my_project">
             <div className={` flex flex-col justify-start relative items-start max-w-[1535px] w-full rounded-3xl px-10 md:px-4 lg:px-6 text-darkest dark:text-white`}>
-                <div className={`w-full flex flex-wrap justify-start relative items-start`}>
+                <div className={`w-full flex flex-col justify-start relative items-start gap-4`}>
                     {
                             Object.keys(projects).map((_keyName) => {
                                 const keyName = _keyName as projectKey
+                                const project = finalProject[keyName] as ProjectProps
+                                const {
+                                    title,
+                                    cover,
+                                    resume,
+                                    projectCategories,
+                                    behanceLink,
+                                    githubLink,
+                                    projectLink
+                                } = project
                                 return (
                                     <>
-                                    <div className="w-full h-auto border-2 border-light-grey/50 lg:h-[unset] sm:w-full lg:w-[cal(50%-0.5rem)] relative mt-4 mr-4 sm:mr-0 overflow-hidden cursor-pointer group" onClick={()=>{router.push(`visualisation?id=${keyName}`)}}>
-                                        <div className="flex w-full relative md:flex-col">
-                                        <div className="p-4 border-r-2 border-light-grey/50 md:border-r-0 md:border-b-2 w-full max-w-md md:max-w-none h-auto flex">
+                                    <div className="w-full h-auto border-2 border-light-grey/50 lg:h-[unset] sm:w-full relative overflow-hidden cursor-pointer" onClick={()=>{router.push(`visualisation?id=${keyName}`)}}>
+                                        <div className="grid grid-cols-[1fr,1.25fr] w-full relative lg:grid-cols-[1fr,1fr] md:grid-cols-1">
+                                        <div className="p-4 border-r-2 border-light-grey/50 md:border-r-0 md:border-b-2 w-full h-auto flex group">
                                             <div className="h-full w-full relative">
                                                 <Image  
-                                                    src={finalProject[keyName]?.cover?.link}
-                                                    alt = {finalProject[keyName]?.cover?.alt}
-                                                    width={500}
-                                                    height={500}/>
+                                                    src={cover?.link}
+                                                    alt = {cover?.alt}
+                                                    className='h-full w-full object-cover object-left-top'
+                                                    width={1000}
+                                                    height={1000}/>
 
                                                     <div className="z-90 absolute transition-all group-hover:h-full group-hover:opacity-100 opacity-0 h-0 flex items-center justify-center w-full bg-white dark:bg-darkest bottom-0 p-2">
                                                         <h4 className=''>
@@ -48,20 +60,56 @@ export default function Listing(){
                                             </div>
                                         </div>
 
-                                        <div className="flex flex-col justify-between w-full">
-                                            <div className="p-4">
+                                        <div className="flex flex-col w-full">
+                                            <div className="p-12 lg:p-4 flex flex-col gap-4 justify-center items-start self-stretch flex-1">
                                                 <h2 className=" text-7xl coolvetica">
-                                                    {finalProject[keyName]?.title} 
+                                                    {title} 
                                                 </h2>
 
-                                                <span className="py-1 px-4 inline-block text-white rounded-full bg-secondary mt-4">
-                                                    {finalProject[keyName]?.projectCategories}
+                                                <span className="py-1 px-4 inline-block text-primary text-xs rounded-full bg-primary/10">
+                                                    {projectCategories}
                                                 </span>
 
-                                                <p className="py-4  text-justify hyphens-auto spacing word-spacing">
-                                                    {finalProject[keyName]?.resume[locale]}
+                                                <p className="md:text-justify md:hyphens-auto text-base">
+                                                    {resume?.[locale]}
                                                 </p>
                                             </div>
+                                            {
+                                                !behanceLink && !githubLink && !projectLink ?
+                                                <></>
+                                                :
+                                                <div className="px-12 py-4 w-full border-t-2 border-light-grey/50 flex flex-wrap justify-start items-center">
+                                                    {
+                                                        behanceLink &&
+                                                        <Link target="_blank" rel="noreferrer" href={behanceLink} className="dark:bg-white bg-dark-grey dark:text-darkest text-white rounded-full mr-4 flex justify-center items-center h-10 aspect-square">
+                                                            <i className="text-xl fa fa-behance transition"></i>
+                                                        </Link>
+                                                    }
+                                                    
+                                                    {
+                                                        githubLink &&
+                                                        <Link target="_blank" rel="noreferrer" href={githubLink} className="dark:bg-white bg-dark-grey dark:text-darkest text-white rounded-full mr-4 flex justify-center items-center h-10 aspect-square">
+                                                            <i className="text-3xl fa fa-github transition"></i>
+                                                        </Link>
+                                                    }
+
+                                                    {
+                                                        projectLink &&
+                                                        <a href={projectLink} target="_blank">
+                                                            <CustomButton 
+                                                                rightIcon={
+                                                                    <span className="material-symbols-outlined pl-4">&#xf8ce;</span>
+                                                                }
+                                                                bgColor={"dark:bg-white bg-dark-grey"} 
+                                                                color={"dark:text-darkest text-white"} 
+                                                                className={"my-0"}
+                                                                label={t("go_to", {project_name: title})} 
+                                                                action={undefined}/>
+                                                        </a>
+                                                    }
+                                                </div>
+                                            }
+
                                             </div>
                                             
                                         </div>

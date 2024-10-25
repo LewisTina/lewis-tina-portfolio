@@ -1,0 +1,61 @@
+{
+
+    "bedrine_game": {
+        "logo": "",
+        "activities": "Juin - Août 2023",
+        "owner": "BedrineDev - France",
+        "title": "BedrineGame",
+        "cover": {
+            "link": "/bedrinegame.png", 
+            "alt": "BedrineGame preview image"
+            },
+        "resume": {
+            "fr": "Conception de maquettes de la page d'accueil et intégration d'une fonctionnalité avec React JS pour un jeu de société grandeur nature.",
+            "en": "Design of landing page mockups and integration of a feature with React JS for a live-action board game."
+        },
+        "introduction": {
+            "fr": "Pour le lancement d'une filiale de jeux au sein de la structure, un nouveau service de jeu de société basé sur deux thèmes (mystère et horreur) est mis en place. On nous demande de créer un site web de présentation avec un formulaire de contact pour faciliter la communication digitale de ce service et la prise de rendez-vous liée à celui-ci.",
+            "en": "For the launch of a subsidiary game service within the organization, a new board game service based on two themes (mystery and horror) is being established. We are tasked with creating a presentation website with a contact form to facilitate the digital communication of this service and related appointment scheduling."
+        },
+        "contribution": {
+            "fr": "Dans le cadre de ce projet de stage effectué en groupe, je propose des maquettes et des prototypes intégrés par d'autres développeurs. J'interviens également pour l'intégration d'une section au sein du site, ainsi que pour l'API de messagerie et son intégration front-end avec react-hook-form.",
+            "en": "In the context of this group internship project, I provide mockups and prototypes integrated by other developers. I also work on the integration of a section within the site, as well as the messaging API and its front-end integration with react-hook-form."
+        },
+        "contributionBlocImg": [ {"link": "/bedrineGame/bedrinegame_landing-1.png", "alt": "Back to school preview image 2"}, {"link": "/bedrineGame/bedrinegame_landing.png",  "alt": "Back to school preview image 1"}],
+        "technos": ["Next Js", "Typescript", "Javascript", "Node Js", "Figma"],
+        "technosBlocImg": [],
+        "githubLink":"https://github.com/bedrinedev/bedrinegame/tree/AventureTicet/web/src/components/Tickets",
+        "projectCategories":"Dev Font-end & UI Design"
+    },
+
+    "say_it": {
+        "logo": {
+            "link": "/sayIt/SayIT_Logo_Dark.png", 
+            "alt": "Logo Cadys"
+            },
+        "activities": "Mai - Juin 2023",
+        "owner": "SayIt - Belgique",
+        "title": "SayIt",
+        "cover": {
+            "link": "/sayit.png", 
+            "alt": "BedrineGame preview image"
+            },
+            
+        "resume": {
+            "fr": "Conception UI d'une application de communication sous forme de réseau social similaire à Twitter dans le cadre de la réalisation d'un projet académique par un groupe d'étudiants en vue de l'obtention de leur licence en développement back-end.",
+            "en": "UI design of a social networking communication application similar to Twitter, as part of an academic project by a group of students aiming to obtain their backend development degree."
+        },
+        "introduction": {
+            "fr": "Dans le cadre de la réalisation de leur projet de fin d'études en développement back-end, des étudiants font appel à moi pour proposer des maquettes afin d'obtenir des prototypes à intégrer dans les différentes opérations de leurs utilisateurs.",
+            "en": "As part of their end-of-studies project in backend development, students turn to me to provide mockups to obtain prototypes for integration into their users' operations."
+        },
+        "contribution": {
+            "fr": "Sur ce projet, j'interviens en tant que designer web UX pour proposer des maquettes et des prototypes pour les différents parcours utilisateurs de leurs applications web et mobiles. Je fournis donc :\n\n - Un logo utilisable sur le web et en tant qu'icône d'application;\n - Des maquettes pour les différents parcours mobiles;\n - Des maquettes pour ces parcours dans la version web également.\n - Des designs d'e-mails conformes à l'image de la marque pour les différentes interactions utilisateur.",
+            "en": "In this project, I am involved as a web UX designer to provide mockups and prototypes for the different user journeys of their web and mobile applications. Therefore, I provide:\n\n - A logo usable on the web and as an application icon;\n - Mockups for the various mobile journeys;\n - Mockups for these journeys in the web version as well.\n - Email designs consistent with the brand image for various user interactions."
+        },
+        "contributionBlocImg": [ {"link": "/sayIt/say-it-3.png", "alt": "Back to school preview image 1"}, {"link": "/sayIt/say-it-2.png",  "alt": "Back to school preview image 2"}, {"link": "/sayIt/say-it-1.png",  "alt": "Back to school preview image 3"}],
+        "technos": ["Figma", "Adobe Illustrator"],
+        "technosBlocImg": [],
+        "projectCategories":"UI Design"
+    }
+}
