@@ -114,7 +114,7 @@ export default function HireMe(props: any) {
     
 
     return(
-        <section className={`bg-custom-light-gray dark:bg-dark-grey w-full flex justify-center mt-20 px-10 md:px-4 lg:px-6 py-32 lg:pt-16 overflow-hidden`} id="hire_me">
+        <section className={`bg-gradient-to-b from-custom-light-gray dark:from-dark-grey from-35% to-white/0 w-full flex justify-center mt-20 px-10 md:px-4 lg:px-6 py-32 lg:pt-16 overflow-hidden`} id="hire_me">
             <div className={`max-w-[1535px] flex w-full h-auto lg:flex-col lg:justify-start lg:items-start`}>
             <div className={`w-2/6 lg:w-full flex flex-col justify-start`}>
                 <h2 className="text-4xl capitalize w-full">

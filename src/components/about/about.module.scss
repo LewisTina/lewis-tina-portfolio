@@ -34,14 +34,8 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: #000;
         transform: rotate(-8deg);
         z-index: -1;
-        @apply bg-custom-light-gray rounded-lg
+        @apply rounded-xl
     }
-}
-
-.geekMemoji img {
-    width: 100%;
-    @apply shadow-lg rounded-xl
 }

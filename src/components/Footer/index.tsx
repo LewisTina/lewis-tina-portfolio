@@ -7,8 +7,8 @@ import VisitCard from "./visitCard";
 export default function Footer(props: any) {
     const {t} = useTranslation('common')
     return(
-        <footer className="w-full flex flex-col justify-center bg-primary dark:bg-black text-white px-10 md:px-4 lg:px-6 relative">
-            <div className={`${styles.contactFrame} bg-primary dark:bg-black before:bg-custom-light-gray before:dark:bg-dark-grey after:bg-custom-light-gray after:dark:bg-dark-grey`}>
+        <footer className="w-full flex flex-col justify-center items-center bg-primary dark:bg-black text-white px-10 md:px-4 lg:px-6 relative">
+            <div className={`${styles.contactFrame} bg-primary dark:bg-black before:bg-white before:dark:bg-darkest after:bg-white after:dark:bg-darkest`}>
                 <div className={`${styles.fakeBand} bg-primary dark:bg-black`}></div>
                 <VisitCard/>
             </div>

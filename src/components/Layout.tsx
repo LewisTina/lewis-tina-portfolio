@@ -1,5 +1,7 @@
 import Head from 'next/head'
-
+import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
 interface LayoutProps {
     title?: string,
     children: React.ReactNode;
@@ -28,7 +30,9 @@ const Layout = (props: LayoutProps) => {
                 <meta name="description" content="Lewis tina's presentation site and portfolio" />
                 <meta name="keywords" content="lewis - tina - Lewis TINA - ABOUTOU - Pierre - Pierre Lewis - Pierre TINA - ABOUTOU TINA - lewistina - portfolio - ternay - lyon - developer - développeur - fullstack - frontend - backend - mobile - dev - designer - graphic - design - designer - skills"/> 
             </Head>
-                  {children}
+            <main className="min-h-screen w-full relative flex flex-col items-center overflow-x-hidden scroll-pl-32 snap-y">
+                {children}
+            </main>
         </>
   );
 }

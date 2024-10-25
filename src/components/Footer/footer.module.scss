@@ -10,6 +10,7 @@
 
    &:after, &:before {
         content: "";
+        transition: background 0.3s;
         @apply 
         absolute bottom-0 block z-10
         w-4 aspect-square

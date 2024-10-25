@@ -1,136 +1,101 @@
-import React, { useEffect, useState } from 'react';
-import { ParallaxProvider, useParallax} from 'react-scroll-parallax';
-import style from './index.module.scss'
+import { useGSAP } from '@gsap/react'
+import { useEffect, useRef, useState } from 'react';
+import gsap from 'gsap';
 import Image from "next/image"
 import ProjectPreview from './projectPreview';
 import projects from '../../../project.json'
+import styles from './index.module.scss'
 
-const ParallaxEffect = (props: { isAppOrDesign: "app" | "design" } ) => {
-    const [startAndEnd, setStartAndEnd] = useState({startScroll: 0, endScroll: 2700})
-    const [startFirstAndEnd, setStartFirstAndEnd] = useState({startScroll: 0, endScroll: 2700})
-    const [startSecondAndEnd, setStartSecondAndEnd] = useState({startScroll: 0, endScroll: 3100})
-    const [startThirdAndEnd, setStartThirdAndEnd] = useState({startScroll: 0, endScroll: 3300})
-    const { isAppOrDesign } = props
+interface ParallaxEffectProps { 
+  isAppOrDesign: "app" | "design", 
+  frameRef: HTMLElement
+}
+
+export const ParallaxEffectApp = (props: ParallaxEffectProps ) => {
+    const { isAppOrDesign, frameRef } = props
     const finalProject = projects as any
+    const a = useRef<HTMLDivElement>(null)
+    const b = useRef<HTMLDivElement>(null)
+    const c = useRef<HTMLDivElement>(null)
+    const d = useRef<HTMLDivElement>(null)
+    const e = useRef<HTMLDivElement>(null)
 
-    useEffect(() => {
-        const maProjectDiv = document.getElementById('projects');
-        const rectProject = maProjectDiv!.getBoundingClientRect();
+    useGSAP(() => {
+      const scrollTriggerFirstLigne = {
+        trigger: frameRef,
+        start: "-50%",
+        end: "top top",
+        scrub: 2,
+      }
 
-        const maFirstDiv = document.getElementById('portfolio-first');
-        const maSecondDiv = document.getElementById('portfolio-second');
-        const maThirdDiv = document.getElementById('portfolio-third');
-        const rectFirst = maFirstDiv!.getBoundingClientRect();
-        const rectSecond= maSecondDiv!.getBoundingClientRect();
-        const rectThird= maThirdDiv!.getBoundingClientRect();
+      const scrollTriggerSecondLigne = {
+        trigger: frameRef,
+        start: "-25%",
+        end: "35%",
+        scrub: 2,
+      }
 
-        setStartFirstAndEnd({
-          startScroll: 0,
-          endScroll: rectProject.top - 184
-        });
+      const scrollTriggerLastLigne = {
+        trigger: frameRef,
+        start: "35%",
+        end: "50%",
+        scrub: 2,
+      }
 
-        setStartSecondAndEnd({
-            startScroll: 0,
-            endScroll: rectFirst.bottom - 368
-          });
+      const tl = gsap.timeline({scrollTrigger: scrollTriggerFirstLigne});
+      const tl2 = gsap.timeline({scrollTrigger: scrollTriggerFirstLigne});
+      const tl3 = gsap.timeline({scrollTrigger: scrollTriggerSecondLigne});
+      const tl4 = gsap.timeline({scrollTrigger: scrollTriggerSecondLigne});
+      const tl5 = gsap.timeline({scrollTrigger: scrollTriggerLastLigne});
 
-          setStartThirdAndEnd({
-            startScroll: 0,
-            endScroll: rectSecond.top - 184
-          });
-
-      }, []);
-    
-      // Each image is initially translated away from its starting position
-      const a = useParallax<HTMLDivElement>({
-        ...startFirstAndEnd,
-        translateX: ["-100%", "0%"],
-        translateY: ["100%", "0%"],
-        rotate: [20, 0]
-      });
-      const b = useParallax<HTMLDivElement>({
-        ...startFirstAndEnd,
-        translateX: ["100%", "0%"],
-        translateY: ["100%", "0%"],
-        rotate: [-20, 0]
-      });
-      const c = useParallax<HTMLDivElement>({
-        ...startSecondAndEnd,
-        translateX: ["-100%", "0%"],
-        translateY: ["100%", "0%"],
-        rotate: [-20, 0]
-      });
-      const d = useParallax<HTMLDivElement>({
-        ...startSecondAndEnd,
-        translateX: ["100%", "0%"],
-        translateY: ["50%", "0%"],
-        rotate: [20, 0]
-      });
-      const e = useParallax<HTMLDivElement>({
-        ...startThirdAndEnd,
-        translateX: ["0%", "0%"],
-        translateY: ["300%", "0%"],
-      });
-      const f = useParallax<HTMLDivElement>({
-        ...startThirdAndEnd,
-        translateX: ["0%", "0%"],
-        translateY: ["300%", "0%"],
-      });
-      const g = useParallax<HTMLDivElement>({
-        ...startThirdAndEnd,
-        translateX: ["0%", "0%"],
-        translateY: ["300%", "0%"],
-      });
-      const h = useParallax<HTMLDivElement>({
-        ...startThirdAndEnd,
-        translateX: ["0%", "0%"],
-        translateY: ["300%", "0%"],
-      });
-
-  const cardStyle = "flex overflow-hidden rounded-2xl h-full sm:w-full sm:aspect-square bg-white/20 border-2 border-light-grey/25"
+      tl.from(a.current, { y: "100%", x: "-100%", rotate: "20deg" });
+      tl2.from(b.current, { y: "100%", x: "100%", rotate: "-20deg" });
+      tl3.from(c.current, { y: "100%", x: "-100%", rotate: "-20deg" });
+      tl4.from(d.current, { y: "100%", x: "100%", rotate: "20deg" });
+      tl5.from(e.current, { y: "300%"});
+  });
 
   return (
-    <>
     <div className={`w-full flex-none flex flex-col gap-4 justify-start items-start transition-all duration-300 transform-gpu ${isAppOrDesign == "app" ? " translate-x-0" : "-translate-x-[100vw]"}`}>
-        <div className="flex gap-4 aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full sm:flex-col" id="portfolio-first">
-            <div ref={a.ref}  className={`${cardStyle} w-1/2 sm:aspect-[1/0.85]`}>
+        <div className="flex gap-4 aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full sm:flex-col">
+            <div ref={a}  className={`${styles.cardStyle} rounded-2xl w-1/2 sm:aspect-[1/0.85]`}>
               <ProjectPreview data={finalProject["factauto"]} id={'factauto'}/>
             </div>
-            <div ref={b.ref} className={`${cardStyle} w-1/2 sm:aspect-[1/0.85]`}>
+            <div ref={b} className={`${styles.cardStyle} rounded-2xl w-1/2 sm:aspect-[1/0.85]`}>
                 <ProjectPreview data={finalProject["pkarenov"]} id={'pkarenov'}/>
             </div>
         </div>
-        <div className="flex gap-4 aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full sm:flex-col" id="portfolio-second">
-            <div ref={c.ref} className={`${cardStyle} w-2/5`}>
+        <div className="flex gap-4 aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full sm:flex-col">
+            <div ref={c} className={`${styles.cardStyle} rounded-2xl w-2/5`}>
                 <ProjectPreview data={finalProject["lienou"]} id={'lienou'}/>
             </div>
-            <div ref={d.ref} className={`${cardStyle} w-3/5`}>
+            <div ref={d} className={`${styles.cardStyle} rounded-2xl w-3/5`}>
                 <ProjectPreview data={finalProject["acc"]} id={'acc'}/>
               </div>
         </div>
-        <div className="flex gap-4 h-48 w-full md:flex-wrap md:h-[unset]" id="portfolio-third">
-            <div ref={e.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/3.6)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25">
+        <div ref={e} className="flex gap-4 h-48 w-full md:flex-wrap md:h-[unset]">
+            <div className={`${styles.cardStyle2} rounded-lg`}>
                 <Image  
                     src="/sayit.png"
                     alt = "Say IT project visual"
                     className='object-cover'
                     fill/>
             </div>
-            <div ref={f.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/3.6)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25">
+            <div className={`${styles.cardStyle2} rounded-lg`}>
                 <Image  
                     src="/cadys/cadys_dashboard-0.png"
                     alt = "Cadys project visual"
                     className='object-cover'
                     fill/>
             </div>
-            <div ref={g.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/3.6)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25">
+            <div className={`${styles.cardStyle2} rounded-lg`}>
                 <Image  
                     src="/factauto.png"
                     alt = "Factauto project visual"
                     className='object-cover object-right-top'
                     fill/>
             </div>
-            <div ref={h.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/5.5)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25">
+            <div className={`${styles.cardStyle2} rounded-lg`}>
                 <Image  
                     src="/abri_solidaire.png"
                     alt = "abri solidaire project visual"
@@ -139,18 +104,130 @@ const ParallaxEffect = (props: { isAppOrDesign: "app" | "design" } ) => {
             </div>
         </div>
     </div>
-    </>
   );
 };
 
-const ParallaxEffectProvider = (props: { isAppOrDesign: "app" | "design" } ) => {
-  const { isAppOrDesign } = props
 
-  return (
-    <ParallaxProvider>
-        <ParallaxEffect isAppOrDesign= {isAppOrDesign}/>
-    </ParallaxProvider>
-  );
+export const ParallaxEffectDesign = (props: ParallaxEffectProps ) => {
+    const { isAppOrDesign, frameRef } = props
+    const [isHidden, setIsHidden] = useState(false)
+    const finalProject = projects as any
+    const a = useRef<HTMLDivElement>(null)
+    const b = useRef<HTMLDivElement>(null)
+    const c = useRef<HTMLDivElement>(null)
+    const d = useRef<HTMLDivElement>(null)
+    const e = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+      if (isAppOrDesign == "app") {
+          const finishTimeout = setTimeout(() => {
+            setIsHidden(true);
+          }, 400);
+
+          return () => {
+              clearTimeout(finishTimeout);
+          };
+      }
+
+      else{
+        const finishTimeout = setTimeout(() => {
+          setIsHidden(false);
+        }, 0);
+
+        return () => {
+            clearTimeout(finishTimeout);
+        };
+      }
+    }, [isAppOrDesign])
+
+    useGSAP(() => {
+      const scrollTriggerFirstLigne = {
+        trigger: frameRef,
+        start: "-50%",
+        end: "top top",
+        scrub: 2,
+      }
+
+      const scrollTriggerSecondLigne = {
+        trigger: frameRef,
+        start: "-25%",
+        end: "35%",
+        scrub: 2,
+      }
+
+      const scrollTriggerLastLigne = {
+        trigger: frameRef,
+        start: "35%",
+        end: "50%",
+        scrub: 2,
+      }
+
+      const tl = gsap.timeline({scrollTrigger: scrollTriggerFirstLigne});
+      const tl2 = gsap.timeline({scrollTrigger: scrollTriggerFirstLigne});
+      const tl3 = gsap.timeline({scrollTrigger: scrollTriggerSecondLigne});
+      const tl4 = gsap.timeline({scrollTrigger: scrollTriggerSecondLigne});
+      const tl5 = gsap.timeline({scrollTrigger: scrollTriggerLastLigne});
+
+      tl.from(a.current, { y: "100%", x: "-100%", rotate: "20deg" });
+      tl2.from(b.current, { y: "100%", x: "100%", rotate: "-20deg" });
+      tl3.from(c.current, { y: "100%", x: "-100%", rotate: "-20deg" });
+      tl4.from(d.current, { y: "100%", x: "100%", rotate: "20deg" });
+      tl5.from(e.current, { y: "300%"});
+    });
+
+    return (
+      <div className={`w-full flex-none flex flex-col gap-4 justify-start items-start transition-all duration-300 transform-gpu ${isHidden ? "" : ""} ${isAppOrDesign == "design" ? "-translate-x-full" : "translate-x-[100vw]"}`}>
+          <div className="flex gap-4 aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full sm:flex-col">
+            <div ref={b}  className={`${styles.cardStyle} w-1/2 sm:aspect-[1/0.85]`}>
+              <ProjectPreview
+                    id={"back_to_school"} data={finalProject["back_to_school"]} 
+                />
+            </div>
+            <div ref={a}  className={`${styles.cardStyle} w-1/2 sm:aspect-[1/0.85]`}>
+              <ProjectPreview
+                      id={"business_card"} data={finalProject["business_card"]}/>
+            </div>
+          </div>
+          <div className="flex aspect-[1/0.41] gap-4 md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full sm:flex-col">
+              <div ref={d} className={`${styles.cardStyle} w-3/5`}>
+                  <ProjectPreview
+                      id={"la_jirafa"} data={finalProject["la_jirafa"]}/>
+              </div>
+              <div ref={c} className={`${styles.cardStyle} w-2/5`}>
+                <ProjectPreview
+                      id={"premier_mai"} data={finalProject["premier_mai"]}/>
+              </div>
+          </div>
+          <div ref={e} className="flex gap-4 h-48 w-full md:flex-wrap md:h-[unset]">
+              <div className={styles.cardStyle2}>
+                  <Image  
+                      src="/abri_solidaire.png"
+                      alt = "Say IT project visual"
+                      className='object-cover'
+                      fill/>
+              </div>
+              <div className={styles.cardStyle2}>
+                  <Image  
+                      src="/cadys_login.png"
+                      alt = "Say IT project visual"
+                      className='object-cover'
+                      fill/>
+              </div>
+              <div className={styles.cardStyle2}>
+                  <Image  
+                      src="/ticket.png"
+                      alt = "Say IT project visual"
+                      className='object-cover object-right-top'
+                      fill/>
+              </div>
+              <div className={styles.cardStyle2}>
+                  <Image  
+                      src="/Mockup-CP-Dash-06.png"
+                      alt = "Say IT project visual"
+                      className='object-cover'
+                      fill/>
+              </div>
+          </div>
+      </div>
+    );
 };
-
-export default ParallaxEffectProvider;
