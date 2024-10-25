@@ -25,8 +25,7 @@ export default function SwitchToggle(props: {activeSkills: string; setActiveSkil
     }, [activeSkills])
 
     return(
-        <div className="flex">
-        <div className="relative self-start rounded-full h-10 my-4 bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl max-w-full sm:w-full">
+        <div className="relative self-start rounded-full h-10 bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-x w-fit max-w-full sm:w-full">
             <div className={`absolute rounded-full h-full transition-all duration-300 bg-primary -z-10`} id='indicator'>
             </div>
 
@@ -48,6 +47,5 @@ export default function SwitchToggle(props: {activeSkills: string; setActiveSkil
                 </span>
             </div>
         </div>
-    </div>
     )
 }

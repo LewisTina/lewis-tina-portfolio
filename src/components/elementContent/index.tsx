@@ -69,7 +69,7 @@ export default function Content (props: {data: ProjectProps}) {
                                 {title}
                             </h2>
 
-                            <span className="py-1 px-4 inline-block text-primary text-xs rounded-full bg-primary/10 mt-4">
+                            <span className="projectCategoryPuce mt-4">
                                 {projectCategories}
                             </span>
 

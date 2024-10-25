@@ -79,21 +79,23 @@ export default function About(){
                             <h2 className="text-title capitalize">
                                 {t('my_focus')}
                             </h2>
-                            <p className={`py-3  whitespace-pre-line`}>
+                            <div className={`py-3  whitespace-pre-line`}>
                                 {t('focus_text')}
-                                <span className="flex flex-wrap py-8 gap-4">
+                                <ul className="flex flex-wrap py-6 gap-3">
                                     {
                                         focus.map((element: any, idx: number)=> {
                                             return(
-                                                <span className="px-6 py-1 capitalize rounded-full bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl" key={idx}>
+                                                <li 
+                                                    className="bubbleSpan"
+                                                    key={idx}>
                                                     {t(element)}
-                                                </span>
+                                                </li>
 
                                             )
                                         })
                                     }
-                                </span>
-                            </p>
+                                </ul>
+                            </div>
                         </div>
                         
                         <div className={styles.geekMemoji}>

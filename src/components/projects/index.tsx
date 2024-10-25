@@ -13,17 +13,18 @@ export default function Projects(){
     const router = useRouter()
 
     return(
-        <section className="flex py-16 flex-col items-center justify-start w-full relative overflow-hidden" id='projects'>
+        <section className="flex pt-40 pb-16 flex-col items-center justify-start w-full relative overflow-hidden" id='projects'>
             <div className={`flex justify-center ${style.gradient_mask}`}>
             
-                <div className={`flex flex-col justify-start relative items-start max-w-[1535px] w-full rounded-3xl mx-10 md:mx-4 lg:mx-6 text-darkest dark:text-white`}>
-                    <h2 className="text-4xl capitalize">
-                        Portfolio
-                    </h2>
-
-                    <div className={` w-full flex-col justify-start relative items-start`}>
+                <div className={`flex flex-col gap-8 justify-start relative items-start max-w-[1535px] w-full rounded-3xl mx-10 md:mx-4 lg:mx-6 text-darkest dark:text-white`}>
+                    <div className="w-full max-w-7xl mx-auto flex flex-col gap-4">
+                        <h2 className="text-4xl capitalize">
+                            Portfolio
+                        </h2>
                         <SwitchToggle activeSkills={activeSkills} setActiveSkills={setActiveSkills}/>
+                    </div>
 
+                    <div className={`w-full flex-col justify-start relative items-start`}>
                         <div className="flex w-full justify-start flex-nowrap">
                             <ParallaxApp isAppOrDesign= {activeSkills}/>
                             <ParallaxDesign isAppOrDesign= {activeSkills}/>

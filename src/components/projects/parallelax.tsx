@@ -87,48 +87,50 @@ const ParallaxEffect = (props: { isAppOrDesign: "app" | "design" } ) => {
         translateY: ["300%", "0%"],
       });
 
+  const cardStyle = "flex overflow-hidden rounded-2xl h-full sm:w-full sm:aspect-square bg-white/20 border-2 border-light-grey/25"
+
   return (
     <>
-    <div className={`w-full flex-none flex flex-col justify-start items-start transition-all duration-300 transform-gpu ${isAppOrDesign == "app" ? " translate-x-0" : "-translate-x-[100vw]"}`}>
-        <div className="flex aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full my-2 sm:my-0 sm:flex-col" id="portfolio-first">
-            <div ref={a.ref}  className="flex overflow-hidden rounded-2xl h-full w-[50%] sm:w-full sm:aspect-[1/0.85] sm:mb-4 bg-white/20 border-2 border-light-grey/25 mr-4">
+    <div className={`w-full flex-none flex flex-col gap-4 justify-start items-start transition-all duration-300 transform-gpu ${isAppOrDesign == "app" ? " translate-x-0" : "-translate-x-[100vw]"}`}>
+        <div className="flex gap-4 aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full sm:flex-col" id="portfolio-first">
+            <div ref={a.ref}  className={`${cardStyle} w-1/2 sm:aspect-[1/0.85]`}>
               <ProjectPreview data={finalProject["factauto"]} id={'factauto'}/>
             </div>
-            <div ref={b.ref} className="flex overflow-hidden rounded-2xl h-full w-[50%] sm:w-full sm:aspect-[1/0.83] sm:mb-4 bg-light-grey/25 border-2 border-light-grey/25">
+            <div ref={b.ref} className={`${cardStyle} w-1/2 sm:aspect-[1/0.85]`}>
                 <ProjectPreview data={finalProject["pkarenov"]} id={'pkarenov'}/>
             </div>
         </div>
-        <div className="flex aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full my-2 sm:my-0 sm:flex-col" id="portfolio-second">
-            <div ref={c.ref} className="flex rounded-2xl h-full w-[41%] sm:w-full sm:aspect-square sm:mb-4 bg-light-grey/25 border-2 border-light-grey/25 mr-4 overflow-hidden">
+        <div className="flex gap-4 aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full sm:flex-col" id="portfolio-second">
+            <div ref={c.ref} className={`${cardStyle} w-2/5`}>
                 <ProjectPreview data={finalProject["lienou"]} id={'lienou'}/>
             </div>
-            <div ref={d.ref} className="flex rounded-2xl h-full w-[59%] sm:w-full sm:aspect-square sm:mb-4 bg-light-grey/25 border-2 border-light-grey/25 overflow-hidden">
+            <div ref={d.ref} className={`${cardStyle} w-3/5`}>
                 <ProjectPreview data={finalProject["acc"]} id={'acc'}/>
               </div>
         </div>
-        <div className="flex h-48 w-full my-2 md:flex-wrap md:h-[unset]" id="portfolio-third">
-            <div ref={e.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/3.6)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25 mr-2 md:mb-4">
+        <div className="flex gap-4 h-48 w-full md:flex-wrap md:h-[unset]" id="portfolio-third">
+            <div ref={e.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/3.6)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25">
                 <Image  
                     src="/sayit.png"
                     alt = "Say IT project visual"
                     className='object-cover'
                     fill/>
             </div>
-            <div ref={f.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/3.6)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25 mr-2 md:mb-4 md:mr-0">
+            <div ref={f.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/3.6)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25">
                 <Image  
                     src="/cadys/cadys_dashboard-0.png"
                     alt = "Cadys project visual"
                     className='object-cover'
                     fill/>
             </div>
-            <div ref={g.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/3.6)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25 mr-2 md:mb-4">
+            <div ref={g.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/3.6)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25">
                 <Image  
                     src="/factauto.png"
                     alt = "Factauto project visual"
                     className='object-cover object-right-top'
                     fill/>
             </div>
-            <div ref={h.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/5.5)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25 md:mb-4">
+            <div ref={h.ref} className="flex overflow-hidden rounded-lg h-full md:h-[unset] w-[calc(100%/5.5)] md:w-[calc(50%-0.5rem)] md:aspect-square bg-light-grey/25 border-2 border-light-grey/25">
                 <Image  
                     src="/abri_solidaire.png"
                     alt = "abri solidaire project visual"
