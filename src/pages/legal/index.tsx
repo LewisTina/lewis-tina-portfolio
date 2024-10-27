@@ -13,10 +13,10 @@ export default function CGU(props: any) {
             <div className="w-full flex justify-center ">
                 <div className="w-full flex justify-center py-32 min-h-screen max-w-[1535px] relative">
                     <Sidebar/>
-                    <div className="px-10 pt-8 w-[840px] h-auto md:px-4 lg:px-6 relative text-gray-500">
+                    <div className="px-10 pt-8 w-[840px] h-auto md:px-4 lg:px-6 relative text-gray-500 dark:text-light-grey">
 
                     <div className="relative">
-                        <h1 className="text-5xl capitalize sticky text-darkest dark:text-light-grey">
+                        <h1 className="text-5xl capitalize sticky text-darkest dark:text-white">
                             {t('legal_mentions')}
                         </h1>
                         <div className="my-5 w-20 h-2 bg-secondary"></div>

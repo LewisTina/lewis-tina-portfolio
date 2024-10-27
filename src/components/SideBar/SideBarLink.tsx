@@ -33,7 +33,7 @@ export default function SideBarLink(props: linkProps) {
                     capitalize transition-all duration-300
                     text-ellipsis inline-block whitespace-nowrap overflow-hidden
                     hover:text-secondary
-                    ${isActive ? "font-bold text-darkest dark:text-light-grey" : "font-semibold text-gray-500"}`}>
+                    ${isActive ? "font-bold text-darkest dark:text-light-grey" : "font-semibold text-gray-500 dark:text-light-grey"}`}>
                         {t(label)}
                     </span>
                 </div>

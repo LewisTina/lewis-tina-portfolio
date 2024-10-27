@@ -2,7 +2,7 @@
     @apply 
     px-3 pt-3
     z-10
-    absolute bottom-full left-1/2 -translate-x-1/2
+    absolute bottom-full left-1/2 sm:left-0 -translate-x-1/2 sm:translate-x-0
     gap-4 flex justify-center
     rounded-t-[1.75rem]
     sm:relative sm:flex-wrap sm:px-0 sm:pt-16 sm:justify-start

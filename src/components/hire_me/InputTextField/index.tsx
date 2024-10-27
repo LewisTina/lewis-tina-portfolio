@@ -11,6 +11,7 @@ export interface formInput {
     min?: number
     max?: number
     valueSetter?: any
+    className?: string
 }
 
 export default function InputTextField(props: formInput){
@@ -24,7 +25,8 @@ export default function InputTextField(props: formInput){
         controller ,
         min,
         max,
-        valueSetter
+        valueSetter,
+        className
     } = props
 
     function handleImageUpload(event: React.ChangeEvent<HTMLInputElement>) {
@@ -43,15 +45,15 @@ export default function InputTextField(props: formInput){
     const fileInputClass = `block text-sm text-slate-500 file:mr-4 mt-2 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-deep-purple hover:file:bg-deep-purple/25`
 
     return(
-        <div className={`m-3 md:mx-0 sm:max-w-none sm:pr-0 md:pr-4 md:max-w-[50%]`}>
-            {label ? <label className='font-bold'> {label} <b>{isRequired ? "*" : ""}</b> <br /></label>: ''}
+        <div className={`${className??''} w-full min-w-[20rem]`}>
+            {label ? <label className='font-medium'> {label} <span>{isRequired ? "*" : ""}</span> <br /></label>: ''}
             <input
                     {...controller(name, {
                             required: isRequired ? true : false,
                         }
                         )}
                     type={type ? type : 'text'}
-                    className={`${type == "file" ? fileInputClass : 'rounded-md p-2 px-4 focus:ring-1'}  w-80 max-w-full sm:w-full`}
+                    className={`${type == "file" ? fileInputClass : 'rounded-md p-2 px-4 focus:ring-1'}  w-full max-w-full`}
                     min ={min ? min : 0}
                     max ={max}
                     accept='.pdf, image/*, .docx'

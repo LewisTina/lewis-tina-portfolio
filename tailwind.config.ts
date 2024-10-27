@@ -14,15 +14,19 @@ const config: Config = {
       
       '2xl': {'max': '1535px'},
 
+      'mxl': {'min': '1281px'},
+
       'xl': {'max': '1280px'},
 
-      'mxl': {'min': '1280px'},
+      'mlg': {'min': '1024px'},
 
       'lg': {'max': '1023px'},
 
-      'mlg': {'min': '1023px'},
-
+      'mmd': {'min': '768px'},
+      
       'md': {'max': '767px'},
+
+      'msm': {'min': '640px'},
 
       'sm': {'max': '639px'},
     },

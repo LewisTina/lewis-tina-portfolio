@@ -89,40 +89,38 @@ export default function About(){
                     </div>
                 </div>
 
-                <div className="w-full py-32 md:py-6">
-                    <div className=" w-full max-w-7xl gap-16 flex justify-between items-center mx-auto md:flex-col-reverse">
-                        <div className="max-w-[50rem] text-darkest dark:text-white lg:max-w-[30rem] md:max-w-full md:mt-8">
-                            <h2 className="text-title capitalize">
-                                {t('my_focus')}
-                            </h2>
-                            <div className={`py-3  whitespace-pre-line`}>
-                                {t('focus_text')}
-                                <ul className="flex flex-wrap py-6 gap-3">
-                                    {
-                                        focus.map((element: any, idx: number)=> {
-                                            return(
-                                                <li 
-                                                    className="bubbleSpan"
-                                                    key={idx}>
-                                                    {t(element)}
-                                                </li>
+                <div className=" w-full py-32 md:py-6 max-w-7xl gap-16 flex justify-between items-center mx-auto md:flex-col-reverse">
+                    <div className="max-w-[50rem] text-darkest dark:text-white lg:max-w-[30rem] md:max-w-full md:mt-8">
+                        <h2 className="text-title capitalize">
+                            {t('my_focus')}
+                        </h2>
+                        <div className={`py-3  whitespace-pre-line`}>
+                            {t('focus_text')}
+                            <ul className="flex flex-wrap py-6 gap-3">
+                                {
+                                    focus.map((element: any, idx: number)=> {
+                                        return(
+                                            <li 
+                                                className="bubbleSpan"
+                                                key={idx}>
+                                                {t(element)}
+                                            </li>
 
-                                            )
-                                        })
-                                    }
-                                </ul>
-                            </div>
+                                        )
+                                    })
+                                }
+                            </ul>
                         </div>
-                        
-                        <div className={`${styles.geekMemoji} before:shadow-[0_-25px_50px_-12px_rgba(0,0,0,0.2)] before:bg-custom-light-gray before:dark:bg-dark-grey`}>
-                            <Image 
-                                src={"/geek_apple_memoji.svg"} 
-                                alt={'geek memoji'}
-                                width={345.55}
-                                height={281.77}
-                                className="w-full shadow-2xl dark:shadow-[rgba(0,0,0,1)] rounded-xl"
-                                />
-                        </div>
+                    </div>
+                    
+                    <div className={`${styles.geekMemoji} before:shadow-[0_-25px_50px_-12px_rgba(0,0,0,0.2)] before:bg-custom-light-gray before:dark:bg-dark-grey`}>
+                        <Image 
+                            src={"/geek_apple_memoji.svg"} 
+                            alt={'geek memoji'}
+                            width={345.55}
+                            height={281.77}
+                            className="w-full shadow-2xl dark:shadow-[rgba(0,0,0,1)] rounded-xl"
+                            />
                     </div>
                 </div>
             </div>
