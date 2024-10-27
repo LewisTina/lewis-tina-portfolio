@@ -26,27 +26,35 @@ export default function Content (props: {data: ProjectProps}) {
         projectLink,
         projectCategories,
     } = data
+
+    const ProjectMeta = (props: {value: string}) => {
+        return (
+            <span className="pl-2 pr-6 py-1">
+                {props.value}
+            </span>
+        )
+    }
     
     return(
-        <div className="px-10 py-8  mt-20 md:px-0 lg:px-6 mb-40 md:mt-10">
+        <div className="px-10 py-8 mt-32 md:px-0 lg:px-6 mb-40 md:mt-20">
             <div className={`max-w-[1535px] mx-auto w-full min-h-screen h-auto relative`}>
-                <div className="my-6 md:px-4 flex w-full items-center">
+                <div className="flex w-fit h-fit items-center border-2 md:border border-b-0 md:border-l-0 border-light-grey/25 divide-x-2 md:divide-x divide-light-grey/25">
                         {
                             !!logo && 
-                            <div className="h-16 aspect-square mr-4 relative">
+                            <div className="h-24 flex items-center aspect-square p-2 relative bg-white">
                                 <Image  
                                 src={logo.link}
                                 alt = {logo.alt}
-                                className={"object-contain object-left"}
-                                quality={75}
-                                fill/>
+                                className={"object-contain object-left rounded-md"}
+                                height={100}
+                                width={100}/>
                             </div>
 
                         }
-                    <div className="flex flex-col font-medium text-sm">
-                        <span> {title} </span>
-                        <span> {activities} </span>
-                        <span> {owner} </span>
+                    <div className="flex flex-col self-stretch justify-center min-w-[15rem] font-medium text-sm divide-y-2 md:divide-y divide-light-grey/25">
+                        <ProjectMeta value={title}/>
+                        <ProjectMeta value={activities}/>
+                        <ProjectMeta value={owner}/>
                     </div>
                 </div>
                 <div className="border-2 md:border-0 border-light-grey/25 text-dark-grey dark:text-light-grey whitespace-pre-line w-full bg-white dark:bg-darkest">
@@ -74,7 +82,7 @@ export default function Content (props: {data: ProjectProps}) {
                                     {projectCategories}
                                 </span>
 
-                                <p className="md:text-justify md:hyphens-auto text-base">
+                                <p className="whitespace-pre-line text-base leading-7 md:text-justify md:hyphens-auto">
                                     {introduction[locale]}
                                 </p>
                             </div>
@@ -129,7 +137,7 @@ export default function Content (props: {data: ProjectProps}) {
                                 <h2 className=" text-7xl coolvetica capitalize dark:text-white">
                                     {t('my_contributions')}
                                 </h2> 
-                                <p className="py-4 text-base">
+                                <p className="py-4 whitespace-pre-line text-base leading-7">
                                     {contribution[locale]}
                                 </p>
 

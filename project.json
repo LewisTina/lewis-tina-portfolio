@@ -48,12 +48,12 @@
         "en": "Front-end integration of new functionalities/interfaces for a color management and optimization application with library/palette management for the Alwan Color Expertise group, with porting of an old jQuery application version to the NextJs stack in collaboration with the group's active team."
     },
     "introduction": {
-        "fr": "check",
-        "en": "check"
+        "fr": "Dans le but de rendre accessible une application de gestion de couleurs du groupe Alwan Color Expertise, anciennement disponible uniquement en version desktop, à un plus grand nombre d'utilisateurs, il a été décidé de la porter vers une version web. Cette mission a consisté à intégrer de nouvelles fonctionnalités/interfaces pour cette application, avec une landing page à l'appuie.",
+        "en": "In order to make an Alwan Color Expertise group color management application, formerly available only in desktop version, accessible to a larger number of users, it was decided to port it to a web version. This mission consisted of integrating new functionalities/interfaces for this application, with a landing page to support it."
     },
     "contribution": {
-        "fr": "check",
-        "en": "check"
+        "fr": "Mes contributions sur ce projet ont été de créer une landing page pour l'application, et d'intégrer de nouvelles fonctionnalités/interfaces pour cette application. \nParmi les tâches, on peut citer :\n\n- Intégration Front-end Next.js des maquettes fournies par le designer\n- Développement de nouvelles fonctionnalités/interfaces pour l'application,\n- Portage de l'ancienne version d'application jQuery vers la stack NextJs",
+        "en": "My contributions on this project were to create a landing page for the application, and to integrate new functionalities/interfaces for this application. \nTasks include:\n\n- Next.js Front-end integration of the mockups provided by the designer\n- Development of new functionalities/interfaces for the application,\n- Porting of the old jQuery application version to the NextJs stack"
     },
     "contributionBlocImg": [],
     "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "Github"],
@@ -78,12 +78,12 @@
         "en": "Visual redesign of a wordpress e-commerce website with payment integration and production launch."
     },
     "introduction": {
-        "fr": "check",
-        "en": "check"
+        "fr": "Lienou est une entreprise de vente de produits de salle de bain haut de gamme et d'architecture d'intérieur, le but de cette mission était de refondre le site web e-commerce de l'entreprise pour une meilleure expérience utilisateur et une meilleure conversion. Pour cela, il a fallu créer de nouvelles pages et un portfolio puis intégrer les moyens de paiements et mettre en production le site.",
+        "en": "Lienou is a company selling high-end bathroom products and interior architecture, the goal of this mission was to redesign the company's e-commerce website for a better user experience and better conversion. To do this, it was necessary to create new pages and a portfolio, then integrate the payment methods and launch the site."
     },
     "contribution": {
-        "fr": "check",
-        "en": "check"
+        "fr": "Pour ce projet, mes responsabilités étaient de refondre le site web e-commerce de l'entreprise pour une meilleure expérience utilisateur et une meilleure conversion. \nParmi les tâches, on peut citer :\n\n- Création de nouvelles pages et d'un portfolio;\n - Refonte visuelle et finalisation des pages existantes;\n- Intégration des moyens de paiements;",
+        "en": "For this project, my responsibilities were to redesign the company's e-commerce website for a better user experience and better conversion. \nTasks include:\n\n- Creation of new pages and a portfolio;\n - Visual redesign and finalization of existing pages;\n- Integration of payment methods;"
     },
     "contributionBlocImg": [],
     "technos": ["Wordpress", "elementor", "woo commerce", "stripe", "paypal"],
@@ -110,12 +110,12 @@
         "en": "Development of an API module for exposing an application's requests to facilitate external use, with the creation of a front-end client module for monitoring and defining user resources."
     },
     "introduction": {
-        "fr": "check",
-        "en": "check"
+        "fr": "Job M est un outil de monitoring de tâche conçu par la société CPG Consulting, destiné à des usages multiples et par diverses sociétés, le but de cette mission était de créer une nouvelle interface front-end intuitive pour la gestion des ressources utilisateurs et le monitoring des tâches côté client.Pour cela, il a fallu créer un module API pour exposer les requêtes de l'application et faciliter son exploitation de façon externe.",
+        "en": "Job M is a task monitoring tool designed by CPG Consulting, intended for multiple uses and by various companies, the goal of this mission was to create a new intuitive front-end interface for managing user resources and monitoring tasks on the client side. To do this, it was necessary to create an API module to expose the application's requests and facilitate external use."
     },
     "contribution": {
-        "fr": "check",
-        "en": "check"
+        "fr": "Pour ce projet, mes responsabilités étaient de créer un module API pour exposer les requêtes de l'application et faciliter son exploitation de façon externe, et de créer un module client front-end de monitoring et de définition des ressources utilisateur. \nParmi les tâches, on peut citer :\n\n- Conception de la maquette UI/UX\n- Intégration full-stack Next.js\n- Déploiement sur l'infra de la société CPG Consulting",
+        "en": "For this project, my responsibilities were to create an API module to expose the application's requests and facilitate external use, and to create a front-end client module for monitoring and defining user resources. \nTasks include:\n\n- UI/UX mockup design\n- Full-stack integration with Next.js\n- Deployment on CPG Consulting's infrastructure"
     },
     "contributionBlocImg": [],
     "technos": ["Lua", "Tarantool DB", "MySQL", "NextJs", "ReactJs", "Typescript", "Node Js", "Github"],
@@ -140,12 +140,12 @@
         "en": "Front-end integration of new functionalities/interfaces for an Alwan Color Expertise group application formerly available only in desktop version to a web version, supported by a landing page in collaboration with the group's active team."
     },
     "introduction": {
-        "fr": "check",
-        "en": "check"
+        "fr": "Dans le but de rendre accessible une application de gestion de couleurs du groupe Alwan Color Expertise, anciennement disponible uniquement en version desktop, à un plus grand nombre d'utilisateurs, il a été décidé de la porter vers une version web. Cette mission a consisté à intégrer de nouvelles fonctionnalités/interfaces pour cette application, avec une landing page à l'appuie.",
+        "en": "In order to make an Alwan Color Expertise group color management application, formerly available only in desktop version, accessible to a larger number of users, it was decided to port it to a web version. This mission consisted of integrating new functionalities/interfaces for this application, with a landing page to support it."
     },
     "contribution": {
-        "fr": "check",
-        "en": "check"
+        "fr": "Mes contributions sur ce projet ont été de créer une landing page pour l'application, et d'intégrer de nouvelles fonctionnalités/interfaces pour cette application. \nParmi les tâches, on peut citer :\n\n- Intégration Front-end Next.js des maquettes fournies par le designer\n- Développement de nouvelles fonctionnalités/interfaces pour l'application",
+        "en": "My contributions on this project were to create a landing page for the application, and to integrate new functionalities/interfaces for this application. \nTasks include:\n\n- Next.js Front-end integration of the mockups provided by the designer\n- Development of new functionalities/interfaces for the application"
     },
     "contributionBlocImg": [],
     "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "Github"],

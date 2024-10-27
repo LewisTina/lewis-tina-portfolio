@@ -1,5 +1,8 @@
 {
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 80,
-    "scss.lint.unknownAtRules": "ignore"
+    "scss.lint.unknownAtRules": "ignore",
+    "cSpell.words": [
+        "d'architectecture"
+    ]
 }
