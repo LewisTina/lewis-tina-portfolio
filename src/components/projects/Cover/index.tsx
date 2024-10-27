@@ -4,9 +4,9 @@ import style from "./index.module.scss"
 export default function PortfolioCover(){
     const router = useRouter()
     return(
-        <div className={`relative h-screen min-h-[700px] sm:min-h-[unset] sm:h-[100svh] flex justify-center w-full z-0 snap-y max-h-[1280px]`}>
+        <div className={`relative h-[100svh] min-h-[700px] sm:min-h-[unset] sm:h-[100svh] flex justify-center w-full z-0 snap-y max-h-[1280px]`}>
             <div className="flex items-center px-10 md:pb-28 max-w-[1535px] w-full h-full bg-portfolio-cover-bg bg-no-repeat bg-contain sm:bg-cover bg-right md:px-4 lg:px-6 overflow-hidden">
-            <div className={`${style.content}  ${style.gradient_mask}  overflow-hidden whitespace-pre-line bg-white/25 dark:bg-black/25 border-2 border-light-grey/50 flex flex-col items-start justify-between backdrop-blur-xl rounded-3xl w-2/5 min-w-[500px] sm:w-full lg:w-full lg:min-w-[unset] mx-8 md:mx-0 p-[4%] md:p-6 mt-32 md:mt-40 h-[calc(100%-7rem)] md:h-full`}>
+            <div className={`${style.content}  ${style.gradient_mask}  overflow-hidden whitespace-pre-line bg-white/25 dark:bg-black/25 border-2 border-light-grey/50 flex flex-col items-start justify-between backdrop-blur-xl rounded-3xl w-2/5 min-w-[500px] sm:w-full lg:w-full lg:max-w-lg lg:mx-auto lg:min-w-[unset] mx-8 p-[4%] md:p-6 mt-32 md:mt-40 h-[calc(100%-7rem)] md:h-full`}>
                 <div className=""></div>
 
                 <div className={`${style.title} flex flex-col items-start w-full mb-10`}>

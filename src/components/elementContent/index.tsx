@@ -28,74 +28,114 @@ export default function Content (props: {data: ProjectProps}) {
     } = data
     
     return(
-        <div className={`px-10 py-8 max-w-[1535px] w-full min-h-screen h-auto md:px-4 lg:px-6 relative mt-20 mb-40 md:mt-10  `}>
-            <div className="my-6 flex w-full items-center">
-                    {
-                        !!logo && 
-                        <div className="h-16 aspect-square mr-4 relative">
-                            <Image  
-                            src={logo.link}
-                            alt = {logo.alt}
-                            className={"object-contain object-left"}
-                            quality={75}
-                            fill/>
+        <div className="px-10 py-8  mt-20 md:px-0 lg:px-6 mb-40 md:mt-10">
+            <div className={`max-w-[1535px] mx-auto w-full min-h-screen h-auto relative`}>
+                <div className="my-6 md:px-4 flex w-full items-center">
+                        {
+                            !!logo && 
+                            <div className="h-16 aspect-square mr-4 relative">
+                                <Image  
+                                src={logo.link}
+                                alt = {logo.alt}
+                                className={"object-contain object-left"}
+                                quality={75}
+                                fill/>
+                            </div>
+
+                        }
+                    <div className="flex flex-col font-medium text-sm">
+                        <span> {title} </span>
+                        <span> {activities} </span>
+                        <span> {owner} </span>
+                    </div>
+                </div>
+                <div className="border-2 md:border-0 border-light-grey/25 text-dark-grey dark:text-light-grey whitespace-pre-line w-full bg-white dark:bg-darkest">
+
+                    <div className="grid grid-cols-[1fr,1.25fr] w-full relative lg:grid-cols-[1fr,1fr] md:grid-cols-1">
+                        <div className="border-r-2 border-light-grey/25 md:border-r-0 md:border-b-2 w-full h-auto flex">
+                            <div className="h-full w-full relative">
+                                <Image  
+                                    src={cover.link}
+                                    alt = {cover.alt}
+                                    width={500}
+                                    height={500}
+                                    sizes="100vw"
+                                    className={"min-h-full h-full md:min-h-[unset] md:h-auto md:w-full w-auto object-cover object-left"}/>
+                            </div>
                         </div>
 
-                    }
-                <div className="font-bold">
-                    <span className=""> {title} </span> <br />
-                    <span className=""> {activities} </span> <br />
-                    <span className=""> {owner} </span>
-                </div>
-            </div>
-            <div className="border-2 border-light-grey/50 text-dark-grey dark:text-light-grey whitespace-pre-line w-full">
+                        <div className="flex flex-col justify-between w-full">
+                            <div className="p-12 lg:p-4 flex flex-col gap-4 justify-center items-start self-stretch flex-1">
+                                <h2 className=" text-7xl coolvetica dark:text-white">
+                                    {title}
+                                </h2>
 
-                <div className="flex w-full relative lg:flex-col">
-                    <div className="p-4 border-r-2 border-light-grey/50 lg:border-r-0 lg:border-b-2 w-full max-w-md lg:max-w-none h-auto flex">
-                        <div className="h-full w-full relative">
-                            <Image  
-                                src={cover.link}
-                                alt = {cover.alt}
-                                width={500}
-                                height={500}
-                                sizes="100vw"
-                                className={"min-h-full h-full md:min-h-[unset] md:h-auto md:w-full w-auto object-cover object-left"}/>
+                                <span className="projectCategoryPuce">
+                                    {projectCategories}
+                                </span>
+
+                                <p className="md:text-justify md:hyphens-auto text-base">
+                                    {introduction[locale]}
+                                </p>
+                            </div>
+                            {
+                                !behanceLink && !githubLink && !projectLink ?
+                                <></>
+                                :
+                                <div className="px-12 lg:p-4 py-4 lg:py-1 w-full border-t-2 border-light-grey/25 flex flex-wrap justify-start items-center">
+                                    {
+                                        behanceLink &&
+                                        <Link target="_blank" rel="noreferrer" href={behanceLink} className="dark:bg-white bg-dark-grey dark:text-darkest text-white rounded-full mr-4 flex justify-center items-center h-10 aspect-square">
+                                            <i className="text-xl fa fa-behance transition"></i>
+                                        </Link>
+                                    }
+                                    
+                                    {
+                                        githubLink &&
+                                        <Link target="_blank" rel="noreferrer" href={githubLink} className="dark:bg-white bg-dark-grey dark:text-darkest text-white rounded-full mr-4 flex justify-center items-center h-10 aspect-square">
+                                            <i className="text-3xl fa fa-github transition"></i>
+                                        </Link>
+                                    }
+        
+                                    {
+                                        projectLink &&
+                                        <a href={projectLink} target="_blank">
+                                            <CustomButton 
+                                                rightIcon={
+                                                    <span className="material-symbols-outlined pl-4">&#xf8ce;</span>
+                                                }
+                                                bgColor={"dark:bg-white bg-dark-grey"} 
+                                                color={"dark:text-darkest text-white"} 
+                                                className={"my-0"}
+                                                label={t("go_to", {project_name: title})} 
+                                                action={undefined}/>
+                                        </a>
+                                    }
+                                </div>
+                            }
+                            
                         </div>
                     </div>
 
-                    <div className="flex flex-col justify-between w-full">
-                        <div className="p-4">
-                            <h2 className=" text-7xl coolvetica">
-                                {title}
-                            </h2>
-
-                            <span className="projectCategoryPuce mt-4">
-                                {projectCategories}
-                            </span>
-
-                            <p className="py-4 md:text-justify md:hyphens-auto text-base">
-                                {introduction[locale]}
-                            </p>
+                    <div className="grid grid-cols-[1fr,8.5fr,9.5fr] lg:grid-cols-[1fr,8.5fr] md:grid-cols-1 w-full border-t-2 border-light-grey/25">
+                        <div className="w-20 p-4 py-12 lg:p-4 md:w-full border-r-2 md:border-r-0 md:pb-0 border-light-grey/25 flex justify-center md:justify-start">
+                            <h2 className=" text-7xl coolvetica dark:text-white">
+                                01
+                            </h2>  
                         </div>
-                        {
-                            !behanceLink && !githubLink && !projectLink ?
-                            <></>
-                            :
-                            <div className="p-4 w-full border-t-2 border-light-grey/50 flex flex-wrap justify-start items-center">
-                                {
-                                    behanceLink &&
-                                    <Link target="_blank" rel="noreferrer" href={behanceLink} className="dark:bg-white bg-dark-grey dark:text-darkest text-white rounded-full mr-4 flex justify-center items-center h-10 aspect-square">
-                                        <i className="text-xl fa fa-behance transition"></i>
-                                    </Link>
-                                }
-                                
-                                {
-                                    githubLink &&
-                                    <Link target="_blank" rel="noreferrer" href={githubLink} className="dark:bg-white bg-dark-grey dark:text-darkest text-white rounded-full mr-4 flex justify-center items-center h-10 aspect-square">
-                                        <i className="text-3xl fa fa-github transition"></i>
-                                    </Link>
-                                }
-    
+
+                        <div className="p-12 lg:p-4 md:w-full lg:border-r-0 border-r-2 md:pt-0 border-light-grey/25 md:text-justify md:hyphens-auto">
+                            <div className="w-full relative ">
+                                <h2 className=" text-7xl coolvetica capitalize dark:text-white">
+                                    {t('my_contributions')}
+                                </h2> 
+                                <p className="py-4 text-base">
+                                    {contribution[locale]}
+                                </p>
+
+                            </div>
+
+                            <div className="">
                                 {
                                     projectLink &&
                                     <a href={projectLink} target="_blank">
@@ -111,140 +151,76 @@ export default function Content (props: {data: ProjectProps}) {
                                     </a>
                                 }
                             </div>
-                        }
-                        
-                    </div>
-                </div>
-
-                <div className="flex w-full lg:flex-wrap border-t-2 border-light-grey/50">
-                    <div className="w-20 lg:w-1/5 md:w-full p-4 border-r-2 md:border-r-0 md:pb-0 border-light-grey/50 flex justify-center md:justify-start">
-                            <h2 className=" text-7xl coolvetica">
-                                01
-                            </h2>  
-                    </div>
-
-                    <div className="p-4 w-2/5 lg:w-4/5 md:w-full lg:border-r-0 border-r-2 md:pt-0 border-light-grey/50 md:text-justify md:hyphens-auto">
-                        <div className="w-full relative ">
-                            <h2 className=" text-7xl coolvetica capitalize">
-                                {t('my_contributions')}
-                            </h2> 
-                            <p className="py-4 text-base">
-                                {contribution[locale]}
-                            </p>
-
                         </div>
 
-                        <div className="">
-                            {
-                                projectLink &&
-                                <a href={projectLink} target="_blank">
-                                    <CustomButton 
-                                        rightIcon={
-                                            <span className="material-symbols-outlined pl-4">&#xf8ce;</span>
-                                        }
-                                        bgColor={"dark:bg-white bg-dark-grey"} 
-                                        color={"dark:text-darkest text-white"} 
-                                        className={"my-0"}
-                                        label={t("go_to", {project_name: title})} 
-                                        action={undefined}/>
-                                </a>
+                        <div className="lg:col-span-2 md:col-span-1 sm:flex-col lg:flex-row xl:flex-col lg:w-full lg:border-t-2 border-light-grey/25 flex p-4 md:p-0">
+                            <div className={`${contributionBlocImg.length > 2 ? "columns-3xs" : "columns-1xs"} gap-4 space-y-4`}>
+                                {
+                                    contributionBlocImg.map((value: imageProps, idx) => {
+                                        return (
+                                            <div className="w-auto relative" key={idx}>
+                                                <Image  
+                                                    src={value.link}
+                                                    alt = {value.alt}
+                                                    width={1000}
+                                                    height={1000}
+                                                    className={"h-auto w-full object-contain"}/>
+
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-[1fr,12fr,6fr] lg:grid-cols-[1fr,12fr] md:grid-cols-1 w-full border-t-2 md:border-t-0 border-light-grey/25">
+                        <div className="w-20 p-4 py-12 lg:p-4 md:w-full border-r-2 md:border-r-0 md:pb-0 border-light-grey/25 flex justify-center md:justify-start">
+                                <h2 className=" text-7xl coolvetica dark:text-white">
+                                    02
+                                </h2>  
+                        </div>
+
+                        <div className="p-12 lg:p-4 md:w-full lg:border-r-0 border-r-2 md:pt-0 border-light-grey/25 text-justify hyphens-auto word-spacing">
+                            <div className="w-full relative ">
+                                <h2 className=" text-7xl coolvetica capitalize dark:text-white">
+                                    {t('tools_tech')}
+                                </h2> 
+                                <ul className="pt-4 flex flex-wrap gap-3">
+                                    {
+                                        technos.map((value: string, idx) => 
+                                            <li className="bubbleSpan" key={idx}>
+                                                {value}
+                                            </li> 
+                                        )
+                                    }
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div className="lg:col-span-2 md:col-span-1 sm:flex-col lg:flex xl:flex-col lg:w-full lg:border-t-2 border-light-grey/25 flex p-2">
+                        {
+                                technosBlocImg.map((value: imageProps, idx) => {
+                                    return (
+                                        <>
+                                        <div className="w-auto relative p-2">
+                                            <Image  
+                                                src={value.link}
+                                                alt = {value.alt}
+                                                width={500}
+                                                height={500}
+                                                className={"h-auto w-full object-contain"}/>
+
+                                        </div>
+                                        </>
+                                    )
+                                })
                             }
                         </div>
                     </div>
 
-                    <div className="flex-1 sm:flex-col lg:flex-row xl:flex-col lg:w-full lg:border-t-2 border-light-grey/50 flex p-2">
-                        <div className="flex flex-col">
-                        {
-                            contributionBlocImg.slice(0, -1).map((value: imageProps, idx) => {
-                                return (
-                                    <>
-                                    <div className="w-auto relative p-2">
-                                        <Image  
-                                            src={value.link}
-                                            alt = {value.alt}
-                                            width={1000}
-                                            height={1000}
-                                            className={"h-auto w-full object-contain"}/>
-
-                                    </div>
-                                    </>
-                                )
-                            })
-                        }
-                        </div>
-                        <div className="flex flex-col">
-                        {
-                            contributionBlocImg.slice(-1).map((value: imageProps, idx) => {
-                                return (
-                                    <>
-                                    <div className="w-auto relative p-2">
-                                        <Image  
-                                            src={value.link}
-                                            alt = {value.alt}
-                                            width={1000}
-                                            height={1000}
-                                            className={"h-auto w-full object-contain"}/>
-
-                                    </div>
-                                    </>
-                                )
-                            })
-                        }
-                        </div>
-                    </div>
                 </div>
-
-                <div className="flex w-full lg:flex-wrap border-t-2 border-light-grey/50">
-                    <div className="w-20 lg:w-1/5 md:w-full p-4 border-r-2 md:border-r-0 md:pb-0 border-light-grey/50 flex justify-center md:justify-start">
-                            <h2 className=" text-7xl coolvetica">
-                                02
-                            </h2>  
-                    </div>
-
-                    <div className="p-4 w-3/5 lg:w-4/5 md:w-full lg:border-r-0 border-r-2 md:pt-0 border-light-grey/50 text-justify hyphens-auto word-spacing">
-                        <div className="w-full relative ">
-                            <h2 className=" text-7xl coolvetica capitalize">
-                                {t('tools_tech')}
-                            </h2> 
-                            <p className="pt-4 flex flex-wrap">
-                                {
-                                    technos.map((value: string, idx) => {
-                                        return (
-                                            <>
-                                            <span className="mr-2 my-2 px-6 md:px-4 py-1 capitalize rounded-full bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl" key={idx}>
-                                                {value}
-                                            </span> 
-                                            &nbsp;
-                                            </>
-                                        )
-                                    })
-                                }
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <div className="flex-1 sm:flex-col lg:flex xl:flex-col lg:w-full lg:border-t-2 border-light-grey/50 flex p-2">
-                    {
-                            technosBlocImg.map((value: imageProps, idx) => {
-                                return (
-                                    <>
-                                    <div className="w-auto relative p-2">
-                                        <Image  
-                                            src={value.link}
-                                            alt = {value.alt}
-                                            width={500}
-                                            height={500}
-                                            className={"h-auto w-full object-contain"}/>
-
-                                    </div>
-                                    </>
-                                )
-                            })
-                        }
-                    </div>
-                </div>
-
             </div>
         </div>
     )

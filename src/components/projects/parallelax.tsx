@@ -58,18 +58,18 @@ export const ParallaxEffectApp = (props: ParallaxEffectProps ) => {
   return (
     <div className={`w-full flex-none flex flex-col gap-4 justify-start items-start transition-all duration-300 transform-gpu ${isAppOrDesign == "app" ? " translate-x-0" : "-translate-x-[100vw]"}`}>
         <div className="flex gap-4 aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full sm:flex-col">
-            <div ref={a}  className={`${styles.cardStyle} rounded-2xl w-1/2 sm:aspect-[1/0.85]`}>
+            <div ref={a}  className={`${styles.cardStyle} rounded-xl md:rounded-lg w-1/2 sm:aspect-[1/0.85]`}>
               <ProjectPreview data={finalProject["factauto"]} id={'factauto'}/>
             </div>
-            <div ref={b} className={`${styles.cardStyle} rounded-2xl w-1/2 sm:aspect-[1/0.85]`}>
+            <div ref={b} className={`${styles.cardStyle} rounded-xl md:rounded-lg w-1/2 sm:aspect-[1/0.85]`}>
                 <ProjectPreview data={finalProject["pkarenov"]} id={'pkarenov'}/>
             </div>
         </div>
         <div className="flex gap-4 aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full sm:flex-col">
-            <div ref={c} className={`${styles.cardStyle} rounded-2xl w-2/5`}>
+            <div ref={c} className={`${styles.cardStyle} rounded-xl md:rounded-lg w-2/5`}>
                 <ProjectPreview data={finalProject["lienou"]} id={'lienou'}/>
             </div>
-            <div ref={d} className={`${styles.cardStyle} rounded-2xl w-3/5`}>
+            <div ref={d} className={`${styles.cardStyle} rounded-xl md:rounded-lg w-3/5`}>
                 <ProjectPreview data={finalProject["acc"]} id={'acc'}/>
               </div>
         </div>

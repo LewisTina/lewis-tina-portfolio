@@ -48,7 +48,7 @@ export default function Cover(props: any){
             </div>
             
 
-            <div className="absolute h-full flex items-center justify-center lg:h-[50vh] transition-all w-full pointer-events-none">
+            <div className="absolute h-full flex items-center justify-center md:h-[50vh] md:hidden transition-all w-full pointer-events-none">
                 <div className="h-auto lg:w-3/5 w-[30rem] mr-[5rem] lg:mr-0 aspect-square animate-float">
                     <div className="w-full h-full relative">
                         <Image  

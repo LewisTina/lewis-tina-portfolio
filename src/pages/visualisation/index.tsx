@@ -8,11 +8,12 @@ import { withRouter, NextRouter } from 'next/router';
 import { WithRouterProps } from 'next/dist/client/with-router';
 
 export function Visualisation({ router}: WithRouterProps){
-
     let projectId = router.query.id as string;
     const data = projects as any
     const ProjectData = data[projectId] as ProjectProps
     const locale = router.locale as "en" | "fr"
+
+    console.log(ProjectData)
 
     return (
         <VisualisationLayout 

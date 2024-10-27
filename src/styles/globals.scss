@@ -54,7 +54,7 @@
 }
 
 .projectCategoryPuce {
-  @apply py-1 px-4 inline-block text-primary text-xs rounded-full bg-primary/10
+  @apply py-1 px-4 inline-block text-primary dark:text-white text-xs rounded-full bg-primary/10 dark:bg-primary
 }
 
 html{

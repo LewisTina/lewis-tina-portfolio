@@ -15,7 +15,7 @@
 .colorSplash {
     @apply
     absolute
-    h-full lg:h-[50vh]
+    h-full md:h-[50vh] md:hidden
     w-full
     flex items-center justify-center
     bg-cover-glow bg-no-repeat bg-center lg:bg-contain
@@ -38,6 +38,6 @@
 
 .title-medium {
     @apply leading-normal block;
-    font-size: max(1.5rem,min(2.5vw,2.25rem));
+    font-size: max(1.25rem,min(2.5vw,2.25rem));
     line-height: 1;
 }
