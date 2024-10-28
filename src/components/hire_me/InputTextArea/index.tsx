@@ -8,6 +8,7 @@ export interface formInput {
     name: string;
     onChange?: any
     isRequired?: any
+    className?: string
 }
 
 export default function InputTextArea(props: formInput){
@@ -17,19 +18,20 @@ export default function InputTextArea(props: formInput){
         placeholder, 
         isRequired, 
         onChange,
-        controller 
+        controller,
+        className
     } = props
 
     return(
-        <div className={`m-3 md:mx-0`}>
-            {label ? <label className='font-bold capitalize'> {label} <b>{isRequired ? "*" : ""}</b> <br /></label>: ''}
+        <div className={`${className??''} w-full`}>
+            {label ? <label className='font-medium capitalize'> {label} <span>{isRequired ? "*" : ""}</span> <br /></label>: ''}
             <textarea
                     {...controller(name, {
                             required: isRequired ? true : false,
                         }
                         )}
                     min ="0"
-                    className='rounded-md p-2 px-4 w-[41.5rem] md:w-full max-w-full h-40' 
+                    className={`rounded-md p-2 px-4 w-full max-w-full h-40`} 
                     placeholder={placeholder}
                     onKeyUp={onChange}
                     />

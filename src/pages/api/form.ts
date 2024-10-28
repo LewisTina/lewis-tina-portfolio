@@ -33,7 +33,7 @@ export default async function handler(req: any, res: any) {
       const mailOptions = {
         from: `"LEWIS TINA" <${process.env.CONTACT_FORM_USERNAME}>`,
         replyTo: email,
-        to: process.env.PERSONAL_MAIL,
+        to: process.env.CONTACT_FORM_USERNAME,
         subject: 'Nouveau message de contact',
         text:`Nom: ${firstName} ${name}\nEmail: ${email}\ntéléphone: ${phone}\ndate: ${(finalDate).toLocaleString('fr', {year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false})}\nNombre de participant: ${participants}\nMessage: ${message || ''}\nsociety:${society || ''},
              `,

@@ -23,3 +23,19 @@
 .yearXp {
     background: linear-gradient(155deg, rgba(0,15,255,1) 45%, rgba(0, 0, 0, 1));
 }
+
+.geekMemoji {
+    transform: rotate(4.5deg);
+    position: relative;
+    width: 50%;
+    max-width: 512px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        transform: rotate(-8deg);
+        z-index: -1;
+        @apply rounded-xl
+    }
+}

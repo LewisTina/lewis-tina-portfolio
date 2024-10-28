@@ -5,7 +5,7 @@
     flex justify-center
     w-full
     bg-cover-bg bg-no-repeat bg-right-top bg-contain
-    px-10 pb-10 md:pb-0 md:pt-10 md:px-4 lg:px-6;
+                px-10 md:px-4 lg:px-6 pb-10 md:pb-0 md:pt-10;
 
     * {
         white-space: pre-line;
@@ -15,7 +15,7 @@
 .colorSplash {
     @apply
     absolute
-    h-full lg:h-[50vh]
+    h-full md:h-[50vh] md:hidden
     w-full
     flex items-center justify-center
     bg-cover-glow bg-no-repeat bg-center lg:bg-contain
@@ -38,6 +38,6 @@
 
 .title-medium {
     @apply leading-normal block;
-    font-size: max(1.5rem,min(2.5vw,2.25rem));
+    font-size: max(1.25rem,min(2.5vw,2.25rem));
     line-height: 1;
 }

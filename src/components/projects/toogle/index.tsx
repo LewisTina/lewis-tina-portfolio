@@ -25,12 +25,11 @@ export default function SwitchToggle(props: {activeSkills: string; setActiveSkil
     }, [activeSkills])
 
     return(
-        <div className="flex">
-        <div className="relative self-start rounded-full h-10 my-4 bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl max-w-full sm:w-full">
-            <div className={`absolute rounded-full h-full transition-all duration-300 bg-primary -z-10`} id='indicator'>
+        <div className="relative self-start rounded-full h-10 bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-x w-fit max-w-full sm:w-full">
+            <div className={`absolute rounded-full h-full transition-all duration-300 bg-primary z-10`} id='indicator'>
             </div>
 
-            <div className="flex h-full px-6 items-center rounded-full cursor-pointer sm:w-1/2 sm:px-4" id='app_toggle' 
+            <div className="flex h-full px-6 items-center rounded-full cursor-pointer z-10 sm:w-1/2 sm:px-4" id='app_toggle' 
                     onClick={()=> setActiveSkills("app")}>
                 <span className={`
                     capitalize transition-all duration-300 text-ellipsis inline-block whitespace-nowrap overflow-hidden
@@ -39,7 +38,7 @@ export default function SwitchToggle(props: {activeSkills: string; setActiveSkil
                 </span>
             </div>
             
-            <div className="flex h-full px-6 items-center rounded-full cursor-pointer sm:w-1/2 sm:px-4" id="design_toggle" 
+            <div className="flex h-full px-6 items-center rounded-full cursor-pointer z-10 sm:w-1/2 sm:px-4" id="design_toggle" 
                     onClick={()=> setActiveSkills("design")}>
                 <span className={`
                     capitalize transition-all duration-300 text-ellipsis inline-block whitespace-nowrap overflow-hidden
@@ -48,6 +47,5 @@ export default function SwitchToggle(props: {activeSkills: string; setActiveSkil
                 </span>
             </div>
         </div>
-    </div>
     )
 }

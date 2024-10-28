@@ -15,7 +15,7 @@ export default function Cover(props: any){
             <div className={`${styles.noise} mix-blend-overlay dark:mix-blend-normal`}>
             </div>
             
-            <div className="relative h-full w-full flex flex-col justify-center md:items-start max-w-[1535px]">
+            <div className="relative h-full w-full flex flex-col justify-center md:items-start max-w-7xl">
                 <div className="flex flex-col items-start justify-start">
                     <div className="pb-8">
                         <h1 className="flex flex-col gap-4 dark:mix-blend-difference">
@@ -48,7 +48,7 @@ export default function Cover(props: any){
             </div>
             
 
-            <div className="absolute h-full flex items-center justify-center lg:h-[50vh] transition-all w-full pointer-events-none">
+            <div className="absolute h-full flex items-center justify-center md:h-[50vh] md:hidden transition-all w-full pointer-events-none">
                 <div className="h-auto lg:w-3/5 w-[30rem] mr-[5rem] lg:mr-0 aspect-square animate-float">
                     <div className="w-full h-full relative">
                         <Image  

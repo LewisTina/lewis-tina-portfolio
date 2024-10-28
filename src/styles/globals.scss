@@ -49,7 +49,17 @@
   font-family: var(--system-ui-font);
 }
 
+.bubbleSpan {
+  @apply px-6 py-1 capitalize rounded-full bg-light-grey/25 border-2 border-light-grey/25 flex backdrop-blur-xl text-sm
+}
 
+.projectCategoryPuce {
+  @apply py-1 px-4 inline-block text-primary dark:text-white text-xs rounded-full bg-primary/10 dark:bg-primary
+}
+
+.privateProjectPuce {
+  @apply py-1 px-4 inline-block text-blood-red dark:text-white text-xs rounded-full bg-blood-red/10 dark:bg-blood-red
+}
 
 html{
   scroll-behavior: smooth;
@@ -185,7 +195,7 @@ input::-webkit-inner-spin-button {
 }
 
 #Calque_1 #Dégradé_sans_nom_17559 {
-  animation: fadein 2s forwards; opacity:0;
+  animation: fadein 10s forwards; opacity:0;
 }
 
 @keyframes fadein {from { opacity: 0; }to  { opacity: 1; }}

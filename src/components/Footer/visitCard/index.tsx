@@ -17,7 +17,7 @@ export default function VisitCard() {
                 action={undefined}/>
             </a>
 
-            <a href="sms:+330767914587?body=Hey20%Lewis">
+            <a href="sms:+330767914587?body=Hey Lewis, je vous contacte depuis votre site web, seriez vous disponible pour que nous puissions échanger ?">
             <CustomButton 
                 leftIcon={
                     <span className="material-symbols-outlined text-lg leading-none">&#xe625;</span>

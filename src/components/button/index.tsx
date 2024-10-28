@@ -18,7 +18,7 @@ export default function CustomButton(props: CustomButtonProps){
             className={`
             ${color} ${bgColor} ${className} 
             flex gap-3 items-center rounded-full px-6 py-2 my-3 disabled:opacity-50
-            transition-all duration-300 text-ellipsis whitespace-nowrap overflow-hidden
+            transition-all duration-300 text-ellipsis whitespace-nowrap overflow-hidden w-fit font-medium
             `}>
             {leftIcon}
             {label}

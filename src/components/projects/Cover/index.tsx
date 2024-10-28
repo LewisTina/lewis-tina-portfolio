@@ -4,27 +4,22 @@ import style from "./index.module.scss"
 export default function PortfolioCover(){
     const router = useRouter()
     return(
-        <div className={`relative h-screen min-h-[700px] sm:min-h-[unset] sm:h-[100svh] flex justify-center w-full z-0 snap-y max-h-[1114px]`}>
+        <div className={`relative h-[100vh] min-h-[700px] sm:min-h-[unset] sm:h-[100svh] flex justify-center w-full z-0 snap-y max-h-[1280px]`}>
             <div className="flex items-center px-10 md:pb-28 max-w-[1535px] w-full h-full bg-portfolio-cover-bg bg-no-repeat bg-contain sm:bg-cover bg-right md:px-4 lg:px-6 overflow-hidden">
-            <div className={`${style.content}  ${style.gradient_mask}  overflow-hidden whitespace-pre-line bg-white/25 dark:bg-black/25 border-2 border-light-grey/50 flex flex-col items-start justify-between backdrop-blur-xl rounded-3xl w-2/5 min-w-[500px] sm:w-full lg:w-full lg:min-w-[unset] mx-8 md:mx-0 p-[4%] md:p-6 mt-32 md:mt-40 h-[calc(100%-7rem)] md:h-full`}>
-                {/* <div className="-z-10 opacity-50 top-0 absolute h-full w-full bg-cover-noise bg-no-repeat bg-content mix-blend-multiply dark:mix-blend-normal">
-                </div> */}
+            <div className={`${style.content}  ${style.gradient_mask}  overflow-hidden whitespace-pre-line bg-white/25 dark:bg-black/25 border-2 border-light-grey/50 flex flex-col items-start justify-between backdrop-blur-xl rounded-3xl w-2/5 min-w-[500px] sm:w-full lg:w-full lg:max-w-lg lg:mx-auto lg:min-w-[unset] mx-8 p-[4%] md:p-6 mt-32 md:mt-40 h-[calc(100%-7rem)] md:h-full`}>
                 <div className=""></div>
 
                 <div className={`${style.title} flex flex-col items-start w-full mb-10`}>
                     <span className="text-7xl text-white leading-[0.70] flex mx-2 before:block before:absolute before:-z-10 before:-inset-4 xl:before:-inset-2 before:-skew-y-3 before:bg-deep-purple relative">
                         {"Lewis Tina's"}
                     </span>
-                    {/* 
-                    <h2 className="uppercase leading-[0.75] text-[24rem] xl:text-[8rem] bg-gradient-to-t from-darkest to-secondary">{"Portfolio"}</h2>
-                     */}
                     <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 567.1626 269.51635" className="w-full my-8 md:mb-0">
                         <defs>
                             <linearGradient id="Dégradé_sans_nom_17559" data-name="Dégradé sans nom 17559" x1="283.5813" y1="268.2843" x2="283.5813" y2="1.23205" gradientUnits="userSpaceOnUse">
-                                <stop offset="0" stop-color="#121212">
+                                <stop offset="0" stopColor="#121212">
                                     <animate attributeName="stop-color" values="#0004ff; #121212; #007aff; #121212; #0004ff" dur="5s" repeatCount="indefinite"></animate>
                                 </stop>
-                                <stop offset="1" stop-color="#007aff">
+                                <stop offset="1" stopColor="#007aff">
                                     <animate attributeName="stop-color" values="#121212; #007aff; #0004ff; #007aff; #121212" dur="5s" repeatCount="indefinite"></animate>
                                 </stop>
                             </linearGradient>
@@ -51,7 +46,7 @@ export default function PortfolioCover(){
                                 <div className="flex-1 h-[2px] bg-gray-700 dark:bg-gray-400 mx-4"></div>
                                 <div className="">
                                     <span className="leading-[0.75]">
-                                        2023
+                                        2024
                                     </span>
                                 </div>
                     </div>

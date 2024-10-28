@@ -29,11 +29,11 @@ export default async function handler(req: any, res: any) {
       });
 
       try{
-        if(file_name != undefined && file_name != '' && !!file_name){
+        if(!!file_name){
             const mailOptions = {
                 from: `"LEWIS TINA" <${process.env.CONTACT_FORM_USERNAME}>`,
                 replyTo: email,
-                to: process.env.PERSONAL_MAIL,
+                to: process.env.CONTACT_FORM_USERNAME,
                 subject: 'Nouveau message de contact',
                 text:`Nom: ${first_name} ${name}\nEmail: ${email}\ntéléphone: ${phone}\nMessage: ${message || ''}\nsociety:${society || ''},
                      `,
@@ -53,7 +53,7 @@ export default async function handler(req: any, res: any) {
             const mailOptions = {
                 from: `"LEWIS TINA" <${process.env.CONTACT_FORM_USERNAME}>`,
                 replyTo: email,
-                to: process.env.PERSONAL_MAIL,
+                to: process.env.CONTACT_FORM_USERNAME,
                 subject: 'Nouveau message de contact',
                 text:`Nom: ${first_name} ${name}\nEmail: ${email}\ntéléphone: ${phone}\nMessage: ${message || ''}\nsociety:${society || ''},
                      `,

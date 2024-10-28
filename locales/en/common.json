@@ -42,7 +42,7 @@
     "privacy": "privacy",
     "social_media": "Social media",
 
-    "about_lewis":"With a DUT degree in Software Engineering and self-taught experience, I have been pursuing my studies in software engineering since 2018 while also working as a Graphic Designer. Furthermore, since 2020, I have been working concurrently as a Fullstack Developer. I have worked on various projects, both in teams and independently, for individuals and businesses. \n I also have a personal product in my portfolio, which is an invoicing solution that I highly recommend for your entrepreneurial or SME activities.",
+    "about_lewis":"Since 2020, I've been working as a Fullstack Developer and Graphic Designer in parallel. To date, I've worked on a variety of projects, both as part of a team and individually, for individuals and companies. \nI've also set up a product to help you improve your company's accounting via an invoicing solution, which I'd recommend for your activities as an entrepreneur or SME.",
     "focus_text": "My main objective is to provide optimized, responsive, intuitive, and tailored solutions to meet your needs. To achieve this, I offer the following services:",
 
     "web_dev": "Web Development",
@@ -74,7 +74,7 @@
     
     "conclusion": "Our passion is to transform your requirements into high-quality solutions, allowing you to expand your digital presence and make a mark for your brand in today's market.",
 
-    "last_update": "DLast update, on {{date}}.",
+    "last_update": "Last update, on {{date}}.",
     "legal_mentions": "Legacy",
     "terms_of_use_title": "Terms of Use",
     "terms_of_use_section_1": "Acceptance of Terms",

@@ -7,10 +7,10 @@ export default function TextPoint(props: textPoint) {
 
     return (
         <div className={`my-4`}>
-            <h3 className="text-2xl font-bold">
+            <h3 className="text-2xl font-bold mb-6 mt-16">
                 {title}
             </h3>
-            <p className="w-full whitespace-pre-line font-medium text-justify  sm:text-left">
+            <p className="w-full whitespace-pre-line text-base leading-7">
                 {text}
             </p>
         </div>
