@@ -24,7 +24,7 @@
         "fr": "Comme toute landing page moderne, en plus de la présentation du produit, elle comporte également un formulaire de contact avec envoi automatique de courrier électronique, ce qui en fait un projet plus complet, même s'il intègre également une page d'API. Parmi les tâches, on peut citer :\n\n- Conception de la maquette UI/UX\n- Intégration full-stack Next.js\n- Déploiement sur l'infra de la société CPG Consulting",
         "en": "Like any modern landing page, in addition to the product presentation, it also includes a contact form with automatic email sending, making it a more comprehensive project, even though it also incorporates an API page. Tasks include:\n\n- UI/UX mockup design\n- Full-stack integration with Next.js\n- Deployment on CPG Consulting's infrastructure"
     },
-    "contributionBlocImg": [{"link": "/jobm/jobm-home-mockup-laptop.jpg", "alt": "Job M Landing page image 1"}],
+    "contributionBlocImg": [{"link": "/jobm/mockup-jobm-landing-page.png", "alt": "Job M Landing page image 1"}, {"link": "/jobm/all-about-jobm.png", "alt": "Job M Landing page image 2"}],
     "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "Github", "gsap", "i18n", "Figma", "nodemailer"],
     "technosBlocImg": [],
     "projectLink":"https://www.jobm.fr/",
@@ -55,7 +55,7 @@
         "fr": "Mes contributions sur ce projet ont été de créer une landing page pour l'application, et d'intégrer de nouvelles fonctionnalités/interfaces pour cette application. \nParmi les tâches, on peut citer :\n\n- Intégration Front-end Next.js des maquettes fournies par le designer\n- Développement de nouvelles fonctionnalités/interfaces pour l'application,\n- Portage de l'ancienne version d'application jQuery vers la stack NextJs",
         "en": "My contributions on this project were to create a landing page for the application, and to integrate new functionalities/interfaces for this application. \nTasks include:\n\n- Next.js Front-end integration of the mockups provided by the designer\n- Development of new functionalities/interfaces for the application,\n- Porting of the old jQuery application version to the NextJs stack"
     },
-    "contributionBlocImg": [],
+    "contributionBlocImg": [{"link": "/ach/no-access-ach.png", "alt": "Alwan color hub image 1"}],
     "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "Github"],
     "technosBlocImg": [],
     "projectCategories":"Dev Frontend"
@@ -85,7 +85,7 @@
         "fr": "Pour ce projet, mes responsabilités étaient de refondre le site web e-commerce de l'entreprise pour une meilleure expérience utilisateur et une meilleure conversion. \nParmi les tâches, on peut citer :\n\n- Création de nouvelles pages et d'un portfolio;\n - Refonte visuelle et finalisation des pages existantes;\n- Intégration des moyens de paiements;",
         "en": "For this project, my responsibilities were to redesign the company's e-commerce website for a better user experience and better conversion. \nTasks include:\n\n- Creation of new pages and a portfolio;\n - Visual redesign and finalization of existing pages;\n- Integration of payment methods;"
     },
-    "contributionBlocImg": [],
+    "contributionBlocImg": [{"link": "/lienou/lienou-mockup.jpg", "alt": "Alwan color hub image 1"}],
     "technos": ["Wordpress", "elementor", "woo commerce", "stripe", "paypal"],
     "technosBlocImg": [],
     "projectLink":"https://www.lienou.fr",
@@ -117,7 +117,7 @@
         "fr": "Pour ce projet, mes responsabilités étaient de créer un module API pour exposer les requêtes de l'application et faciliter son exploitation de façon externe, et de créer un module client front-end de monitoring et de définition des ressources utilisateur. \nParmi les tâches, on peut citer :\n\n- Conception de la maquette UI/UX\n- Intégration full-stack Next.js\n- Déploiement sur l'infra de la société CPG Consulting",
         "en": "For this project, my responsibilities were to create an API module to expose the application's requests and facilitate external use, and to create a front-end client module for monitoring and defining user resources. \nTasks include:\n\n- UI/UX mockup design\n- Full-stack integration with Next.js\n- Deployment on CPG Consulting's infrastructure"
     },
-    "contributionBlocImg": [],
+    "contributionBlocImg": [{"link": "/jobm/jobm-cover.png", "alt": "Job M image 1"}],
     "technos": ["Lua", "Tarantool DB", "MySQL", "NextJs", "ReactJs", "Typescript", "Node Js", "Github"],
     "technosBlocImg": [],
     "projectCategories":"Dev Fullstack & UI Design"
@@ -147,7 +147,7 @@
         "fr": "Mes contributions sur ce projet ont été de créer une landing page pour l'application, et d'intégrer de nouvelles fonctionnalités/interfaces pour cette application. \nParmi les tâches, on peut citer :\n\n- Intégration Front-end Next.js des maquettes fournies par le designer\n- Développement de nouvelles fonctionnalités/interfaces pour l'application",
         "en": "My contributions on this project were to create a landing page for the application, and to integrate new functionalities/interfaces for this application. \nTasks include:\n\n- Next.js Front-end integration of the mockups provided by the designer\n- Development of new functionalities/interfaces for the application"
     },
-    "contributionBlocImg": [],
+    "contributionBlocImg": [{"link": "/acc/acc-cover.jpg", "alt": "Alwan color cloud visual image 1"}, {"link": "/acc/pricing-alwan-new.jpg", "alt": "Alwan color cloud visual image 2 (pricing)"}, {"link": "/acc/landing-alwan.jpg", "alt": "Alwan color cloud visual image 2 (Landing page)"}],
     "technos": ["NextJs", "ReactJs", "Typescript", "Node Js", "Github"],
     "technosBlocImg": [],
     "projectLink":"https://colorcloud.alwancolor.com/",

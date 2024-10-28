@@ -57,6 +57,10 @@
   @apply py-1 px-4 inline-block text-primary dark:text-white text-xs rounded-full bg-primary/10 dark:bg-primary
 }
 
+.privateProjectPuce {
+  @apply py-1 px-4 inline-block text-blood-red dark:text-white text-xs rounded-full bg-blood-red/10 dark:bg-blood-red
+}
+
 html{
   scroll-behavior: smooth;
 }
