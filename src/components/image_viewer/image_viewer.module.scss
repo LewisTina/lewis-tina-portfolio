@@ -1,5 +1,5 @@
 .wrapper {
-    @apply inset-0 fixed z-[9999] flex items-center justify-center bg-darkest/90 overflow-auto select-none;
+    @apply inset-0 fixed z-[9999] bg-darkest/90 overflow-auto select-none;
 
     button {
         @apply flex items-center justify-center rounded-full aspect-square transition-all duration-300 bg-black text-white p-3;
@@ -27,7 +27,7 @@
 }
 
 .menu {
-    @apply fixed bottom-12 bg-black flex gap-2 rounded-full p-2;
+    @apply fixed left-1/2 -translate-x-1/2 bottom-12 bg-black flex gap-2 rounded-full p-2;
 
     button {
         @apply hover:bg-white/10;

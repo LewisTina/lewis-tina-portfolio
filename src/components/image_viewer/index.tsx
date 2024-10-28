@@ -79,7 +79,6 @@ export default function ImageViewer(props: ImageViewerProps) {
             const frameDimensions = frame.getBoundingClientRect();
             const imageDimensions = image.contentRect;
             const scaleX = imageDimensions.width / frameDimensions.width;
-            const scaleY = imageDimensions.height / frameDimensions.height;
             const scale = (scaleX);
             setScaleGap((1 / scale) / 5);
         }
@@ -105,7 +104,7 @@ export default function ImageViewer(props: ImageViewerProps) {
                 alt = {activeImage?.alt}
                 ref={imageRef}
                 unoptimized={true}
-                className='h-auto w-auto max-h-full max-w-full'
+                className='h-auto w-auto max-h-full max-w-full origin-top m-auto'
                 height={10000}
                 width={10000}
                 style={{
