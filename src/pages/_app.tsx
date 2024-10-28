@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import React, {useEffect} from 'react'
 import setLanguage from 'next-translate/setLanguage'
 import { Analytics } from '@vercel/analytics/react';
+import { ImageViewerProvider } from '@/components/context/image_viewer'
 
 export default function App({ Component, pageProps }: AppProps) {
 
@@ -21,8 +22,10 @@ export default function App({ Component, pageProps }: AppProps) {
   )
   return (
     <ThemeProvider attribute="class">
-      <Component {...pageProps} />
-      <Analytics />
+      <ImageViewerProvider>
+        <Component {...pageProps} />
+        <Analytics />
+      </ImageViewerProvider>
     </ThemeProvider>
   )
 }

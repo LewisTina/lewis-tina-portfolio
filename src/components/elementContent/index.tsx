@@ -4,10 +4,12 @@ import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useImageViewer } from "../context/image_viewer";
 
 export default function Content (props: {data: ProjectProps}) {
     const {data} = props
     const {t} = useTranslation('common')
+    const { open: openViewer } = useImageViewer();
     const router = useRouter()
     const locale = router.locale as "en" | "fr"
     const {
@@ -166,12 +168,13 @@ export default function Content (props: {data: ProjectProps}) {
                                 {
                                     contributionBlocImg.map((value: imageProps, idx) => {
                                         return (
-                                            <div className="w-auto relative" key={idx}>
+                                            <div className="w-auto relative cursor-pointer" key={idx}>
                                                 <Image  
                                                     src={value.link}
                                                     alt = {value.alt}
                                                     width={1000}
                                                     height={1000}
+                                                    onClick={() => openViewer({images: [cover, ...contributionBlocImg], initialIndex: idx + 1})}
                                                     className={"h-auto w-full object-contain"}/>
 
                                             </div>

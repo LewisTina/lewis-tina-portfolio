@@ -13,8 +13,6 @@ export function Visualisation({ router}: WithRouterProps){
     const ProjectData = data[projectId] as ProjectProps
     const locale = router.locale as "en" | "fr"
 
-    console.log(ProjectData)
-
     return (
         <VisualisationLayout 
             cover={ProjectData?.cover?.link} 
