@@ -193,7 +193,7 @@
             },
         "activities": "Octobre 2023",
         "owner": "Lewis TINA",
-        "title": "My Portfolio",
+        "title": "This Portfolio",
         "cover": {
             "link": "/this_portfolio/Online_Portfolio_Mockup_1.png", 
             "alt": "this porfolio preview image"
@@ -215,7 +215,6 @@
         "technosBlocImg": [],
         "githubLink":"https://github.com/LewisTina/lewis-tina-portfolio",
         "behanceLink":"https://www.behance.net/gallery/181857483/Personal-Landing-Page-with-some-project/",
-        "projectLink":"https://www.lewistina.com/",
         "projectCategories":"Dev Fullstack & UI Design"
     },
 "factauto": {

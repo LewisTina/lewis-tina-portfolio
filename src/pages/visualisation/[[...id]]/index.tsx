@@ -1,8 +1,8 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/NavBar";
-import projects from '../../../project.json'
+import projects from '../../../../project.json'
 import { ProjectProps } from "@/components/types";
-import Content from "../../components/elementContent";
+import Content from "../../../components/elementContent";
 import VisualisationLayout from "@/components/visualisationLayout";
 import { withRouter, NextRouter } from 'next/router';
 import { WithRouterProps } from 'next/dist/client/with-router';
@@ -12,6 +12,7 @@ export function Visualisation({ router}: WithRouterProps){
     const data = projects as any
     const ProjectData = data[projectId] as ProjectProps
     const locale = router.locale as "en" | "fr"
+    console.log(router.query)
 
     return (
         <VisualisationLayout 

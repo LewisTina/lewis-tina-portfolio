@@ -78,11 +78,12 @@ export default function ProjectPreview(props: {data: ProjectProps, id:string}) {
             <div className="flex items-center justify-between text-sm">
 
                 <div className="flex">
+                    <Link href={`/visualisation/${id}`}>
                         <CustomButton 
                             bgColor={"bg-white"} 
                             color={"text-black"} 
-                            label={t("more_details")} 
-                            action={()=>{router.push(`visualisation?id=${id}`)}}/>
+                            label={t("more_details")}/>
+                    </Link>
                 </div>
 
                 <div className="flex items-center lg:hidden">

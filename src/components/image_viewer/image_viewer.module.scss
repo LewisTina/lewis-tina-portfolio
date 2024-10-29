@@ -1,5 +1,5 @@
 .wrapper {
-    @apply inset-0 fixed z-[9999] bg-darkest/90 overflow-auto select-none;
+    @apply inset-0 fixed max-w-full max-h-full flex z-[9999] bg-darkest/90 backdrop-blur-sm overflow-auto select-none;
 
     button {
         @apply flex items-center justify-center rounded-full aspect-square transition-all duration-300 bg-black text-white p-3;
@@ -10,27 +10,35 @@
     }
 }
 
+.navigation, .close {
+    @apply fixed hover:ring-1;
+}
+
 .navigation {
-    @apply fixed top-1/2 transform -translate-y-1/2 hover:ring-1;
+    @apply bottom-1/2 transform -translate-y-1/2 md:bottom-4;
 
     &.back {
-        @apply left-12
+        @apply left-4 md:left-[unset] md:right-1/2 md:-translate-x-1
     }
 
     &.next {
-        @apply right-12
-    }
-
-    &.close {
-        @apply top-12 right-12 translate-y-0;
+        @apply right-4 md:right-[unset] md:left-1/2 md:translate-x-1
     }
 }
 
+.close {
+    @apply top-4 right-4 md:right-2 md:top-2 translate-y-0;
+}
+
 .menu {
-    @apply fixed left-1/2 -translate-x-1/2 bottom-12 bg-black flex gap-2 rounded-full p-2;
+    @apply fixed left-1/2 -translate-x-1/2 bottom-4 bg-black flex gap-2 rounded-full p-1 md:hidden;
 
     button {
-        @apply hover:bg-white/10;
+        @apply hover:bg-white/10 p-2;
+
+        i {
+            font-size: 22px;
+        }
 
         &.disabled {
             @apply opacity-50 pointer-events-none;

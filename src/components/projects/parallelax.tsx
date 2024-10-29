@@ -62,15 +62,15 @@ export const ParallaxEffectApp = (props: ParallaxEffectProps ) => {
               <ProjectPreview data={finalProject["factauto"]} id={'factauto'}/>
             </div>
             <div ref={b} className={`${styles.cardStyle} rounded-xl md:rounded-lg w-1/2 sm:aspect-[1/0.85]`}>
-                <ProjectPreview data={finalProject["pkarenov"]} id={'pkarenov'}/>
+                <ProjectPreview data={finalProject["jobm-landing"]} id={'jobm-landing'}/>
             </div>
         </div>
         <div className="flex gap-4 aspect-[1/0.41] md:aspect-[auto] md:h-[18rem] sm:h-[unset] w-full sm:flex-col">
             <div ref={c} className={`${styles.cardStyle} rounded-xl md:rounded-lg w-2/5`}>
-                <ProjectPreview data={finalProject["lienou"]} id={'lienou'}/>
-            </div>
-            <div ref={d} className={`${styles.cardStyle} rounded-xl md:rounded-lg w-3/5`}>
                 <ProjectPreview data={finalProject["acc"]} id={'acc'}/>
+              </div>
+            <div ref={d} className={`${styles.cardStyle} rounded-xl md:rounded-lg w-3/5`}>
+                <ProjectPreview data={finalProject["pkarenov"]} id={'pkarenov'}/>
               </div>
         </div>
         <div ref={e} className="flex gap-4 h-48 w-full md:flex-wrap md:h-[unset]">
