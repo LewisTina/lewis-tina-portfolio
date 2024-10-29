@@ -123,7 +123,7 @@ export default function ImageViewer(props: ImageViewerProps) {
                 }}/>
 
             <button 
-                className={`${styles.close} ${styles.navigation}`}
+                className={`${styles.close}`}
                 onClick={() => closeViewer('CANCEL')}>
                 <i className= {`material-symbols-outlined`}>{"\ue5cd"}</i>
             </button> 
@@ -144,7 +144,7 @@ export default function ImageViewer(props: ImageViewerProps) {
 
             <div className={styles.menu}>
                 <button 
-                    className={`${styles.zoom} ${canZoomOut ? '' : styles.disabled}`}
+                    className={`${canZoomOut ? '' : styles.disabled}`}
                     disabled={!canZoomOut}
                     onClick={() => handleZoomChange("out")}>
                     <i className= {`material-symbols-outlined`}>{"\ue15b"}</i>
