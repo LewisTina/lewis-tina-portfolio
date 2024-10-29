@@ -12,6 +12,8 @@ export interface ImageViewerProps {
 export default function ImageViewer(props: ImageViewerProps) {
     const { images = [], initialIndex } = props;
     const [ imageIndex, setImageIndex ] = useState<number>(initialIndex ?? 0)
+    const [ imageSize, setImageSize ] = useState({h: 0, w: 0});
+    const [ frameSizeScroll, setFrameSizeScroll ] = useState({h: false, w: false});
     const [ scaleGap, setScaleGap ] = useState(0.5);
     const [ previewScale, setPreviewScale ] = useState(1);
     const { close: closeViewer } = useImageViewer();
@@ -65,7 +67,6 @@ export default function ImageViewer(props: ImageViewerProps) {
             viewer.addEventListener('keydown', handleKeyDown);
             viewer.tabIndex = -1;
             viewer.focus();
-
             return () => {
                 viewer.removeEventListener('keydown', handleKeyDown);
             };
@@ -78,6 +79,7 @@ export default function ImageViewer(props: ImageViewerProps) {
             const image = entries[0];
             const frameDimensions = frame.getBoundingClientRect();
             const imageDimensions = image.contentRect;
+            setImageSize({h: imageDimensions.height, w: imageDimensions.width});
             const scaleX = imageDimensions.width / frameDimensions.width;
             const scale = (scaleX);
             setScaleGap((1 / scale) / 5);
@@ -97,6 +99,13 @@ export default function ImageViewer(props: ImageViewerProps) {
         };
     }, [onResize]);
 
+    useEffect(() => {
+        const viewer = frameRef.current;
+        if(viewer) {
+            setFrameSizeScroll({h: viewer.clientHeight < viewer.scrollHeight, w: viewer.clientWidth < viewer.scrollWidth});
+        }
+    }, [previewScale])
+
     return (
         <div className={styles.wrapper} ref={frameRef}>
             <Image  
@@ -104,11 +113,13 @@ export default function ImageViewer(props: ImageViewerProps) {
                 alt = {activeImage?.alt}
                 ref={imageRef}
                 unoptimized={true}
-                className='h-auto w-auto max-h-full max-w-full origin-top m-auto'
+                className='h-auto w-auto max-h-full max-w-full object-contain transition-none duration-100 ease-in-out'
                 height={10000}
                 width={10000}
                 style={{
-                    scale: `${previewScale / 1}`,
+                    transform: `scale(${previewScale / 1})`,
+                    transformOrigin: `${frameSizeScroll.h ? 'top' : 'center'} ${frameSizeScroll.w ? 'left' : 'center'}`, 
+                    margin: `${frameSizeScroll.h ? '0' : 'auto'} ${frameSizeScroll.w ? '0' : 'auto'}`,
                 }}/>
 
             <button 
@@ -139,7 +150,7 @@ export default function ImageViewer(props: ImageViewerProps) {
                     <i className= {`material-symbols-outlined`}>{"\ue15b"}</i>
                 </button> 
                 <button onClick={() => handleZoomChange("reset")}>
-                    <i className= {`material-symbols-outlined`}>{"\ue56b"}</i>
+                    <i className= {`material-symbols-outlined`}>{"\ueb2d"}</i>
                 </button> 
                 <button
                     className={`${canZoomIn ? '' : styles.disabled}`}

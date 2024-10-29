@@ -5,7 +5,7 @@ interface CustomButtonProps {
     rightIcon?: any,
     disabled?: boolean,
     label: string,
-    action: any
+    action?: any
     className?: any
 }
 
@@ -16,9 +16,9 @@ export default function CustomButton(props: CustomButtonProps){
             onClick={action}
             disabled={disabled}
             className={`
-            ${color} ${bgColor} ${className} 
+            ${color} ${bgColor} 
             flex gap-3 items-center rounded-full px-6 py-2 my-3 disabled:opacity-50
-            transition-all duration-300 text-ellipsis whitespace-nowrap overflow-hidden w-fit font-medium
+            transition-all duration-300 text-ellipsis whitespace-nowrap overflow-hidden w-fit font-medium ${className}
             `}>
             {leftIcon}
             {label}
